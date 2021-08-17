@@ -1,0 +1,194 @@
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav_bar-div {
+}
+.nav_bar-table {
+    width: 100%;
+    height: 2.5rem;
+    background-color: rgba(255,255,255,0.2);
+    text-align: center;
+
+}
+table td {
+  width: 10%;
+}
+table td a {
+  color: #000000;
+  text-decoration: none;
+}
+.nav_bar-logo {
+  height: auto;
+  width: 3rem;
+}
+.nav_bar-active {
+  font-weight: bold;
+}
+
+.home-watermark_and_started-section{
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/background_images/unregisteredbg.jpg");
+  background-size: cover;
+  margin: 0px;
+}
+.watermark {
+  font-size: 10rem;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin: 10% auto auto 17%;
+  font-family: "Times New Roman", Times, serif;
+}
+.get_started-btn{
+  margin:0% auto auto 40%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #89C2B8;
+  opacity: 0.6;
+  height: 3rem;
+  width: 15rem;
+  border-radius: 0.6rem;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+}
+
+/*--------------about_us-----------*/
+
+.about_us-section {
+  height: 100vh;
+}
+.h1-about_us {
+  font-size: 2rem;
+  text-align: center;
+}
+.h3-about_us {
+  margin: auto auto auto 8%;
+}
+.p-about_us {
+  display: block;
+  text-align: justify;
+  width: 60%;
+  margin: auto auto auto 8%;
+  float: left;
+}
+.logo-about_us {
+  width: 12%;
+  height: auto;
+  float: right;
+  margin: auto 8% auto auto;
+}
+.div-about_us {
+  display: block;
+  height: 26vh;
+}
+.hr-about_us {
+border-width: 0.3rem 0rem 0rem 0rem;
+border-color: #000000;
+margin: 0px;
+}
+/*.............image gallery <- about us...............*/
+.gallary-about_us {
+  height: 45vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.slide-about_us img{
+  height: 43vh;
+  width: auto;
+  margin: 0.3rem 5px;
+  border-radius: 1vh;
+}
+.gallary-about_us::-webkit-scrollbar {
+	display: none;
+}
+.prev_btn-about_us {
+  float: left;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 3px #888;
+  height: 15vh;
+  width: 2.5rem;
+  margin: 15vh 0rem 15vh 0.5rem;
+  cursor: pointer;
+}
+.left_arrow-about_us {
+  height: 10vh;
+  width: auto;
+  margin: 2.5vh -0.4rem;
+}
+.next_btn-about_us {
+  float: right;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 3px #888;
+  height: 15vh;
+  width: 2.5rem;
+  margin: 15vh 0.5rem 15vh 0.5rem;
+  cursor: pointer;
+}
+.right_arrow-about_us {
+  height: 10vh;
+  width: auto;
+  margin: 2.5vh -0.4rem;
+}
+.slide-about_us img:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+/*--------------contact_us-----------*/
+.home-contact_us {
+  height: 30vh;
+  background-color: #000000;
+}
+.mail_div-contact_us{
+  display: block;
+  height: 3rem;
+}
+.mail_img-contact_us {
+  height: auto;
+  width: 2rem;
+  margin: 1.8rem auto auto 3rem;
+  float: left;
+}
+.mail-contact_us {
+  float: left;
+  color: #ffffff;
+  margin: 2.3rem auto auto 1rem;
+  font-size: 1.2rem;
+}
+.phone_img-contact_us {
+  height: auto;
+  width: 2rem;
+  margin: 0.8rem auto auto 3rem;
+  float: left;
+}
+.phone-contact_us {
+  float: left;
+  color: #ffffff;
+  margin: 1.3rem auto auto 1rem;
+  font-size: 1.2rem;
+}
+.social_media-contact_us {
+  float: right;
+  margin: auto 3rem auto auto;
+}
+.social_media_img-about_us {
+  float: right;
+  margin: auto 1rem auto auto;
+  height: auto;
+  width: 2rem;
+}
+.Copyrights-contact_us {
+  color: #ffffff;
+  display: inline-block;
+  margin: 2.7rem auto auto 15rem;
+
+}

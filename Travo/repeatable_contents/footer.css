@@ -1,0 +1,48 @@
+.home-contact_us {
+  height: 30vh;
+  background-color: #000000;
+}
+.mail_div-contact_us{
+  display: block;
+  height: 3rem;
+}
+.mail_img-contact_us {
+  height: auto;
+  width: 2rem;
+  margin: 1.8rem auto auto 3rem;
+  float: left;
+}
+.mail-contact_us {
+  float: left;
+  color: #ffffff;
+  margin: 2.3rem auto auto 1rem;
+  font-size: 1.2rem;
+}
+.phone_img-contact_us {
+  height: auto;
+  width: 2rem;
+  margin: 0.8rem auto auto 3rem;
+  float: left;
+}
+.phone-contact_us {
+  float: left;
+  color: #ffffff;
+  margin: 1.3rem auto auto 1rem;
+  font-size: 1.2rem;
+}
+.social_media-contact_us {
+  float: right;
+  margin: auto 3rem auto auto;
+}
+.social_media_img-about_us {
+  float: right;
+  margin: auto 1rem auto auto;
+  height: auto;
+  width: 2rem;
+}
+.Copyrights-contact_us {
+  color: #ffffff;
+  display: inline-block;
+  margin: 2.7rem auto auto 15rem;
+
+}
