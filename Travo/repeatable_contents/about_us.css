@@ -1,0 +1,84 @@
+.about_us-section {
+  height: 100vh;
+}
+.h1-about_us {
+  font-size: 2rem;
+  text-align: center;
+}
+.h3-about_us {
+  margin: auto auto auto 8%;
+}
+.p-about_us {
+  display: block;
+  text-align: justify;
+  width: 60%;
+  margin: auto auto auto 8%;
+  float: left;
+}
+.logo-about_us {
+  width: 12%;
+  height: auto;
+  float: right;
+  margin: auto 8% auto auto;
+}
+.div-about_us {
+  display: block;
+  height: 26vh;
+}
+.hr-about_us {
+border-width: 0.3rem 0rem 0rem 0rem;
+border-color: #000000;
+margin: 0px;
+}
+/*.............image gallery <- about us...............*/
+.gallary-about_us {
+  height: 45vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.slide-about_us img{
+  height: 43vh;
+  width: auto;
+  margin: 0.3rem 5px;
+  border-radius: 1vh;
+}
+.gallary-about_us::-webkit-scrollbar {
+	display: none;
+}
+.prev_btn-about_us {
+  float: left;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 3px #888;
+  height: 15vh;
+  width: 2.5rem;
+  margin: 15vh 0rem 15vh 0.5rem;
+  cursor: pointer;
+}
+.left_arrow-about_us {
+  height: 10vh;
+  width: auto;
+  margin: 2.5vh -0.4rem;
+}
+.next_btn-about_us {
+  float: right;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 0 1px 3px #888;
+  height: 15vh;
+  width: 2.5rem;
+  margin: 15vh 0.5rem 15vh 0.5rem;
+  cursor: pointer;
+}
+.right_arrow-about_us {
+  height: 10vh;
+  width: auto;
+  margin: 2.5vh -0.4rem;
+}
+.slide-about_us img:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}

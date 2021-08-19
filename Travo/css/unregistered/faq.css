@@ -26,6 +26,18 @@ body {
   flex-direction: column;
   overflow-y: auto;
 }
+table::-webkit-scrollbar {
+  width: 5px;
+}
+
+table::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+table::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 .question-faq {
   background-color: rgba(255,255,255,0.8);
   height: 2rem;
