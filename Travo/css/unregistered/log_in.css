@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+.log_in {
+  background-image: url("../../images/background_images/unregisteredbg.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin: 0px;
+}
+.box-log_in{
+  background-color: rgba(255,255,255,0.4);
+  height: 80vh;
+  width: 35%;
+  margin: auto;
+}
+.img-log_in {
+  width: auto;
+  height: 4.5rem;
+  margin: 0.75rem 0.4rem 0.75rem 1.1rem;
+}
+.border-img-log_in {
+  margin: auto;
+  width: 6rem;
+  height: 6rem;
+  border: solid;
+  border-radius: 50%;
+  border-width: medium;
+  background-color: rgba(255,255,255,0.6);
+}
+.description-log_in{
+  width: 65%;
+  margin: auto;
+  text-align: left;
+}
+.username-div-log_in {
+  width: 100%;
+  border: solid;
+  height: 2.5rem;
+  border-width: thin;
+  margin: 1.8rem auto 1.8rem auto;
+}
+.img-username-div-log_in {
+  width: 1.8rem;
+  height: auto;
+  padding: 0.35rem;
+}
+.text-log_in {
+  width: 85%;
+  border: solid;
+  height: 2.5rem;
+  border-width:0px;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  background-color: rgba(0,0,0,0);
+  font-size: 1rem;
+}
+.description-log_in input[type=submit] {
+  width: 100%;
+  margin: auto auto 1.5rem auto;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border-width: 0px;
+  background-color: rgba(103,176,186,0.7);
+  font-weight: bold;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.description-log_in h3 {
+  font-weight: normal;
+  margin-top: 0px;
+}
+.description-log_in h3 a {
+  color: #000000;
+  text-decoration: none;
+}

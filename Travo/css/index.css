@@ -58,7 +58,7 @@ table td a {
   cursor: pointer;
 }
 
-/*--------------about_us-----------*/
+/*__________________about_us________________*/
 
 .about_us-section {
   height: 100vh;
@@ -67,8 +67,13 @@ table td a {
   font-size: 2rem;
   text-align: center;
 }
+.div-about_us {
+  display: block;
+  height: 28vh;
+}
 .h3-about_us {
-  margin: auto auto auto 8%;
+  margin: auto auto 1rem 8%;
+  float: left;
 }
 .p-about_us {
   display: block;
@@ -78,23 +83,21 @@ table td a {
   float: left;
 }
 .logo-about_us {
-  width: 12%;
+  width: 14.5%;
   height: auto;
   float: right;
   margin: auto 8% auto auto;
 }
-.div-about_us {
-  display: block;
-  height: 26vh;
-}
+
 .hr-about_us {
 border-width: 0.3rem 0rem 0rem 0rem;
 border-color: #000000;
 margin: 0px;
 }
 /*.............image gallery <- about us...............*/
+
 .gallary-about_us {
-  height: 45vh;
+  height: 42vh;
   width: 90%;
   margin: auto;
   display: flex;
@@ -103,7 +106,7 @@ margin: 0px;
   scroll-behavior: smooth;
 }
 .slide-about_us img{
-  height: 43vh;
+  height: 40vh;
   width: auto;
   margin: 0.3rem 5px;
   border-radius: 1vh;
@@ -117,7 +120,7 @@ margin: 0px;
   box-shadow: 0 1px 3px #888;
   height: 15vh;
   width: 2.5rem;
-  margin: 15vh 0rem 15vh 0.5rem;
+  margin: 12.5vh 0rem 12.5vh 0.5rem;
   cursor: pointer;
 }
 .left_arrow-about_us {
@@ -131,7 +134,7 @@ margin: 0px;
   box-shadow: 0 1px 3px #888;
   height: 15vh;
   width: 2.5rem;
-  margin: 15vh 0.5rem 15vh 0.5rem;
+  margin: 12.5vh 0.5rem 12.5vh 0rem;
   cursor: pointer;
 }
 .right_arrow-about_us {
@@ -144,6 +147,9 @@ margin: 0px;
   box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
   cursor: pointer;
 }
+/*.............END image gallery <- about us...............*/
+/*__________________END about_us________________*/
+
 /*--------------contact_us-----------*/
 .home-contact_us {
   height: 30vh;

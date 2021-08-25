@@ -1,0 +1,197 @@
+body{
+    background-image: url("../images/background_Images/travelerbg.jpg");
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 100%;
+}
+
+.prev,.next,.topic{
+    float: left;
+}
+
+.topic{
+    width: 40%;
+}
+
+.prev{
+    width: 0;
+    height: 0;
+    border-top: 35px solid transparent;
+    border-right: 30px solid #555;
+    border-bottom: 35px solid transparent;
+    width: 25%;
+    align-content: center;
+}
+
+.trips{
+    width: 100%;
+}
+
+.row1{
+    float: left;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.next{
+	width: 0;
+	height: 0;
+	border-top: 35px solid transparent;
+	border-left: 30px solid #555;
+	border-bottom: 35px solid transparent;
+    width: 25%;
+    align-content: center;
+}
+
+.slide{
+    /* to center .cols2 */
+    text-align: center;
+}
+
+.cols2{
+    /* to center .cols2 */
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50px;
+    padding-top: 10px;
+    /* to center .tripdetails */
+    text-align: center;
+}
+
+.trip1{
+    display: block;
+}
+
+.trip2,.trip3{
+    display: none;
+}
+
+.tripdetail{
+    position: relative;
+    /* to center .tripdetail */
+    display: inline-block;
+
+    width: 40%;
+    height: 250px;
+    padding-top: 50px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 25px;
+    border: none;
+    margin:4px;
+
+    /* align texts and button center */
+    text-align: center;
+}
+
+img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 30px;
+}
+
+#selecttrip{
+    width: 230px;
+    height: 60px;
+    color: #ffffff;
+    border: 2px solid #FFFFFF;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.trip1 .t1{
+    background-image: url('../images/Sample_images/For_trips/roxanne-desgagnes-Jc-XDKM6bZk-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip1 .t2{
+    background-image: url('../images/Sample_images/For_trips/mike-swigunski-zDDQZgZjFtM-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip1 .t3{
+    background-image: url('../images/Sample_images/For_trips/supun-batagoda-xAV7NSUeeLc-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip1 .t4{
+    background-image: url('../images/Sample_images/For_trips/devils-staircase-5346771.jpg');
+    background-size: cover;
+}
+
+.trip2 .t1{
+    background-image: url('../images/Sample_images/For_trips/eshan-malaviarachchi-Z3XO2B2Db7Q-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip2 .t2{
+    background-image: url('../images/Sample_images/For_trips/fidelia-zheng-SRd8je3VIcE-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip2 .t3{
+    background-image: url('../images/Sample_images/For_trips/geoff-brooks-3TwThGdEUZA-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip2 .t4{
+    background-image: url('../images/Sample_images/For_trips/jalitha-hewage-Dw2QYtzSNn0-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip3 .t1{
+    background-image: url('../images/Sample_images/For_trips/manoj-dharmarathne-sznpwfFhfrU-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip3 .t2{
+    background-image: url('../images/Sample_images/For_trips/subodha-karunarathne-PuWCoG8WHok-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip3 .t3{
+    background-image: url('../images/Sample_images/For_trips/izuru-kannagara-UeSfcl4xreE-unsplash.jpg');
+    background-size: cover;
+}
+
+.trip3 .t4{
+    background-image: url('../images/Sample_images/For_trips/irakli-janiashvili-REqtNDaUSfY-unsplash.jpg');
+    background-size: cover;
+}
+
+/* @media screen and (max-width:800px){
+    .tripdetail{
+        height: 200px;
+    }
+
+    .slide{
+        float: left;
+        width: 100%;
+        align-content: center;
+    }
+
+
+    .next{
+        float:left;
+        width: 5%;
+    }
+
+    #selecthotelbtn{
+        font-size: 20px;
+        height: 100px;
+    }
+} */
+

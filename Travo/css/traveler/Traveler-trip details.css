@@ -1,0 +1,117 @@
+body{
+    background-image: url("../images/background_Images/travelerbg.jpg");
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+.trip{
+    /* used to center .tripmenu */
+    position: absolute;
+    left:50%;
+
+    top: 10px;
+    width: 50%;
+    height: auto;
+    /* align .tripmenu div tags to the center */
+    margin: auto; 
+}
+
+.tripmenu{
+    /* helps to center .tripmenu */
+    position: relative;
+    left: -50%;
+
+    width: 33%;
+    height: 60px;
+    float: left;
+    text-align: center;
+    margin-left: 1px;
+    padding-top: 30px;
+    font-size: 25px;
+    font-family: sans-serif;
+
+    background: rgba(103, 176, 186, 0.7);
+}
+
+a:link,:visited,:hover,:active{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container{
+    width: 80%;
+    height: auto;
+    /* align .tripmenu div tags to the center */
+    margin: auto; 
+    margin-top: 120px;
+}
+
+.details{
+    align-content: center;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.main td{
+    padding: 5px;
+}
+
+table{
+    margin: auto;
+}
+
+.days th,td{
+    padding: 20px;}
+
+.days tr{
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid ;
+}
+
+.days{
+    width: 80%;
+}
+
+.row{
+    text-align: left;
+}
+
+.buttons{
+    position: absolute;
+    left: 50%;
+    margin-top: 10px;
+}
+
+.map{
+    display: block;
+}
+
+button{
+    position: relative;
+    left: -50%;
+    width: 257px;
+    height: 70px;
+
+    background: rgba(103, 176, 186, 0.7);
+    border-radius: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    border: none;
+}
+
+@media screen and (max-width:760px){
+
+    .trip{
+        width:100%;
+    }
+
+    .tripmenu{
+        font-size: 20px;
+        margin: 0.5px;
+        width:32.5%;
+    }
+}

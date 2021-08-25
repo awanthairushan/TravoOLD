@@ -1,0 +1,49 @@
+body{
+    background-image: url("../images/background_Images/travelerbg.jpg");
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 80%;
+    height: auto;
+    /* align .tripmenu div tags to the center */
+    margin: auto; 
+    margin-top: 120px;
+}
+
+.details{
+    align-content: center;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 50px;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.main td{
+    padding: 5px;
+}
+
+table{
+    margin: auto;
+    width: 100%;
+}
+
+.feedbacks th,td{
+    padding: 20px;}
+
+.feedbacks tr{
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid ;
+}
+
+.date{
+    width:20%;
+}
+
+
+/* @media screen and (max-width:760px){
+
+} */

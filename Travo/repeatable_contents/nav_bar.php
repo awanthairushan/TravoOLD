@@ -13,8 +13,8 @@
           <td><a href="../../pages/unregistered/faq.php">FAQ</a></td>
           <td><a href="#contact_us-section">CONTACT</a></td>
           <td><a href="../../pages/unregistered/feedback.php">FEEDBACK</a></td>
-          <td><a href="#">LOG IN</a></td>
-          <td><a href="#">SIGN UP</a></td>
+          <td><a href="../../pages/unregistered/log_in.php">LOG IN</a></td>
+          <td><a href="../../pages/unregistered/sign_up.php">SIGN UP</a></td>
         </tr>
       </table>
     </div> '; ?>

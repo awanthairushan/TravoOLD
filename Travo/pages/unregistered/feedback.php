@@ -96,5 +96,6 @@
       <?php include '../../repeatable_contents/footer.php';?>
       <style> <?php include '../../repeatable_contents/footer.css'; ?>  </style>
     </section>
+
   </body>
 </html>
