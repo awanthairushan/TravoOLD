@@ -1,0 +1,135 @@
+/* Whole page*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+
+/*Content of the page*/
+
+.main {
+    margin-top: 5%;
+}
+
+
+/*Buttons*/
+
+#addbtn {
+    background-color: rgb(41, 180, 161);
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border-width: 0.01ch;
+    border-color: rgb(41, 180, 161);
+    margin-left: 490px;
+    margin-right: 490px;
+    margin-top: 50px;
+}
+
+#removebtn {
+    background-color: rgb(204, 78, 109);
+    border-radius: 8px;
+    width: 160px;
+    height: 25px;
+    cursor: pointer;
+    border-width: 0.01ch;
+    border-color: rgb(204, 78, 109);
+}
+
+
+/*Form to add new destination*/
+
+.form-container {
+    margin-top: 5%;
+    background-color: #323534;
+    padding: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 1080px;
+    height: 300px;
+}
+
+.fques {
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.fans {
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+#fquestion {
+    margin-left: 75px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border-width: 0ch;
+    height: 40px;
+    width: 800px;
+    background-color: #aaaaaa;
+    border-color: #aaaaaa;
+    color: black;
+    font-size: 15px;
+}
+
+#fanswer {
+    margin-left: 88px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border-width: 0ch;
+    height: 40px;
+    width: 800px;
+    background-color: #aaaaaa;
+    border-color: #aaaaaa;
+    color: black;
+    font-size: 15px;
+}
+
+.heading-one {
+    margin-left: 1%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*.heading-two {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-primary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header-svg-primary {
+    width: 3rem;
+    min-width: 3rem;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+.header-secondary {
+    display: flex;
+    align-items: center;
+}
+
+.header-svg-secondary {
+    width: 2.5rem;
+    min-width: 2.5rem;
+    margin-left: 5px;
+    margin-right: 10px;
+    padding: 0;
+}*/
