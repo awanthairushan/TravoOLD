@@ -16,15 +16,19 @@
           <img class="img-log_in"src="../../images/icons/log_in.png" alt="SIGN UP">
       </div>
       <div class="description-log_in">
-        <form class="" action="" method="post">
+        <form class="" action="../../php/unregistered/end-log_in.php" method="post">
         <div class="username-div-log_in">
           <img class="img-username-div-log_in"src="../../images/icons/user.png" alt="">
-          <input class="text-log_in" type="text" name="username" id="username" value="Username...">
+          <input class="text-log_in" type="text" name="username" id="username" placeholder="Username...">
         </div>
         <div class="username-div-log_in">
           <img class="img-username-div-log_in"src="../../images/icons/password.png" alt="">
-          <input class="text-log_in" type="password" name="password" id="password" value="Password">
+          <input class="text-log_in" type="password" name="password" id="password" placeholder="Password">
         </div>
+        <?php
+          if(isset($_GET['error'])) { ?>
+            <p class = "error-log_in"><?php echo $_GET['error'];?></p>
+          <?php }   ?>
         <input type="submit" value="LOG IN"><br>
         </form>
         <h3><a href="">Forgot Password...?</a></h3>

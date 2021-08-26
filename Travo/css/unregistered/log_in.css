@@ -38,7 +38,7 @@ body {
   border: solid;
   height: 2.5rem;
   border-width: thin;
-  margin: 1.8rem auto 1.8rem auto;
+  margin: 1.5rem auto 1.5rem auto;
 }
 .img-username-div-log_in {
   width: 1.8rem;
@@ -56,9 +56,20 @@ body {
   background-color: rgba(0,0,0,0);
   font-size: 1rem;
 }
+input:focus {
+  outline: none;
+}
+.error-log_in {
+  font-size: 0.8rem;
+  background-color: #F2DEDE;
+  color: #A94442;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  width: 100%;
+}
 .description-log_in input[type=submit] {
   width: 100%;
-  margin: auto auto 1.5rem auto;
+  margin: auto auto 1rem auto;
   height: 2rem;
   border-radius: 0.5rem;
   border-width: 0px;
@@ -72,6 +83,9 @@ body {
 .description-log_in h3 {
   font-weight: normal;
   margin-top: 0px;
+}
+.description-log_in input[type=submit]:hover {
+  opacity: 0.8;
 }
 .description-log_in h3 a {
   color: #000000;

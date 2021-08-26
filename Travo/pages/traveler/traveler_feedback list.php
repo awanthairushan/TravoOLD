@@ -1,14 +1,14 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../css/Traveler-feedback list.css">
+        <style> <?php include '../../css/traveler/traveler_feedback_list.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        
+
 
         <div class="container">
             <div class="details">
-                
+
                 <table class="feedbacks" rules=none>
                     <tr>
                         <th class="date">DATE</th>
@@ -29,7 +29,7 @@
                 </table>
             </div>
         </div>
-        
-        
+
+
     </body>
 </html>

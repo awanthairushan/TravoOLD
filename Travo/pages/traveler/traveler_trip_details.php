@@ -1,6 +1,6 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../css/Traveler-trip details.css">
+      <style> <?php include '../../css/traveler/traveler_trip_details.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -30,7 +30,7 @@
                         <td></td>
                     </tr>
                 </table>
-                
+
                 <table class="days" rules=none>
                     <tr>
                         <th></th>
@@ -59,12 +59,12 @@
                 </table>
             </div>
         </div>
-        
+
         <div class="buttons">
             <button id="savebtn">SAVE</button>
             <button  id="paybtn">PAY NOW</button>
         </div>
-        
-        
+
+
     </body>
 </html>

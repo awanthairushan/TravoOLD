@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="../css/Traveler-plantrip.css">
+    <style> <?php include '../../css/traveler/traveler_plantrip.css'; ?> </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -10,7 +10,7 @@
         <form>
             <label for="location">PICKUP LOCATION:</label>
             <input type="" id="location" name="location">
-            <img id="img" src="../images/icons/placeholder.png"><br/>
+            <img id="img" src="../../images/icons/placeholder.png"><br/>
             <!-- destination  1 -->
             <div id="destinations">
                 <table>
@@ -98,10 +98,10 @@
                     </tr>
                 </table>
             </div>
-            <label for="mails">OTHER PERSON'S E-MAILS:</label><input type="email" id="mails" name="mails"><img id="img" src="../images/icons/plus.png"><br/>
+            <label for="mails">OTHER PERSON'S E-MAILS:</label><input type="email" id="mails" name="mails"><img id="img" src="../../images/icons/plus.png"><br/>
         </form>
         <div class="buttons"><button onclick="window.location.href='#next';" id="nextbtn">NEXT</button></div>
         </div>
-        
+
 </body>
 </html>

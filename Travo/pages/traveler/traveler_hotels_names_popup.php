@@ -1,10 +1,10 @@
 <html>
     <head>
-        <link rel="stylesheet" href="../css/Traveler-Hotels_names_popup.css">
+        <style> <?php include '../../css/traveler/traveler_hotels_names_popup.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../script/Traveler-Hotel_names_popoup.js"></script>
+        <script src="../script/traveler/traveler_hotels_names_popup.js"></script>
     </head>
-    <body> 
+    <body>
         <table>
             <tr>
                 <td><a onclick="plusSlides(-1)"><div class="prev"></div></a></td>
@@ -19,7 +19,7 @@
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-</button></div>
                         </div>
                     </div>
-            
+
                     <div class="slide hotels2">
                         <div class="cols1">
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> -5000</button></div>
@@ -28,9 +28,9 @@
                         <div class="cols2">
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> -5000</button></div>
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> -5000</button></div>
-                        </div>   
+                        </div>
                     </div>
-            
+
                     <div class="slide hotels3">
                         <div class="cols1">
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
@@ -39,9 +39,9 @@
                         <div class="cols2">
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
-                        </div> 
+                        </div>
                     </div>
-            
+
                     <div class="slide hotels4">
                         <div class="cols1">
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
@@ -50,14 +50,14 @@
                         <div class="cols2">
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
                             <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
-                        </div> 
+                        </div>
                     </div>
                 </td>
                 <td><a onclick="plusSlides(1)"><div class="next"></div></a></td>
             </tr>
             <tr class="cancel"><td colspan="3"><button  id="cancelbtn">CANCEL</button></td></tr>
         </table>
-       
-       
+
+
     </body>
 </html>

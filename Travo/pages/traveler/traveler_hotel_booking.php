@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="../css/Traveler-hotel_booking.css">
+        <style> <?php include '../../css/traveler/traveler_hotel_bookings.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../script/Traveler-hotel_booking.js"></script>
+        <script src="../script/traveler/traveler_hotel_booking.js"></script>
     </head>
-    <body> 
-        
+    <body>
+
         <form>
             <div class="rooms">
                 <div class="slide">
@@ -18,7 +18,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
                     </div>
                 </div>
-        
+
                 <div class="slide">
                     <div>Double Room</div>
                     <div class="roomtype r2">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR xxxx.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 1 left !</b></div>
@@ -28,7 +28,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
                     </div>
                 </div>
-        
+
                 <div class="slide">
                     <div>Family Room</div>
                     <div class="roomtype r3">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR xxxx.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 1 left !</b></div>
@@ -38,7 +38,7 @@
                         <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
                     </div>
                 </div>
-    
+
                 <div class="slide">
                     <div>Massive Room</div>
                     <div class="roomtype r4">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR xxxx.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 1 left !</b></div>
@@ -74,4 +74,3 @@
         </table>
     </body>
 </html>
-

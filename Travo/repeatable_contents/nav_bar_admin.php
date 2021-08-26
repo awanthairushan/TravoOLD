@@ -14,7 +14,7 @@
           <td><a href="../../pages/admin/admin_faq.php">FAQ</a></td>
           <td><a href="../../pages/admin/admin_feedback.php">FEEDBACK</a></td>
           <td><a href="../../pages/admin/admin_destinations.php">DESTINATIONS</a></td>
-          <td><a id="demo" href="../../index.html">LOG OUT</a></td>
+          <td><a id="demo" href="../../php/unregistered/end-log_out.php">LOG OUT</a></td>
         </tr>
       </table>
     </div> '; ?>
