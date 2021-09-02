@@ -2,7 +2,7 @@
     <head>
         <style> <?php include '../../css/traveler/traveler_hotels_names_popup.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../script/traveler/traveler_hotels_names_popup.js"></script>
+        <script src="../../script/traveler/traveler_hotels_names_popup.js"></script>
     </head>
     <body>
         <table>

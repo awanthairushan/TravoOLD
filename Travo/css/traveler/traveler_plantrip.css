@@ -1,34 +1,36 @@
 body{
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.uppersection{
     background-image: url("../../images/background_Images/travelerbg.jpg");
+    opacity: 90%;
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: sans-serif;
-    font-size: 25px;
+    height: 100vh;
 }
 
-body, html {height: 100%}
-
-#background{
-    position: absolute;
-    width: 80%;
-    left: 10px;
-    top: 5%;
-
+.details{
+    align-content: center;
     background: rgba(196, 196, 196, 0.5);
     border-radius: 50px;
-    padding: 35px;
+    padding: 40px;
+    margin: 0 auto;
+    width: 80%;
+    height: 70vh;
 }
 
-table{
+.tableday{
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-td{
+.tdata{
     padding :15px;
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #destinations{
@@ -39,20 +41,21 @@ td{
 
 #selecthotelbtn{
     width: 250px;
-    height: 90px;
+    height: 70px;
+    display: inline-block;
 
     color: #ffffff;
     border: none;
     background: rgba(103, 176, 186, 0.7);
     border-radius: 30px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 select{
     border: none;
     border-bottom: solid #000000 2px;
     background:none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #sights{
@@ -65,19 +68,14 @@ select{
     border-radius: 15px;
 }
 
-a:link,:visited,:hover,:active{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-input[type=email],input[type=""]{
+input[type=email],input[type="text"]{
     background: none;
     border:2px solid #000000;
     margin: 5px;
     border-radius: 10px;
-    width: 70%;
+    width: 65%;
 
-    font-size: 25px;
+    font-size: 20px;
 }
 
 #img{
@@ -85,19 +83,9 @@ input[type=email],input[type=""]{
     height: 40px;
 }
 
-#nextbtn{
-    position: relative;
-    left: -50%;
-    width: 150px;
-    height: 90px;
-
-    font-size: 25px;
-    color: #ffffff;
-    border: none;
-    margin-left: 40%;
-    padding: 35px;
-    background: rgba(103, 176, 186, 0.7);
-    border-radius: 30px;
+.addmail{
+    font-size: 30;
+    color: #000000;
 }
 
 .buttons{
@@ -106,12 +94,26 @@ input[type=email],input[type=""]{
     margin-top: 10px;
 }
 
-@media screen and (max-width:1075px){
+#nextbtn{
+    position: relative;
+    left: -50%;
+    width: 257px;
+    height: 70px;
+
+    background: rgba(103, 176, 186, 0.7);
+    border-radius: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    border: none;
+}
+
+/* @media screen and (max-width:1075px){
     #destinations{
         float: none;
         width: 90%;
     }
+
     body{
         background-repeat: repeat-y;
     }
-}
+} */

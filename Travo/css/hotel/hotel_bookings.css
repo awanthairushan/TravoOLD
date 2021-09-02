@@ -1,0 +1,115 @@
+body {
+  background-image: url("../../images/background_Images/Hotelbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+   }
+   .sign_up-traveler{
+    height: 100vh;
+}
+
+.rectangle {
+  position: absolute;
+width: 1100px;
+height: 450px;
+left: 15%;
+top: 180px;
+background: rgba(255, 255, 255, 0.5);
+border-radius: 30px;   
+text-align: middle; 
+}
+
+.rectangle2 {
+  position: absolute;
+width: 600px;
+height:55px;
+left: 30%;
+top: 80px;
+background: rgba(255, 255, 255, 0.4);
+border-radius: 7px;    
+}
+.dateselect{
+  
+  justify-content: space-between;
+  box-align : center; 
+  width:831px; 
+  height: 70px;
+}
+
+table.b {
+  table-layout: auto;  
+  position: absolute;
+  border: none;
+  width: 1000px;  
+  height: 300px;
+  top: 70px;
+  left:56px
+}
+td.b {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  box-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 1.0) ;
+  width: 22%;
+  
+}
+th.b {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  box-align: center;
+  font-size: 17.5px;
+  font-family: Roboto;
+}
+
+.button:hover {opacity: 1}
+.morebtn {
+  width: 70px;
+  height: 30px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 25px;
+  color: #000000;      
+  left: 379px;
+  background:rgba(103, 176, 186, 1.0);
+  border: rgba(103, 176, 186, 1.0);
+  
+}
+
+.price{   
+	padding: 7px;
+  border:1px solid none;
+	resize: vertical;
+  width: 103px;
+  height: 30px;
+  background: none;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+    
+}
+/* For the form which is craeted fro the date (within the rectangle 2)*/
+input[type=date], select{
+	padding: 7px;
+	resize: vertical;
+	width:300px; 
+  height: 50px;
+  background: rgba(255, 255, 255, 0.0);
+  border: rgba(255, 255, 255, 0.4);
+  left: 130px;
+  font-size: 25px;
+}
+/*label part*/
+.label{
+	font-family:Roboto;
+	font-size:20px;
+  font-weight: bold;
+	color:rgb(0, 0, 0);
+  text-align: right;
+  background: rgba(255, 255, 255, 0.0);
+  height:50px;
+  width:700px
+}

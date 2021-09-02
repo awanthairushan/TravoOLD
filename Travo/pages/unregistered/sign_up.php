@@ -23,7 +23,6 @@
         <button type="button" name="button" onclick="window.location.href = '../../pages/unregistered/sign_up-hotel.php';">HOTEL</button><br>
         <h3><a href="../../pages/unregistered/log_in.php">Already have an account ?</a></h3>
       </div>
-
     </div>
     </section>
   </body>

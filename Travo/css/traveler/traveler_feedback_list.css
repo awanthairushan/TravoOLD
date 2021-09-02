@@ -1,49 +1,75 @@
-body{
-    background-image: url("../images/background_Images/travelerbg.jpg");
-    opacity: 90%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: sans-serif;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+.feedback {
+  background-image: url("../../images/background_images/travelerbg.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin: 0px;
+}
+.box-feedback {
+  background-color: rgba(255,255,255,0.4);
+  height: 80vh;
+  width: 90%;
+  margin: auto;
+}
+.feedback_table-feedback {
+  background-color: rgba(255,255,255,0.0);
+  width: 90%;
+  margin: auto;
+}
+.feedback_thead-feedback {
+  display: flex;
+  flex-direction: column;
+}
+.feedback_thead-feedback tr td {
+  background-color: rgba(255,255,255,0.8);
+  height: 2rem;
+  padding: 0px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-weight: bold;
+}
+.feedback_tbody-feedback {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  max-height: 65vh;
+
+}
+tbody::-webkit-scrollbar {
+  width: 5px;
 }
 
-.container{
-    width: 80%;
-    height: auto;
-    /* align .tripmenu div tags to the center */
-    margin: auto; 
-    margin-top: 120px;
+tbody::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-.details{
-    align-content: center;
-    background: rgba(196, 196, 196, 0.5);
-    border-radius: 50px;
-    padding: 50px;
-    margin: 0 auto;
+tbody::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
-
-.main td{
-    padding: 5px;
+.feedback_tbody-feedback tr td{
+  background-color: rgba(255,255,255,0.8);
+  height: 2rem;
+  padding: 0px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-
-table{
-    margin: auto;
-    width: 100%;
+.date-feedback {
+  width: 25vh;
 }
-
-.feedbacks th,td{
-    padding: 20px;}
-
-.feedbacks tr{
-    background: rgba(255, 255, 255, 0.5);
-    border: 2px solid ;
+.feedback-feedback {
+  width: 130vh;
 }
-
-.date{
-    width:20%;
+.answer-faq {
+  background-color: #89C2B8;
+  height: 5rem;
+  padding: 0px;
+  padding-left: 2rem;
+  border-bottom: solid;
+  border-width: thin;
+  border-spacing: none;
+  border-color: rgba(0, 0, 0, 0);
 }
-
-
-/* @media screen and (max-width:760px){
-
-} */

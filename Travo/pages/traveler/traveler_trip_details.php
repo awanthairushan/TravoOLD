@@ -4,67 +4,77 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="trip">
-            <div class="tripmenu"><a href="Traveler_details-Trip.html">TRIP</a></div>
-            <div class="tripmenu"><a href="Traveler_details-budget.html">BUDGET</div>
-            <div class="tripmenu"><a href="Traveler_details-Route.html">ROUTE</a></div>
-        </div>
+        <section class="uppersection">
+            <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
+            <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
+            <br>
+            <div class="content">
+                <div class="trip">
+                    <div class="tripmenu"><a class="link" href="traveler_trip_details.php">TRIP</a></div>
+                    <div class="tripmenu"><a class="link" href="traveler_budget.php">BUDGET</div>
+                    <div class="tripmenu"><a class="link" href="traveler_route.php">ROUTE</a></div>
+                </div>
 
-        <div class="container">
-            <div class="details">
-                <table class="main">
-                    <tr>
-                        <td>Date : </td>
-                        <td>YYYY-MM-DD To YYYY-MM-DD</td>
-                    </tr>
-                    <tr>
-                        <td>Number of Travelers : </td>
-                        <td>Count.</td>
-                    </tr>
-                    <tr>
-                        <td>Category : </td>
-                        <td>Category</td>
-                    </tr>
-                    <tr>
-                        <td>Mileage : </td>
-                        <td></td>
-                    </tr>
-                </table>
+                <div class="container">
+                    <div class="details">
+                        <table class="main">
+                            <tr>
+                                <td>Date : </td>
+                                <td>YYYY-MM-DD To YYYY-MM-DD</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Travelers : </td>
+                                <td>Count.</td>
+                            </tr>
+                            <tr>
+                                <td>Category : </td>
+                                <td>Category</td>
+                            </tr>
+                            <tr>
+                                <td>Mileage : </td>
+                                <td></td>
+                            </tr>
+                        </table>
 
-                <table class="days" rules=none>
-                    <tr>
-                        <th></th>
-                        <th>Day 1</th>
-                        <th>Day 2</th>
-                        <th>Day 3</th>
-                    </tr>
-                    <tr>
-                        <th class="row">Destination</th>
-                        <td>Destination 1</td>
-                        <td>Destination 2</td>
-                        <td>Destination 3</td>
-                    </tr>
-                    <tr>
-                        <th class="row">Hotel</th>
-                        <td>Hotel 1</td>
-                        <td>Hotel 2</td>
-                        <td>Hotel 3</td>
-                    </tr>
-                    <tr>
-                        <th class="row">Sights</th>
-                        <td>sight 1<br/>sight 2<br/>sight 3</td>
-                        <td>sight 1<br/>sight 2<br/>sight 3</td>
-                        <td>sight 1<br/>sight 2<br/>sight 3</td>
-                    </tr>
-                </table>
+                        <table class="days" rules=none>
+                            <tr>
+                                <th class="trow"></th>
+                                <th class="trow">Day 1</th>
+                                <th class="trow">Day 2</th>
+                                <th class="trow">Day 3</th>
+                            </tr>
+                            <tr>
+                                <th class="row">Destination</th>
+                                <td class="trow">Destination 1</td>
+                                <td class="trow">Destination 2</td>
+                                <td class="trow">Destination 3</td>
+                            </tr>
+                            <tr>
+                                <th class="row">Hotel</th>
+                                <td class="trow">Hotel 1</td>
+                                <td class="trow">Hotel 2</td>
+                                <td class="trow">Hotel 3</td>
+                            </tr>
+                            <tr>
+                                <th class="row">Sights</th>
+                                <td class="trow">sight 1<br/>sight 2<br/>sight 3</td>
+                                <td class="trow">sight 1<br/>sight 2<br/>sight 3</td>
+                                <td class="trow">sight 1<br/>sight 2<br/>sight 3</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button id="savebtn">SAVE</button>
+                    <button  id="paybtn">PAY NOW</button>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="buttons">
-            <button id="savebtn">SAVE</button>
-            <button  id="paybtn">PAY NOW</button>
-        </div>
-
-
+    <section id="contact_us-section">
+      <?php include '../../repeatable_contents/footer.php';?>
+      <style> <?php include '../../repeatable_contents/footer.css'; ?>  </style>
+    </section>
     </body>
 </html>

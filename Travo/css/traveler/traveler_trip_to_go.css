@@ -1,12 +1,18 @@
 body{
-    background-image: url("../images/background_Images/travelerbg.jpg");
-    opacity: 90%;
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: sans-serif;
     font-size: 25px;
-    width: 100%;
+    margin: 0px;
+    background-image: url("../../images/background_Images/travelerbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+.upperclass{
+    opacity: 90%;
+    height: 100vh;
+}
+
+
 
 .prev,.next,.topic{
     float: left;
@@ -92,7 +98,7 @@ body{
     text-align: center;
 }
 
-img{
+.delete{
     position: absolute;
     width: 20px;
     height: 20px;
@@ -113,62 +119,62 @@ img{
 }
 
 .trip1 .t1{
-    background-image: url('../images/Sample_images/For_trips/roxanne-desgagnes-Jc-XDKM6bZk-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/10.jpg');
     background-size: cover;
 }
 
 .trip1 .t2{
-    background-image: url('../images/Sample_images/For_trips/mike-swigunski-zDDQZgZjFtM-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/9.jpg');
     background-size: cover;
 }
 
 .trip1 .t3{
-    background-image: url('../images/Sample_images/For_trips/supun-batagoda-xAV7NSUeeLc-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/12.jpg');
     background-size: cover;
 }
 
 .trip1 .t4{
-    background-image: url('../images/Sample_images/For_trips/devils-staircase-5346771.jpg');
+    background-image: url('../../images/Sample_images/for_trips/1.jpg');
     background-size: cover;
 }
 
 .trip2 .t1{
-    background-image: url('../images/Sample_images/For_trips/eshan-malaviarachchi-Z3XO2B2Db7Q-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/2.jpg');
     background-size: cover;
 }
 
 .trip2 .t2{
-    background-image: url('../images/Sample_images/For_trips/fidelia-zheng-SRd8je3VIcE-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/3.jpg');
     background-size: cover;
 }
 
 .trip2 .t3{
-    background-image: url('../images/Sample_images/For_trips/geoff-brooks-3TwThGdEUZA-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/4.jpg');
     background-size: cover;
 }
 
 .trip2 .t4{
-    background-image: url('../images/Sample_images/For_trips/jalitha-hewage-Dw2QYtzSNn0-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/7.jpg');
     background-size: cover;
 }
 
 .trip3 .t1{
-    background-image: url('../images/Sample_images/For_trips/manoj-dharmarathne-sznpwfFhfrU-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/8.jpg');
     background-size: cover;
 }
 
 .trip3 .t2{
-    background-image: url('../images/Sample_images/For_trips/subodha-karunarathne-PuWCoG8WHok-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/11.jpg');
     background-size: cover;
 }
 
 .trip3 .t3{
-    background-image: url('../images/Sample_images/For_trips/izuru-kannagara-UeSfcl4xreE-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/6.jpg');
     background-size: cover;
 }
 
 .trip3 .t4{
-    background-image: url('../images/Sample_images/For_trips/irakli-janiashvili-REqtNDaUSfY-unsplash.jpg');
+    background-image: url('../../images/Sample_images/for_trips/5.jpg');
     background-size: cover;
 }
 
