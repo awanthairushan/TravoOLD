@@ -1,8 +1,12 @@
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php 
-    
+<?php
+
 
 ?>
     <meta charset="UTF-8">
@@ -18,7 +22,7 @@
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
     <!--End Navigation bar-->
 <div class="main">
-    
+
     <h1 class="heading-one">FEEDBACKS</h1>
     <!--Start search option-->
         <label for="filter" class="filter-labels">SEARCH BY DATE :</label>
@@ -39,55 +43,55 @@
         <tbody>
             <tr>
                 <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of 
-                    the printing and typesetting industry lorem ipsum has been 
-                    the industry's standard dummy text ever since the 1500s 
-                    when an unknown printer took a galley of type and scrambled 
+                <td>What is lorem ipsum lorem ipsum is simply dummy text of
+                    the printing and typesetting industry lorem ipsum has been
+                    the industry's standard dummy text ever since the 1500s
+                    when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book it has?</td>
                 <td><input type="button" id="removebtn" value="REMOVE"></td>
             </tr>
             <tr>
                 <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of 
-                    the printing and typesetting industry lorem ipsum has been 
-                    the industry's standard dummy text ever since the 1500s 
-                    when an unknown printer took a galley of type and scrambled 
+                <td>What is lorem ipsum lorem ipsum is simply dummy text of
+                    the printing and typesetting industry lorem ipsum has been
+                    the industry's standard dummy text ever since the 1500s
+                    when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book it has?</td>
                 <td><input type="button" id="removebtn" value="REMOVE"></td>
             </tr>
             <tr>
                 <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of 
-                    the printing and typesetting industry lorem ipsum has been 
-                    the industry's standard dummy text ever since the 1500s 
-                    when an unknown printer took a galley of type and scrambled 
+                <td>What is lorem ipsum lorem ipsum is simply dummy text of
+                    the printing and typesetting industry lorem ipsum has been
+                    the industry's standard dummy text ever since the 1500s
+                    when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book it has?</td>
                 <td><input type="button" id="removebtn" value="REMOVE"></td>
             </tr>
             <tr>
                 <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of 
-                    the printing and typesetting industry lorem ipsum has been 
-                    the industry's standard dummy text ever since the 1500s 
-                    when an unknown printer took a galley of type and scrambled 
+                <td>What is lorem ipsum lorem ipsum is simply dummy text of
+                    the printing and typesetting industry lorem ipsum has been
+                    the industry's standard dummy text ever since the 1500s
+                    when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book it has?</td>
                 <td><input type="button" id="removebtn" value="REMOVE"></td>
             </tr>
             <tr>
                 <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of 
-                    the printing and typesetting industry lorem ipsum has been 
-                    the industry's standard dummy text ever since the 1500s 
-                    when an unknown printer took a galley of type and scrambled 
+                <td>What is lorem ipsum lorem ipsum is simply dummy text of
+                    the printing and typesetting industry lorem ipsum has been
+                    the industry's standard dummy text ever since the 1500s
+                    when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book it has?</td>
                 <td><input type="button" id="removebtn" value="REMOVE"></td>
             </tr>
             <tr>
                 <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of 
-                    the printing and typesetting industry lorem ipsum has been 
-                    the industry's standard dummy text ever since the 1500s 
-                    when an unknown printer took a galley of type and scrambled 
+                <td>What is lorem ipsum lorem ipsum is simply dummy text of
+                    the printing and typesetting industry lorem ipsum has been
+                    the industry's standard dummy text ever since the 1500s
+                    when an unknown printer took a galley of type and scrambled
                     it to make a type specimen book it has?</td>
                 <td><input type="button" id="removebtn" value="REMOVE"></td>
             </tr>
@@ -100,3 +104,9 @@
 </section>
 </body>
 </html>
+<?php
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>

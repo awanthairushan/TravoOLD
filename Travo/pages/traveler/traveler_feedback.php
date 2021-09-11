@@ -1,3 +1,7 @@
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+ ?>
 <html>
     <head>
         <style> <?php include '../../css/traveler/traveler_feedback.css'; ?> </style>
@@ -28,3 +32,9 @@
     </section>
     </body>
 </html>
+<?php
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>

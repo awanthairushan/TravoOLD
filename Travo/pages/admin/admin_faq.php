@@ -1,8 +1,12 @@
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php 
-    
+<?php
+
 
 ?>
     <meta charset="UTF-8">
@@ -19,7 +23,7 @@
     <!--End Navigation bar-->
 
     <div class="main">
-    
+
     <h1 class="heading-one">ADD NEW FAQ</h1>
 
 
@@ -31,7 +35,7 @@
         <label for="fanswer" class="fans">ANSWER</label>
             <input type="text" id="fanswer" name="fanswer"><br />
         <input type="submit" id="addbtn" value="SUBMIT">
-        
+
 
     </form>
 
@@ -45,3 +49,9 @@
 </section>
 </body>
 </html>
+<?php
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>

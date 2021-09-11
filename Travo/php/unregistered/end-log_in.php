@@ -42,6 +42,9 @@
           if($row['email'] == $username && password_verify($password, $row['password'])){
             $_SESSION['username'] = $row['email'];
             $_SESSION['travelerID'] = $row['travelerID'];
+            $_SESSION['name'] = $row['name'];
+            $_SESSION['city'] = $row['city'];
+            $_SESSION['contact1'] = $row['contact1'];
             header("location: ../../pages/traveler/traveler_home.php");
             exit();
           } else {
@@ -53,6 +56,7 @@
           if($row['email'] == $username && password_verify($password, $row['password'])){
             $_SESSION['username'] = $row['email'];
             $_SESSION['hotelID'] = $row['hotelID'];
+            $_SESSION['name'] = $row['name'];
             header("location: ../../pages/hotel/hotel_home.php");
             exit();
           } else {

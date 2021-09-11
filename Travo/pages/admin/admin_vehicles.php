@@ -1,8 +1,12 @@
-<!DOCTYPE html>
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+ ?>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php 
-    
+<?php
+
 
 ?>
     <meta charset="UTF-8">
@@ -19,7 +23,7 @@
     <!--End Navigation bar-->
 
 <div class="main">
-    
+
     <h1 class="heading-one">REGISTERED VEHICLES</h1>
     <!--Start search option-->
         <label for="filter" class="filter-labels">SEARCH BY :</label>
@@ -205,3 +209,9 @@
 </section>
 </body>
 </html>
+<?php
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>

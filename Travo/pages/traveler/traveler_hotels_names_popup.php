@@ -1,3 +1,6 @@
+<?php
+  session_start();
+ ?>
 <html>
     <head>
         <style> <?php include '../../css/traveler/traveler_hotels_names_popup.css'; ?> </style>

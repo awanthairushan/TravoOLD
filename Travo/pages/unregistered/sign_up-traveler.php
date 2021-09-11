@@ -13,36 +13,36 @@
       <br>
     <div class="box-sign_up-traveler">
       <br>
-      <form class="form-sign_up-traveler" id="form-sign_up-traveler" action="../../php/unregistered/traveler_sign_up.php" method="post"> 
+      <form class="form-sign_up-traveler" id="form-sign_up-traveler" action="../../php/unregistered/traveler_sign_up.php" method="post">
       <br>
-        <label for="name">Name</label> 
+        <label for="name">Name</label>
         <input class="text-form-sign_up-traveler" type="text" name="name" id="name" value=""><br>
         <br>
-        <label for="email">Email Address</label> 
+        <label for="email">Email Address</label>
         <input class="text-form-sign_up-traveler" type="email" name="email" id="email" value=""  ><br>
         <br>
-        <label for="contact">Contact Number</label> 
+        <label for="contact">Contact Number</label>
         <input class="text-small-form-sign_up-traveler" type="number" name="contact2" id="contact2" value="" placeholder="contact 2">
         <input class="text-small-form-sign_up-traveler" type="number" name="contact1" id="contact1" value="" placeholder="contact 1"><br>
         <br>
-        <label for="password">Password</label> 
+        <label for="password">Password</label>
         <input class="text-small-form-sign_up-traveler" type="password" name="retype-password" id="retype-password" value="" placeholder=" Confirm password" >
         <input class="text-small-form-sign_up-traveler" type="password" name="password" id="password" value=""><br>
         <br>
-      <label for="adress">Address</label> 
+      <label for="adress">Address</label>
       <input class="text-form-sign_up-traveler" type="text" name="address-line1" id="address-line1" placeholder="Line 1" value=""  ><br>
       <br>
       <input class="text-form-sign_up-traveler" type="text" name="address-line2" id="address-line2" placeholder="Line 2" value=""  ><br>
       <br>
       <input class="text-form-sign_up-traveler" type="text" name="city" id="city" placeholder="City" value=""  ><br>
       <br>
-      <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value=""><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="#">Terms & Conditions</a> of travo.lk</label>
+      <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value=""><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="../../pages/unregistered/tc.php">Terms & Conditions</a> of travo.lk</label>
       <br><br><br>
+    </form>
+    </div>
     <div class="buttons-sign_up-traveler">
       <input type="button" class="refreshbtn" value="REFRESH" onclick="window.location.reload();">
-      <input type="submit" class="submitbtn" value="SUBMIT" name="submit" id="submitbtn">
-    </div> 
-    </form>
+      <input type="submit" form="form-sign_up-traveler" class="submitbtn" value="SUBMIT" name="submit" id="submitbtn">
     </div>
     </section>
     <section id="contact_us-section">

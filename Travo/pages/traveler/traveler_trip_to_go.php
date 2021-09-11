@@ -1,8 +1,12 @@
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+ ?>
 <html>
     <head>
         <style> <?php include '../../css/traveler/traveler_trip_to_go.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../../script/traveler/traveler_hotels_names_popup.js"></script> 
+        <script src="../../script/traveler/traveler_hotels_names_popup.js"></script>
     </head>
     <body>
         <section class="uppersection">
@@ -66,3 +70,9 @@
     </section>
     </body>
 </html>
+<?php
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>

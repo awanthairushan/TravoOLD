@@ -1,5 +1,9 @@
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+ ?>
 <html>
-    <head> 
+    <head>
         <style> <?php include '../../css/traveler/traveler_vehicle.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -93,3 +97,9 @@
     </section>
     </body>
 </html>
+<?php
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>

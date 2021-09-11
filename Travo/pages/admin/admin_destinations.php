@@ -1,8 +1,12 @@
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<?php 
-    
+<?php
+
 
 ?>
     <meta charset="UTF-8">
@@ -19,7 +23,7 @@
     <!--End Navigation bar-->
 
     <div class="main">
-    
+
     <h1 class="heading-one">MANAGE DESTINATIONS & VISITING PLACES</h1>
 
 
@@ -134,15 +138,15 @@
             <input type="text" id="flocation" name="flocation">
             <img src="../../images/icons/placeholder.png" id="location"><br />
 
-         
 
 
 
- 
+
+
 
         <input type="button" id="addvpbtn" value="ADD NEW PLACE">
         <input type="submit" id="submitvpbtn" value="SUBMIT">
-        
+
 
     </form>
 
@@ -156,3 +160,9 @@
 </section>
 </body>
 </html>
+<?php
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>

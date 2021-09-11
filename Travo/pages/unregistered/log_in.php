@@ -1,3 +1,12 @@
+<?php
+session_start();
+if(isset($_SESSION['username'])) {
+  session_unset();
+  session_destroy();
+  header("location: ../../index.html");
+  exit();
+} else {
+  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -39,3 +48,4 @@
     </section>
   </body>
 </html>
+<?php } ?>
