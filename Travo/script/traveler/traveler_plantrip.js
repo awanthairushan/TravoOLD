@@ -11,7 +11,7 @@ popupBtnFirst.onclick = function() {
 
 }
 window.onclick = function(event) {
-  if (event.target == popupBtnFirst) {
+  if (event.target == popup) {
     popup.style.display = "none";
   }
 }
@@ -23,7 +23,7 @@ popupBtnSecond.onclick = function() {
 
 }
 window.onclick = function(event) {
-  if (event.target == popupBtnSecond) {
+  if (event.target == popup) {
     popup.style.display = "none";
   }
 }
@@ -33,10 +33,9 @@ window.onclick = function(event) {
 popupBtnThird.onclick = function() {
   content.style.display = "none";
   popup.style.display = "block";
-
 }
 window.onclick = function(event) {
-  if (event.target == popupBtnThird) {
+  if (event.target == popup) {
     popup.style.display = "none";
   }
 }

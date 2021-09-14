@@ -24,13 +24,13 @@ if (isset($_POST['submitbtn'])) {
     $ac =  $_POST['ac'];
 
     $password = password_hash($password, PASSWORD_DEFAULT); // Password hashing
-    $sql = "INSERT INTO vehicles (vehicle_id, owner_name, email, contact1, contact2, password, city, vehicle_no, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac) VALUES ( '$vehicle_id' , '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$vehicle_no', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac')";
+    $sql = "INSERT INTO vehicles (vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac) VALUES ('$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac')";
 
-    if (mysqli_query($db, $sql)) {
+    if (mysqli_query($con, $sql)) {
         //echo "New record created successfully !";
-        header('location: ../pages/unregistered/log_in.php');
+        header('location: ../../pages/unregistered/log_in.php');
     } else {
-        echo "Error: " . $db->error;
-        mysqli_close($db);
+        echo "Error: " . $con->error;
+        mysqli_close($con);
     }
 }

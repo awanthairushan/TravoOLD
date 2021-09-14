@@ -48,9 +48,9 @@
 
       <div class="form-control">
       <label for="adress">Address</label>
-      <input class="text-form-sign_up-traveler" type="text" name="address-line1" id="address-line1" placeholder="Line 1"  ></br>
+      <input class="text-form-sign_up-traveler" type="text" name="address_line1" id="address_line1" placeholder="Line 1"  ></br>
       <br>
-      <input class="text-form-sign_up-traveler" type="text" name="address-line2" id="address-line2" placeholder="Line 2"  ></br>
+      <input class="text-form-sign_up-traveler" type="text" name="address_line2" id="address_line2" placeholder="Line 2"  ></br>
       <br>
       <input class="text-form-sign_up-traveler" type="text" name="city" id="city" placeholder="City"  ></br>
       <br>
@@ -99,7 +99,7 @@
 
       <div class="form-control">
       <label for="hotel_type">Hotel type</label>
-      <select class="drop-down-form-sign_up-traveler" name="hotel_type-type" id="hotel_type-type">
+      <select class="drop-down-form-sign_up-traveler" name="hotel_type" id="hotel_type">
       <option value="">Select Hotel Type</option>
       <option value="Standerd">Standerd</option>
       <option value="Luxury">Luxury</option>

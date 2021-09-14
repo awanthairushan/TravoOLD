@@ -17,9 +17,6 @@
             <div class="container" >
                 <div class="details">
                     <form>
-                        <label for="location">PICKUP LOCATION       :</label>
-                        <input type="text" id="location" name="location">
-                        <img id="img" src="../../images/icons/placeholder.png"><br/>
                         <!-- destination  1 -->
                         <div id="destinations">
                             <table class="tableday">
@@ -107,7 +104,9 @@
                                 </tr>
                             </table>
                         </div>
-                        <label for="mails">OTHER PERSON'S E-MAILS:</label><input type="email" id="mails" name="mails"><img id="img" src="../../images/icons/plus.png"><br/>
+                        <div class="other_email">
+                          <label for="mails">OTHER PERSON'S E-MAILS:</label><input type="email" id="mails" name="mails"><img id="img" src="../../images/icons/plus.png"><br/>
+                        </div>
                     </div>
                         <div class="buttons">
                             <button id="nextbtn">NEXT</button>
