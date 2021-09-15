@@ -14,7 +14,21 @@
             <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
             <br>
-            <div class="content">
+            <div class="image_gallery_hotel">
+                <table>
+                  <tr>
+                    <td> <img src="../../images/sample_images/for_hotels/1.jpg" class="images_image_gallery_hotel" alt="HOTEL SAMPLE IMAGES"> </td>
+                    <td> <img src="../../images/sample_images/for_hotels/2.jpg" class="images_image_gallery_hotel" alt="HOTEL SAMPLE IMAGES"></td>
+                    <td><img src="../../images/sample_images/for_hotels/3.jpg" class="images_image_gallery_hotel" alt="HOTEL SAMPLE IMAGES"></td>
+                    <td><img src="../../images/sample_images/for_hotels/4.jpg" class="images_image_gallery_hotel" alt="HOTEL SAMPLE IMAGES"></td>
+                    <td><img src="../../images/sample_images/for_hotels/5.jpg" class="images_image_gallery_hotel" alt="HOTEL SAMPLE IMAGES"></td>
+                  </tr>
+                </table>
+            </div>
+
+            <br>  
+
+            <div>
                 <form>
                 <div class="rooms">
                     <div class="slide">

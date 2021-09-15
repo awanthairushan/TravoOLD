@@ -13,10 +13,10 @@
         <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
         <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
         <br>
-        <div class="content" id="content">
+        <div class="content">
             <div class="container" >
                 <div class="details">
-                    <form>
+                    <form id="form_plan">
                         <!-- destination  1 -->
                         <div id="destinations">
                             <table class="tableday">
@@ -33,7 +33,7 @@
                                         </select>
                                     </td>
                                 </tr>
-                                <tr><td class="tdata"><button id="selecthotelbtn_first" class="selecthotelbtn"> FIRST NIGHT HOTEL</button></td></tr>
+                                <tr><td class="tdata"><button class="selecthotelpopupbtn"> FIRST NIGHT HOTEL</button></td></tr>
                                 <tr><td class="tdata"><label for="destination1">DESTINATION 1</label></td></tr>
                                 <tr>
                                     <td class="tdata">
@@ -62,7 +62,7 @@
                                         </select>
                                     </td>
                                 </tr>
-                                <tr><td class="tdata"><button id="selecthotelbtn_second" class="selecthotelbtn">SECOND NIGHT HOTEL</button></td></tr>
+                                <tr><td class="tdata"><button class="selecthotelpopupbtn">SECOND NIGHT HOTEL</button></td></tr>
                                 <tr><td class="tdata"><label for="destination2">DESTINATION 2</label></td></tr>
                                 <tr>
                                     <td class="tdata">
@@ -91,7 +91,7 @@
                                         </select>
                                     </td>
                                 </tr>
-                                <tr><td class="tdata"><button id="selecthotelbtn_third" class="selecthotelbtn">THIRD NIGHT HOTEL</button></td></tr>
+                                <tr><td class="tdata"><button  class="selecthotelpopupbtn">THIRD NIGHT HOTEL</button></td></tr>
                                 <tr><td class="tdata"><label for="destination1">DESTINATION 3</label></td></tr>
                                 <tr>
                                     <td class="tdata">
@@ -115,53 +115,54 @@
 
             </div>
         </div>
+<!-- .................................popup.................................. -->
 
-        <div id="hotel_names_popup">
+        <div class="hotel_names_popup">
           <table>
               <tr>
                   <td><a onclick="plusSlides(-1)"><div class="prev"></div></a></td>
                   <td class="hotels">
                       <div class="slide hotels1">
                           <div class="cols1">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-6000</button></div>
                           </div>
                           <div class="cols2">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 2000-3000</button></div>
                           </div>
                       </div>
 
                       <div class="slide hotels2">
                           <div class="cols1">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> -5000</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> -5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 4500-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 2000-5000</button></div>
                           </div>
                           <div class="cols2">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> -5000</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> -5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 6000-5000</button></div>
                           </div>
                       </div>
 
                       <div class="slide hotels3">
                           <div class="cols1">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
                           </div>
                           <div class="cols2">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
                           </div>
                       </div>
 
                       <div class="slide hotels4">
                           <div class="cols1">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
                           </div>
                           <div class="cols2">
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
-                              <div><button onclick="window.location.href='#hotel1';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
                           </div>
                       </div>
                   </td>
@@ -170,18 +171,14 @@
               <tr class="cancel"><td colspan="3"><button id="cancelbtn">CANCEL</button></td></tr>
           </table>
         </div>
-
-
-
     </section>
+
+    <script type="text/javascript" src="../../script/traveler/traveler_plantrip.js"></script>
 
     <section id="contact_us-section">
       <?php include '../../repeatable_contents/footer.php';?>
       <style> <?php include '../../repeatable_contents/footer.css'; ?>  </style>
     </section>
-    <script type="text/javascript" src="../../script/traveler/traveler_plantrip.js">
-
-    </script>
 </body>
 </html>
 <?php

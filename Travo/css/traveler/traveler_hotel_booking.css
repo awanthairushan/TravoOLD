@@ -1,27 +1,47 @@
 body{
-    background-image: url("../../images/background_Images/travelerbg.jpg");
-    opacity: 90%;
-    background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
     margin: 0px;
 }
-
-.bg{
-    height: auto;
-    background: rgba(196, 196, 196, 0.5);
-    border-radius: 50px;
-    align-content: center;
-    margin-top: 15px;
+.uppersection {
+  background-image: url("../../images/background_Images/travelerbg.jpg");
+  opacity: 90%;
+  background-size: cover;
+  height: 100vh;
 }
-
+.image_gallery_hotel {
+  height: 20.5vh;
+  background-color: rgba(0,0,0,0.5);
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+.image_gallery_hotel table {
+  padding: 0;
+}
+.image_gallery_hotel table td {
+  width: 20%;
+  padding: 0;
+}
+.images_image_gallery_hotel {
+  height: 18vh;
+  width: 95%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding: 0;
+}
+.images_image_gallery_hotel:hover {
+  transform: scale(1.03);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
 form{
     margin: auto;
 }
 
 .rooms{
-    width: 95%;
-    height: auto;
+    width: 80%;
+    height: 40vh;
     margin: auto;
     background: rgba(196, 196, 196, 0.5);
     border-radius: 40px;
@@ -32,33 +52,29 @@ form{
 .slide{
     display: inline-block;
     width: 24%;
-    /*to center  .roomtype*/
     text-align: center;
 }
 
 .rname{
-    font-size: 25px;
+    /* font-size: 25px; */
 }
 
-.r1,.r2,r3,r4{
+.r1,.r2,.r3,.r4{
     display: block;
 }
 
-.r5,.r6,.r7,.r8,.r9{
-    display: none;
-}
+
 
 .roomtype{
     /* to center .roomtype */
     display: inline-block;
 
     width: 90%;
-    height: 300px;
-    padding-top: 50px;
+    height: 26vh;
+    padding-top: 1rem;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     color: #ffffff;
-    font-size: 25px;
     margin:4px;
 
     /* align texts and button center */
@@ -90,11 +106,11 @@ b{
     display: inline-block;
     border: 1px solid #ddd;
     margin: 0px;
-    width: 40px;
-    height: 20px;
+    width: 3rem;
+    height: 1.5rem;
+    padding-top: 0.4rem;
     text-align: center;
     vertical-align: middle;
-    padding: 11px 0;
     background: #eee;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -103,36 +119,36 @@ b{
     -ms-user-select: none;
     user-select: none;
   }
-  
+
   .value-button:hover {
     cursor: pointer;
   }
-  
+
   form #decrease {
     margin-right: -4px;
     border-radius: 8px 0 0 8px;
   }
-  
+
   form #increase {
     margin-left: -4px;
     border-radius: 0 8px 8px 0;
   }
-  
+
   form #input-wrap {
     margin: 0px;
     padding: 0px;
   }
-  
+
   input#number {
     text-align: center;
     border: none;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    margin: 0px;
-    width: 40px;
-    height: 40px;
+    border: 1px solid #ddd;
+    margin: 0;
+    width: 2rem;
+    height: 1.5rem;
+    padding-top: 0.3rem;
   }
-  
+
   input[type=number]::-webkit-inner-spin-button,
   input[type=number]::-webkit-outer-spin-button {
       -webkit-appearance: none;
@@ -176,4 +192,3 @@ b{
         height: 100px;
     }
 } */
-

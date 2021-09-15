@@ -10,7 +10,8 @@ body{
     background-repeat: no-repeat;
     height: 100vh;
 }
-#content {
+.content {
+  display: block;
 }
 .details{
     align-content: center;
@@ -38,7 +39,7 @@ body{
 }
 
 
-.selecthotelbtn{
+.selecthotelpopupbtn{
     width: 15rem;
     height: 4rem;
     display: inline-block;
@@ -48,6 +49,7 @@ body{
     border: none;
     background: rgba(103, 176, 186, 0.7);
     border-radius: 30px;
+    cursor: pointer;
 }
 
 select{
@@ -112,7 +114,7 @@ input[type=email],input[type="text"]{
 
 
 
-#hotel_names_popup {
+.hotel_names_popup {
   display: none;
   height: 50vh;
   background: rgba(196, 196, 196, 0.5);
@@ -132,6 +134,7 @@ table{
     width: 5%;
     float: left;
     align-content: center;
+    cursor: pointer;
 }
 
 .hotels{
@@ -147,6 +150,7 @@ table{
     width: 5%;
     float: left;
     align-content: center;
+    cursor: pointer;
 }
 
 .cols1,.cols2{

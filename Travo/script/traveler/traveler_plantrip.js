@@ -1,46 +1,57 @@
-var content = document.getElementById("content")
-var popup = document.getElementById("hotel_names_popup");
-var popupBtnFirst = document.getElementById("selecthotelbtn_first");
-var popupBtnSecond = document.getElementById("selecthotelbtn_second");
-var popupBtnThird = document.getElementById("selecthotelbtn_third");
-var cancelBtn = document.getElementById("cancelbtn")
-
-popupBtnFirst.onclick = function() {
-  content.style.display = "none";
-  popup.style.display = "block";
-
+var content = document.querySelector(".content");
+var popup = document.querySelector(".hotel_names_popup");
+var popupBtn = document.querySelectorAll(".selecthotelpopupbtn");
+var cancelBtn = document.querySelector("#cancelbtn");
+var formPlantrip = document.querySelector("#form_plan");
+formPlantrip.addEventListener("submit", function(event){
+  event.preventDefault();
+});
+for (var i = 0; i < popupBtn.length; i++) {
+     popupBtn[i].addEventListener("click", function(event){
+       openPopup();
+   });
 }
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-}
-
-
-popupBtnSecond.onclick = function() {
-  content.style.display = "none";
-  popup.style.display = "block";
-
-}
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-}
-
-
-
-popupBtnThird.onclick = function() {
+function openPopup(){
   content.style.display = "none";
   popup.style.display = "block";
 }
 window.onclick = function(event) {
   if (event.target == popup) {
     popup.style.display = "none";
+    content.style.display = "block";
   }
 }
+cancelBtn.addEventListener("click", function(){
+   popup.style.display = "none";
+   content.style.display = "block";
+ });
 
 
-cancelBtn.onclick = function(){
-  popup.style.display = "none";
-}
+
+
+
+
+ var slideIndex = 1;
+ showSlides(slideIndex);
+
+ // Next/previous controls
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+
+ // Thumbnail image controls
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+
+ function showSlides(n) {
+   var i;
+   var slides = document.getElementsByClassName("Slide");
+   if (n > slides.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+       slides[slideIndex-1].style.display = "block";
+   }
+
+ }
