@@ -16,8 +16,12 @@
         <div class="content">
             <div class="container" >
                 <div class="details">
+                  <br>
                     <form id="form_plan">
                         <!-- destination  1 -->
+                        <div class="location">
+                          <label for="location">LOCATION:</label><input type="text" id="location" name="location"><br/>
+                        </div>
                         <div id="destinations">
                             <table class="tableday">
                                 <tr><td class="tdata"><label for="destination1">DESTINATION 1</label></td></tr>

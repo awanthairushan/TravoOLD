@@ -15,6 +15,8 @@
         <td><a href="../../pages/traveler/traveler_feedback list.php">FEEDBACK</a></td>
         <td><a href="../../pages/traveler/traveler_plantrip.php">PLAN</a></td>
         <td><a href="../../pages/traveler/traveler_trip_to_go.php">MY TRIPS</a></td>
+        <td><a href="../../pages/traveler/traveler_vehicle.php">VEHICLES </a></td>
+        <td> </td>
         <td>
             <div class="dropdown">
                 <img class="nav_bar-logo" src="../../images/icons/user.png">

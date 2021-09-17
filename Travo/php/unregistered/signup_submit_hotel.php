@@ -222,10 +222,13 @@ if (isset($_POST['submitbtn'])) {
     //                echo 'no';
     //              }
 
-  header("Location: ../../pages/unregistered/log_in.php");
-} else {
-    echo "Error: " . $con->error;
-    mysqli_close($con);
-}
+    if (mysqli_query($con, $sql)) {
+        //echo "New record created successfully !";
+        header('location: ../../pages/unregistered/log_in.php');
+    } else {
+        echo "Error: " . $con->error;
+        mysqli_close($con);
+    }
+  }
 
 ?>
