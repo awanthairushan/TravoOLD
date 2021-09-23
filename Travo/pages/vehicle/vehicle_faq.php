@@ -13,6 +13,7 @@
     <section class="faq">
       <?php include '../../repeatable_contents/nav_bar_vehicle.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_vehicle.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_vehicle.js"></script>
       <br>
     <div class="question_and_answers-faq">
       <br>

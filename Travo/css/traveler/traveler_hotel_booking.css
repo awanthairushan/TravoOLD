@@ -114,6 +114,7 @@ b{
     border-radius: 30px;;
     color: #ffffff;
     border: none;
+    cursor: pointer;
 }
 
 /* css for changing no of rooms part */
@@ -155,7 +156,7 @@ b{
     padding: 0px;
   }
 
-  input#number {
+  input#Snumber,#Dnumber,#Fnumber,#Mnumber {
     text-align: center;
     border: none;
     border: 0.15rem solid #000;

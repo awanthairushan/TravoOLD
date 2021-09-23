@@ -1,6 +1,9 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])) {
+    // if () {
+    //   // code...
+    // }
  ?>
 <html>
     <head>
@@ -11,16 +14,19 @@
         <section class="uppersection">
         <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
         <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
+        <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
         <br>
-        <div class="content">
+
         <div class="trip">
             <div class="tripmenu"><a class="link" href="traveler_trip_details.php">TRIP</a></div>
             <div class="tripmenu"><a class="link" href="traveler_budget.php">BUDGET</div>
             <div class="tripmenu"><a class="link" href="traveler_route.php">ROUTE</a></div>
         </div>
-
+        <br>
+        <div class="content">
         <div class="container">
             <div class="details">
+              <br>
                 <table class="main">
                     <tr>
                         <td>Accomodaions</td>
@@ -28,12 +34,12 @@
                         <td>RS XXXX.XX</td>
                     </tr>
                     <tr>
-                        <td>Meals</td>
+                        <td>hotel 1</td>
                         <td>=</td>
                         <td>RS XXXX.XX</td>
                     </tr>
                     <tr>
-                        <td>Transportation</td>
+                        <td>hotel 2</td>
                         <td>=</td>
                         <td>RS XXXX.XX</td>
                     </tr>
@@ -57,8 +63,8 @@
         </div>
 
         <div class="buttons">
-            <button id="savebtn">SAVE</button>
-            <button  id="paybtn">PAY NOW</button>
+            <button class="button" id="savebtn">SAVE</button>
+            <button  class="button" id="paybtn">PAY NOW</button>
         </div>
         </div>
         </section>

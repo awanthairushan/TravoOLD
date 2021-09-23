@@ -13,6 +13,7 @@
     <section class="sign_up-traveler">
       <?php include '../../repeatable_contents/nav_bar_hotel.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_hotel.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_hotel.js"></script>
       <div class="box-sign_up-traveler">
         <form class="form-sign_up-traveler" id = "sign_up_form-hotel" action="../../php/unregistered/signup_submit_hotel.php" method="post">
           <label for="name">Name</label> <input class="text-form-sign_up-traveler" type="text" name="name" id="name" value=""><br>

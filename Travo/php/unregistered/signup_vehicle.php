@@ -24,7 +24,7 @@ if (isset($_POST['submitbtn'])) {
     $ac =  $_POST['ac'];
 
     $password = password_hash($password, PASSWORD_DEFAULT); // Password hashing
-    $sql = "INSERT INTO vehicles (vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac) VALUES ('$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac')";
+    $sql = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac) VALUES ('$vehicle_id', '$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac')";
 
     if (mysqli_query($con, $sql)) {
         //echo "New record created successfully !";

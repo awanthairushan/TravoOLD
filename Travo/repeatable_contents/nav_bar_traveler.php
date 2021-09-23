@@ -22,8 +22,8 @@
                 <img class="nav_bar-logo" src="../../images/icons/user.png">
                 <div class="dropdown-content">
                     <div class="drop-title">USERNAME</div>
-                    <div class="drop-box"><a class="drop-nav" href=#update>UPDATE</a></div>
-                    <div class="drop-box"><a class="drop-nav" href="../../pages/traveler/traveler_feedback.php">GIVE FEEDBACKS</a></div>
+                    <div class="drop-box"><a class="drop-nav" href=../../pages/traveler/traveler_update.php>UPDATE</a></div>
+                    <div class="drop-box"><button class="deleteAccount_btn" id="deleteAccount_btn">DELETE ACCOUNT</button></div>                    <div class="drop-box"><a class="drop-nav" href="../../pages/traveler/traveler_feedback.php">GIVE FEEDBACKS</a></div>
                     <div class="drop-box"><a class="drop-nav" href=../../php/unregistered/end-log_out.php>LOG OUT</a></div>
                 </div>
             </div>
@@ -31,4 +31,15 @@
         <td></td>
       </tr>
     </table>
-  </div> '; ?>
+    <div class="delete_modal">
+      <div class="deleteAccount_confirm_box">
+            <h3>Delete Account</h3>
+            <hr>
+            <p>There is no recovery option. Are you sure you want to delete this account ?</p>
+            <hr>
+            <button type="button" name="delete_confirm_btn" class="delete_confirm_btn" id="delete_confirm_btn">DELETE ACCOUNT</button>
+            <button type="button" name="delete_cancel_btn" class="delete_cancel_btn" id="delete_cancel_btn">CANCEL</button>
+      </div>
+      </div>
+  </div>
+'; ?>

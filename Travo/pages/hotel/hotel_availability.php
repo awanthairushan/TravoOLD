@@ -15,19 +15,18 @@
       <style>
       <?php include '../../repeatable_contents/nav_bar_hotel.css';?>
       </style>
-
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_hotel.js"></script>
+      <br>
             <form>
                 <table class="b">
-                <div class="dateselect">
-
+                  <tr>
                     <td class="b" colspan="3" >  <div class="calendar"><input type="date" id="start"></div></td>
 
                     <td class="b" colspan="3" > <div class="calendar"><input type="date" id="end"></div> </td>
-
-           </div>
+                  </tr>
 </table>
            </form>
-
+<br>
     <center>
 
         <form>

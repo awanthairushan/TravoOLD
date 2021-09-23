@@ -8,9 +8,9 @@ if (isset($_POST['submitbtn'])) {
     $email = $_POST['email'];
     $contact1 = $_POST['contact1'];
     $contact2 = $_POST['contact2'];
-    $password = $_POST['password'];
-    $line1 = $_POST['address_line1'];
-    $line2 = $_POST['address_line2'];
+    $password1 = $_POST['password'];
+    $line1 = $_POST['address-line1'];
+    $line2 = $_POST['address-line2'];
     $city = $_POST['city'];
     $decription = $_POST['description'];
     $location = $_POST['location'];
@@ -18,18 +18,19 @@ if (isset($_POST['submitbtn'])) {
     $rep_email = $_POST['rep_email'];
     $rep_contact1 = $_POST['rep_contact1'];
     $rep_contact2 = $_POST['rep_contact2'];
-    $hotel_type = $_POST['hotel_type'];
+    $hotel_type = $_POST['hotel_type-type'];
     $images = $_POST['images'];
-    $password = password_hash($password, PASSWORD_DEFAULT);
-    $sql = "INSERT INTO hotels (hotelID, name, address_line1, address_line2, city , location, contact1, contact2, description, email, password, hotel_type, rep_name, rep_email, rep_contact1, rep_contact2, status) VALUES (NULL, '$name', '$line1', '$line2', '$city', '$location', '$contact1','$contact2','$decription','$email', '$password', '$hotel_type','$rep_name', '$rep_email', '$rep_contact1', '$rep_contact2','NEW')";
-    $result= mysqli_query($con,$sql);
-    // if($result){
-    //     $status=FALSE;
-    //     echo "yes";
-    // }else{
-    //     echo  "Error: " . $con->error;
-    //     mysqli_close($con);
-    // }
+
+   $password1 = password_hash($password1, PASSWORD_DEFAULT); // Password hashing
+   $sql = "INSERT INTO hotels VALUES (NULL, '$name', '$line1', '$line2', '$city', '$location', '$contact1','$contact2','$decription','$email','$password1','$hotel_type','$rep_name', '$rep_email', '$rep_contact1', '$rep_contact2','NEW')";
+   $result= mysqli_query($con,$sql);
+    if($result){
+        $status=FALSE;
+        echo "yes";
+    }else{
+        echo  "Error: " . $con->error;
+        mysqli_close($con);
+    }  
         $single_count = $_POST['single_room_count'];
         $single_price = $_POST['single_room_price'];
         $double_count = $_POST['double_room_count'];
@@ -39,196 +40,169 @@ if (isset($_POST['submitbtn'])) {
         $massive_capacity = $_POST['massive_room_capacity'];
         $massive_count = $_POST['massive_room_count'];
         $massive_price = $_POST['massive_room_price'];
-
-
-        if (isset ($_POST['single_room_minibar']))
+       
+    
+        if (isset ($_POST['single_room_minibar'])) 
         {
             $single_mini_bar = 'yes';
         }
-        else
+        else 
         {
             $single_mini_bar = 'no';
         }
-
-        if (isset ($_POST['single_room_food']))
+    
+        if (isset ($_POST['single_room_food'])) 
         {
             $single_food = 'yes';
         }
-        else
+        else 
         {
             $single_food = 'no';
         }
-        if (isset ($_POST['single_room_ac']))
+
+        if (isset ($_POST['single_room_ac'])) 
         {
             $single_ac = 'yes';
         }
-        else
+        else 
         {
             $single_ac = 'no';
         }
-        if (isset ($_POST['double_room_minibar']))
+        
+        if (isset ($_POST['double_room_minibar'])) 
         {
             $double_mini_bar = 'yes';
         }
-        else
+        else 
         {
             $double_mini_bar = 'no';
         }
-        if (isset ($_POST['double_room_food']))
+
+        if (isset ($_POST['double_room_food'])) 
         {
             $double_food = 'yes';
         }
-        else
+        else 
         {
             $double_food = 'no';
         }
-        if (isset ($_POST['double_room_ac']))
+
+        if (isset ($_POST['double_room_ac'])) 
         {
             $double_ac = 'yes';
         }
-        else
+        else 
         {
             $double_ac = 'no';
         }
-        if (isset ($_POST['family_room_minibar']))
+
+        if (isset ($_POST['family_room_minibar'])) 
         {
             $family_mini_bar = 'yes';
         }
-        else
+        else 
         {
             $family_mini_bar = 'no';
         }
-        if (isset ($_POST['family_room_food']))
+
+        if (isset ($_POST['family_room_food'])) 
         {
             $family_food = 'yes';
         }
-        else
+        else 
         {
             $family_food = 'no';
         }
-
-        if (isset ($_POST['family_room_ac']))
+    
+        if (isset ($_POST['family_room_ac'])) 
         {
             $family_ac = 'yes';
         }
-        else
+        else 
         {
             $family_ac = 'no';
+            echo "noAC";
         }
-        if (isset ($_POST['massive_room_minibar']))
+
+        if (isset ($_POST['massive_room_minibar'])) 
         {
             $massive_mini_bar = 'yes';
         }
-        else
+        else 
         {
             $massive_mini_bar = 'no';
         }
-        if (isset ($_POST['massive_room_food']))
+
+        if (isset ($_POST['massive_room_food'])) 
         {
             $massive_food = 'yes';
         }
-        else
+        else 
         {
             $massive_food = 'no';
         }
-        if (isset ($_POST['massive_room_ac']))
+
+        if (isset ($_POST['massive_room_ac'])) 
         {
             $massive_ac = 'yes';
         }
-        else
+        else 
         {
             $massive_ac = 'no';
         }
-        if (isset ($_POST['submit'])) {
-
-            $images = $_POST['images'];
-        }
-
-        // $sql = "INSERT INTO hotelrepresentative VALUES (35, '$hotel_type', '$name','$email', '$contact1', '$contact2')";
-        // $result=$db->query($sql);
-        //  if($result){
-        //      $status=FALSE;
-        //      echo 'yes';
-        //  }else{
-        //      echo 'no';
-        //  }
-
-
-
-         $sql1 = "INSERT INTO hotel_rooms VALUES (LAST_INSERT_ID(), 'single', '$single_count',1, '$single_food', '$single_mini_bar', '$single_ac', '$single_price')";
-        // $result1=$con->query($sql1);
-        //  if($result1){
-        //      $status=FALSE;
-        //      echo "yes1";
-        //  }else{
-        //     echo  "Error: " . $db->error;
-        //     mysqli_close($db);
-        //  }
-
-
+          
+        $sql1 = "INSERT INTO hotel_rooms VALUES (LAST_INSERT_ID(), 'single', '$single_count',1, '$single_food', '$single_mini_bar', '$single_ac', '$single_price')";
+        $result1=$con->query($sql1);
+         if($result1){
+             $status=FALSE;
+            // echo "yes1";
+         }else{
+            echo  "Error: " . $db->error;
+            mysqli_close($db);
+         }
+         
+    
          $sql2 = "INSERT INTO hotel_rooms VALUES (LAST_INSERT_ID(), 'double', '$double_count',2, '$double_food', '$double_mini_bar', '$double_ac', '$double_price')";
-        // $result2=$con->query($sql2);
-        //  if($result2){
-        //      $status=FALSE;
-        //      echo "yes2";
-        //  }else{
-        //     echo  "Error: " . $db->error;
-        //     mysqli_close($db);
-        //  }
-
+        $result2=$con->query($sql2);
+         if($result2){
+             $status=FALSE;
+             //echo "yes2";
+         }else{
+            echo  "Error: " . $con->error;
+            mysqli_close($db);
+         }
+         
          $sql3 = "INSERT INTO hotel_rooms VALUES (LAST_INSERT_ID(), 'family', '$family_count',4, '$family_food', '$family_mini_bar', '$family_ac', '$family_price')";
-        // $result3=$con->query($sql3);
-        //  if($result3){
-        //      $status=FALSE;
-        //      echo "yes3";
-        //  }else{
-        //     echo  "Error: " . $db->error;
-        //     mysqli_close($db);
-        //  }
-
+        $result3=$con->query($sql3);
+         if($result3){
+             $status=FALSE;
+            // echo "yes3";
+         }else{
+            echo  "Error: " . $db->error;
+            mysqli_close($con);
+         }
+         
          $sql4 = "INSERT INTO hotel_rooms VALUES (LAST_INSERT_ID(), 'massive', '$massive_count','$massive_capacity', '$massive_food', '$massive_mini_bar', '$massive_ac', '$massive_price')";
-        // $result4=$con->query($sql4);
-        //  if($result4){
-        //      $status=FALSE;
-        //      echo "yes4";
-        //  }else{
-        //     echo  "Error: " . $db->error;
-        //     mysqli_close($db);
-        //
-        //  }
+        $result4=$con->query($sql4);
+         if($result4){
+             $status=FALSE;
+            // echo "yes4";
+         }else{
+            echo  "Error: " . $con->error;
+            mysqli_close($con);
+             
+         }
          $sql5 = "INSERT INTO hotel_images VALUES (LAST_INSERT_ID(), NULL, '$images')";
-    // $result5=$con->query($sql5);
-    //  if($result5){
-    //      $status=FALSE;
-    //      echo 'yes';
-    //  }else{
-    //    echo  "Error: " . $con->error;
-    //    mysqli_close($con);
-    //
-    //  }
+         $result5=$con->query($sql5);
+            if($result5){
+            $status=FALSE;
+            //echo 'yes';
+        }else{
+            echo  "Error: " . $con->error;
+            mysqli_close($con);
+         
+     }
 
-    // if (isset ($_POST['tc'])) {
-
-    //     if($password == $password)
-    //     {
-    //         $sql = "INSERT INTO travelers VALUE (NULL, '$name', '$password1','$line1', '$line2', '$city', '$location', '$contact1','$contact2','$decription','$email','NEW')"
-
-
-    //         $result=$db->query($sql);
-    //             if($result){
-    //                 $status=FALSE;
-    //                 echo "yes";
-    //              }else{
-    //                echo 'no';
-    //              }
-
-    if (mysqli_query($con, $sql)) {
-        //echo "New record created successfully !";
-        header('location: ../../pages/unregistered/log_in.php');
-    } else {
-        echo "Error: " . $con->error;
-        mysqli_close($con);
-    }
-  }
-
+}
+    header('location: ../../pages/unregistered/log_in.php');
 ?>

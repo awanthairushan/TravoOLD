@@ -15,13 +15,13 @@
     <section class = "home-watermark_and_started-section">
       <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
       <br>
       <p class = "watermark">TRAVO.lk</p>
-      <button type="button" name="button" class="get_started-btn">GET STARTED</button>
       </div>
 
 
-    <div class="container">
+    <div class="container" id="containerstart">
             <div class="details">
 
               <form class="" action="index.html" method="post">
@@ -42,7 +42,7 @@
                               </select>
                           </td>
                   </table>
-                  <button id="nextbtn">NEXT</button>
+                  <button id="nextbtn" onclick="window.location.href='pages/traveler/traveler_plantrip.php'">NEXT</button>
                 </form>
             </div>
         </div>

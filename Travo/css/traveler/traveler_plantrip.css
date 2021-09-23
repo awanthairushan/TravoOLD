@@ -112,6 +112,7 @@ input[type=email],input[type="text"]{
     border-radius: 30px;
     color: #ffffff;
     border: none;
+    cursor: pointer;
 }
 .other_email {
   text-align: center;

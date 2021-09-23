@@ -1,10 +1,10 @@
 <?php
-
 include('../../db/db_connection.php');
 
-$status=TRUE;
 
-if(isset($_POST['submit'])){
+
+if(isset($_POST['submitbtn'])){
+    echo "Awooo";
     $traveler_id = uniqid("tr_");
     $name=$_POST['name'];
     $email=$_POST['email'];

@@ -11,6 +11,7 @@
         <section class="uppersection">
             <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
+            <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
             <br>
             <div class="content">
                 <div class="container">

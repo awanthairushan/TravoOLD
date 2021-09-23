@@ -15,9 +15,9 @@
     <section class = "home-watermark_and_started-section">
       <?php include '../../repeatable_contents/nav_bar_vehicle.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_vehicle.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_vehicle.js"></script>
       <br>
       <p class = "watermark">TRAVO.lk</p><br>
-      <button type="button" name="button" class="get_started-btn">GET STARTED</button>
       </div>
     </section>
 

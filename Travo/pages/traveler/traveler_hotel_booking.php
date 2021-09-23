@@ -13,6 +13,7 @@
         <section class="uppersection">
             <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
+            <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
             <div class="image_gallery_hotel">
                 <table>
                   <tr>
@@ -43,9 +44,9 @@
                             </dl>
                           </div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseSValue()" value="Decrease Value">-</div>
+                            <input type="number" id="Snumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseSValue()" value="Increase Value">+</div>
                         </div>
                     </div>
 
@@ -64,9 +65,9 @@
                           </dl>
                         </div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseDValue()" value="Decrease Value">-</div>
+                            <input type="number" id="Dnumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseDValue()" value="Increase Value">+</div>
                         </div>
                     </div>
 
@@ -85,9 +86,9 @@
                           </dl>
                         </div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseFValue()" value="Decrease Value">-</div>
+                            <input type="number" id="Fnumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseFValue()" value="Increase Value">+</div>
                         </div>
                     </div>
 
@@ -106,13 +107,13 @@
                           </dl>
                         </div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseMValue()" value="Decrease Value">-</div>
+                            <input type="number" id="Mnumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseMValue()" value="Increase Value">+</div>
                         </div>
                     </div>
                 </div>
-                <div class="confirm"><button id="confirmbtn">CONFIRM</button></div>
+                <div class="confirm"><button id="confirmbtn" onclick="window.location.href='traveler_plantrip.php'">CONFIRM</button></div>
             </form>
 
             <table class="hoteldetails">

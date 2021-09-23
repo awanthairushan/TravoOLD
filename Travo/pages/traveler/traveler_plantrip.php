@@ -12,6 +12,7 @@
     <section class="uppersection">
         <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
         <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
+        <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
         <br>
         <div class="content">
             <div class="container" >
@@ -113,7 +114,7 @@
                         </div>
                     </div>
                         <div class="buttons">
-                            <button id="nextbtn">NEXT</button>
+                            <button id="nextbtn" onclick="window.location.href='../../pages/traveler/traveler_budget.php'">NEXT</button>
                         </div>
                     </form>
 

@@ -14,17 +14,21 @@
       <style>
       <?php include '../../repeatable_contents/nav_bar_hotel.css'; ?>
       </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_hotel.js"></script>
+      <br>
 <center>
         <form>
             <div class="rectangle2">
                 <table>
+                  <tr>
                     <td><label class = "label" for="dateselect">DATE :</label></td>
                     <div class="calender"></div>
                     <td><input type="date" id="dateselect" name="dateselect" placeholder="yy/mm/dd"></td>
+                  </tr>
                  </table>
              </div>
         </form>
-         </br></br>
+         </br>
 
     <div class="rectangle">
             <table class="b" rules= "none">

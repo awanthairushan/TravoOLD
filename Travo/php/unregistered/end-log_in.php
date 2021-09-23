@@ -19,6 +19,8 @@
     $resulthotel = mysqli_query($con,$sqlhotel);
     $sqlvehicle = "SELECT * FROM vehicles WHERE email = '$username' ";
     $resultvehicle = mysqli_query($con,$sqlvehicle);
+    $sqldeleted_accounts = "SELECT * FROM deleted_accounts WHERE email = '$username' ";
+    $resultdeleted_accounts = mysqli_query($con,$sqldeleted_accounts);
 
     if(empty($username)) {
       header('location: ../../pages/unregistered/log_in.php?error=Username is required');
@@ -37,7 +39,7 @@
             header('location: ../../pages/unregistered/log_in.php?error=Incorrect Username or Password');
             exit();
           }
-      }else if (mysqli_num_rows($resulttraveler) === 1) {
+      } else if (mysqli_num_rows($resulttraveler) === 1) {
           $row = mysqli_fetch_assoc($resulttraveler); //The fetch_assoc() / mysqli_fetch_assoc() function fetches a result row as an associative array.
           if($row['email'] == $username && password_verify($password, $row['password'])){
             $_SESSION['username'] = $row['email'];
@@ -63,7 +65,7 @@
             header('location: ../../pages/unregistered/log_in.php?error=Incorrect Username or Password');
             exit();
           }
-      }elseif (mysqli_num_rows($resultvehicle) === 1) {
+      } elseif (mysqli_num_rows($resultvehicle) === 1) {
           $row = mysqli_fetch_assoc($resultvehicle); //The fetch_assoc() / mysqli_fetch_assoc() function fetches a result row as an associative array.
           if($row['email'] == $username && password_verify($password, $row['password'])){
             $_SESSION['username'] = $row['email'];
@@ -74,8 +76,10 @@
             header('location: ../../pages/unregistered/log_in.php?error=Incorrect Username or Password');
             exit();
           }
-      }
-      else {
+      } elseif (mysqli_num_rows($resultdeleted_accounts) === 1) {
+        header('location: ../../pages/unregistered/log_in.php?error=අම්නෙ අපි ඔවාව අයිම් කලාම්නෙ. සොම්රි');
+        exit();
+      } else {
           header('location: ../../pages/unregistered/log_in.php?error=Incorrect Username or Password');
           exit();
       }

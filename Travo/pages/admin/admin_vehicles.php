@@ -2,12 +2,13 @@
   session_start();
   if(isset($_SESSION['username'])) {
  ?>
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <?php
 
-
+$result = require '../../db/db_admin_vehicles.php';
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,38 +26,63 @@
 <div class="main">
 
     <h1 class="heading-one">REGISTERED VEHICLES</h1>
+
     <!--Start search option-->
         <label for="filter" class="filter-labels">SEARCH BY :</label>
         <select name="filter" id="filter" class="filter-input">
             <option value="vnumber">VEHICLE NUMBER</option>
-            <option value="vnumber">ADDRESS</option>
+            <option value="vcategory">VEHICLE CATEGORY</option>
+            <option value="vcity">CITY</option>
         </select>
         <input type="text" name="search" id="search" class="search-input" placeholder="Enter Value"><br>
     <!--End search option-->
 
 <!--Start "Registered vehicle" table-->
 <div class="table">
-    <table class="content-table" id="conn_table" >
+    <table class="content-table" id="vehicle_table" >
         <thead>
             <tr>
+                <th>NO</th>
                 <th>VEHICLE NUMBER</th>
                 <th>VEHICLE CATEGORY</th>
-                <th>ADDRESS</th>
+                <th>CITY</th>
                 <th>VEHICLE DETAILS</th>
                 <th>DRIVER DETAILS</th>
                 <th></th>
             </tr>
         </thead>
+        
         <tbody class="table-body">
-            <tr>
-                <td>12345</td>
-                <td>Car</td>
-                <td>Kandy</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
+        <?php
+            while ($rows = mysqli_fetch_array($result)){
+                echo "<tr>
+                    <td>".$rows['row_no']."</td>
+                    <td>".$rows['vehicle_no']."</td>
+                    <td>".$rows['type']."</td>
+                    <td>".$rows['city']."</td> 
+                    <td>
+                    <form method='post' action=' '>
+                        <input type='hidden' value='$rows[0]' name=con_id>
+                        <input type='button' id='morebtn' value='MORE'>
+                    </form>
+                    </td>
+                    <td>
+                    <form method='post' action=' '>
+                        <input type='hidden' value='$rows[0]' name=con_id>
+                        <input type='button' id='morebtn' value='MORE'>
+                    </form>
+                    </td> 
+                    <td>
+                    <form method='post' action=' '>
+                        <input type='hidden' value='$rows[0]' name=con_id>
+                        <input type='button' id='removebtn' value='REMOVE'>
+                    </form>
+                    </td>
+                    
+                </tr>";
+            }
+            ?>
+         <!--   <tr>
                 <td>5678</td>
                 <td>Van</td>
                 <td>Colombo</td>
@@ -199,14 +225,18 @@
                 <td><input type="button" id="morebtn" value="MORE"></td>
                 <td><input type="button" id="morebtn" value="MORE"></td>
                 <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
+            </tr> -->
+
         </tbody>
     </table>
 </div>
 <!--End "Registered vehicle" table-->
 
-  <!--<script src="../../JS/filter.js"></script>-->
+  
 </section>
+<!--JS file for search & filter-->
+    <script src="../../script/admin/admin_filter_vehicles.js"></script>
+
 </body>
 </html>
 <?php

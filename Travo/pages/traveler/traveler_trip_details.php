@@ -11,6 +11,7 @@
         <section class="uppersection">
             <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
+            <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
             <br>
             <div class="content">
                 <div class="trip">
@@ -49,9 +50,9 @@
                             </tr>
                             <tr>
                                 <th class="row">Destination</th>
-                                <td class="trow">Destination 1</td>
-                                <td class="trow">Destination 2</td>
-                                <td class="trow">Destination 3</td>
+                                <td class="trow">Destination1</td>
+                                <td class="trow">Destination2</td>
+                                <td class="trow">Destination3</td>
                             </tr>
                             <tr>
                                 <th class="row">Hotel</th>
@@ -70,8 +71,8 @@
                 </div>
 
                 <div class="buttons">
-                    <button id="savebtn">SAVE</button>
-                    <button  id="paybtn">PAY NOW</button>
+                    <button class="button" id="savebtn">SAVE</button>
+                    <button class="button" id="paybtn">PAY NOW</button>
                 </div>
             </div>
         </section>

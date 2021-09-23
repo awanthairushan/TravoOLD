@@ -13,30 +13,22 @@ body{
 
 .trip{
     /* used to center .tripmenu */
-    position: absolute;
-    left:50%;
-
-    top: 150px;
     width: 50%;
-    height: auto;
+    height: 3rem;;
     /* align .tripmenu div tags to the center */
-    margin: auto; 
+    margin: auto;
+    vertical-align: middle;
 }
 
 .tripmenu{
     /* helps to center .tripmenu */
-    position: relative;
-    left: -50%;
-
     width: 33%;
-    height: 60px;
+    height: 3rem;
     float: left;
+    padding-top: 0.75rem;
     text-align: center;
-    margin-left: 1px;
-    padding-top: 30px;
-    font-size: 25px;
-    font-family: sans-serif;
-
+    vertical-align: middle;
+    font-size: 1.5rem;
     background: rgba(103, 176, 186, 0.7);
 }
 
@@ -47,30 +39,30 @@ body{
 
 .container{
     width: 80%;
-    height: auto;
+    height: 60vh;
     /* align .tripmenu div tags to the center */
-    margin: auto; 
-    margin-top: 170px;
+    margin: 0.5rem auto;
+        background: rgba(196, 196, 196, 0.5);
+        align-content: center;
+
+        border-radius: 3rem;
 }
 
-.details{
-    align-content: center;
-    background: rgba(196, 196, 196, 0.5);
-    border-radius: 50px;
-    padding: 50px;
-    margin: 0 auto;
+.main{
+  margin: 1rem auto;
+  width: 80%;
+
 }
 
 .main td{
     padding: 5px;
 }
 
-table{
-    margin: auto;
-}
+
 
 .trow{
-    padding: 20px;}
+    padding: 1rem;
+}
 
 .days tr{
     background: rgba(255, 255, 255, 0.5);
@@ -78,37 +70,37 @@ table{
 }
 
 .days{
-    width: 80%;
+  margin: 1rem auto;
+  width: 80%;
 }
 
 .row{
     text-align: left;
 }
-
-.buttons{
-    position: absolute;
-    left: 50%;
-    margin-top: 10px;
+.buttons {
+  text-align: center;
 }
 
 .map{
     display: block;
 }
 
-button{
-    position: relative;
-    left: -50%;
-    width: 257px;
-    height: 70px;
-
+.button{
+    width: 15rem;
+    height: 4rem;
     background: rgba(103, 176, 186, 0.7);
-    border-radius: 30px;
-    font-size: 25px;
+    border-radius: 2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     border: none;
+    cursor: pointer;
+}
+.details iframe {
+  margin:auto;
+  border-radius: 3rem;
 }
 
-@media screen and (max-width:760px){
+/* @media screen and (max-width:760px){
 
     .trip{
         width:100%;
@@ -119,4 +111,4 @@ button{
         margin: 0.5px;
         width:32.5%;
     }
-}
+} */

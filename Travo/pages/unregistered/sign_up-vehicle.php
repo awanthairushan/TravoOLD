@@ -30,8 +30,8 @@
 
       <div class="form-control">
         <label for="contact">Contact Number</label>
-        <input class="text-small-form-sign_up-traveler" type="text" name="contact2" id="contact2" placeholder="">
-        <input class="text-small-form-sign_up-traveler" type="text" name="contact1" id="contact1" placeholder=""><br><br>
+        <input class="text-small-form-sign_up-traveler" type="text" name="contact2" id="contact2" placeholder=" Contact Number 2">
+        <input class="text-small-form-sign_up-traveler" type="text" name="contact1" id="contact1" placeholder=" Contact Number 1"><br><br>
         <span id="error3" class="error-msg"></span>
         <small>Error Message</small>
             </div>
@@ -62,7 +62,7 @@
         <label for="vehicle">Vehicle</label>
         <input class="text-small-form-sign_up-traveler" type="text" name="no_of_passengers" id="no_of_passengers" placeholder=" No of passengers">
         <span id="error7" class="error-msg"></span>
-        <input class="text-small-form-sign_up-traveler" type="text" name="type" id="type" placeholder=" Type"><br><br>
+        <input class="text-small-form-sign_up-traveler" type="text" name="type" id="type" placeholder=" Vehicle Category"><br><br>
         <span id="error8" class="error-msg"></span>
       </div>
 
@@ -77,9 +77,9 @@
       <div class="form-control">
         <label for="driver">Driver</label> <input class="text-small-form-sign_up-traveler" type="text" name="driver_charge" id="driver_charge" placeholder=" Driver charges for a day">
         <select class="drop-down-form-sign_up-traveler" type="driver-type" name="driver_type" id="driver_type">
-            <option value="with-driver">With Driver</option>
-            <option value="without-driver">Without Driver</option>
-            <option value="with-without-driver">With or Without Driver</option>
+            <option value="with driver">With Driver</option>
+            <option value="without driver">Without Driver</option>
+            <option value="with or without driver">With or Without Driver</option>
         </select><br><br>
       </div>
 
