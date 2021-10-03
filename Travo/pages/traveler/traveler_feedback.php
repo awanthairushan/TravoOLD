@@ -1,6 +1,11 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])) {
+    include '../../db/db_connection.php';
+    $temp = $_SESSION['username'];
+    $sqlForSession = "SELECT travelerID FROM travelers WHERE email = '$temp'";
+    $resultForSession = mysqli_query($con, $sqlForSession);
+    if (mysqli_num_rows($resultForSession) === 1) {
  ?>
 <html>
     <head>
@@ -18,9 +23,12 @@
                 <div class="details">
                     <div class="heading">LEAVE YOUR LOVING RESPONSE !</div>
                     <div class="feedback">
-                        <form>
-                            <textarea class="response"></textarea>
-                            <input type="image" src="../../images/icons/send.png" alt="Submit" class="Submit">
+                      <form action="../../php/traveler/traveler_givefeedback.php" method="POST">
+                            <textarea name="response" class="response" required></textarea>
+                            <!--<input type="image" name="submit" src="../../images/icons/send.png" alt="Submit"  id="Submit" class="Submit">-->
+                            <button type="submit" name="submitbtn"  class="submitbtn" >
+                                <img src="../../images/icons/send.png" id="Submit" class="Submit" alt="Submit"/>
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -34,6 +42,10 @@
     </body>
 </html>
 <?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
 }else{
   header("location: ../../index.html");
   exit();

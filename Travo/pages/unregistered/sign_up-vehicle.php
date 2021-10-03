@@ -34,7 +34,7 @@
         <input class="text-small-form-sign_up-traveler" type="text" name="contact1" id="contact1" placeholder=" Contact Number 1"><br><br>
         <span id="error3" class="error-msg"></span>
         <small>Error Message</small>
-            </div>
+      </div>
 
       <div class="form-control">
         <label for="password">Password</label>
@@ -84,12 +84,20 @@
       </div>
 
       <div class="form-control">
+        <label for="images">Input Image</label> 
+        <input type="file" class="text-small-form-sign_up-traveler" name="images" id="image-small-form-sign_up-traveler" ></br><br>
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="form-control">
         <label for="ac">A/C</label>
         <input type="hidden" name="ac" value="no" />
         <input class="ac-checkbox-form-sign_up-traveler" type="checkbox" name="ac" id="ac" value="yes"> <span></span> <br>
 
         <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="yes" required><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="../../pages/unregistered/tc.php">Terms & Conditions</a> of travo.lk</label>
       </div>
+
+
 
       </form>
     </div>
@@ -105,6 +113,7 @@
       <?php include '../../repeatable_contents/footer.php';?>
       <style> <?php include '../../repeatable_contents/footer.css'; ?>  </style>
     </section>
+    <!--JS file for validation-->
     <script src="../../script/unregistered/sign_up-vehicle.js"></script>
   </body>
 </html>

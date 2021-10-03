@@ -1,12 +1,17 @@
 <?php
 session_start();
 if(isset($_SESSION['username'])) {
+  include '../../db/db_connection.php';
+  $temp = $_SESSION['username'];
+  $sqlForSession = "SELECT username FROM admin WHERE username = '$temp'";
+  $resultForSession = mysqli_query($con, $sqlForSession);
+  if (mysqli_num_rows($resultForSession) === 1) {
  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <?php
-        $result = require '../../db/db_admin_hotels.php';
+        $result = require '../../db/admin/admin_hotels.php';
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +71,7 @@ if(isset($_SESSION['username'])) {
                         <input type='hidden' value='$rows[0]' name=con_id>
                         <input type='button' id='morebtn' value='MORE'>
                     </form>
-                    </td> 
+                    </td>
                     <td>
                     <form method='post' action=' '>
                     <input type='hidden' value='$rows[0]' name=con_id>
@@ -79,7 +84,7 @@ if(isset($_SESSION['username'])) {
                         <input type='button' id='removebtn' value='DECLINE'>
                     </form>
                     </td>
-                    
+
                 </tr>";
             }
             ?>
@@ -201,6 +206,10 @@ if(isset($_SESSION['username'])) {
 <!--<script src="../../JS/filter.js"></script>-->
 </section>
 <?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
 }else{
   header("location: ../../index.html");
   exit();

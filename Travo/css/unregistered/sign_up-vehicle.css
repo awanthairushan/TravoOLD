@@ -172,6 +172,18 @@ body {
     border: 1px solid red;
 }
 
+#image-small-form-sign_up-traveler {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: thin;
+    border-color: #000000;
+    width: 70%;
+    height: 1.3rem;
+    margin: 0px;
+    float: right;
+    align-items: center;
+}
+
 
 /*Tooltip in password*/
 

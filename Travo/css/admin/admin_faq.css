@@ -18,6 +18,84 @@ body {
     margin-top: 5%;
 }
 
+.heading-one {
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+/*FAQ table*/
+
+.content-table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin: auto;
+}
+
+.table {
+    max-height: 40vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 82%;
+    margin: auto;
+}
+
+.table::-webkit-scrollbar {
+    width: 5px;
+}
+
+.table::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.table::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.content-table th {
+    background-color: #323534;
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 2px solid #000000;
+    font-weight: 700;
+}
+
+.tdtxt {
+    width: fit-content;
+    padding: 12px;
+    text-align: left;
+}
+
+.tdbtn {
+    width: fit-content;
+    padding: 12px;
+    text-align: center;
+}
+
+.content-table tbody tr {
+    background-color: #323534;
+    border-bottom: 2px solid #000000;
+}
+
+.content-table tbody tr:last-child {
+    border-bottom: 2px solid #323534;
+}
+
+.content-table tbody tr:hover {
+    background-color: rgb(71, 138, 149);
+}
+
+tbody a {
+    text-decoration: none;
+    color: black;
+}
+
 
 /*Buttons*/
 
@@ -31,13 +109,13 @@ body {
     border-color: rgb(41, 180, 161);
     margin-left: 490px;
     margin-right: 490px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #removebtn {
     background-color: rgb(204, 78, 109);
     border-radius: 8px;
-    width: 160px;
+    width: 70px;
     height: 25px;
     cursor: pointer;
     border-width: 0.01ch;
@@ -45,7 +123,7 @@ body {
 }
 
 
-/*Form to add new destination*/
+/*Form to add new faq*/
 
 .form-container {
     margin-top: 5%;
@@ -53,15 +131,16 @@ body {
     padding: 20px 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
+    margin-bottom: 1%;
     width: 1080px;
-    height: 300px;
+    height: 180px;
+    align-content: center;
 }
 
 .fques {
     font-weight: 700;
     margin-left: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .fans {
@@ -71,7 +150,7 @@ body {
 
 #fquestion {
     margin-left: 75px;
-    margin-top: 50px;
+    margin-top: 10px;
     border-radius: 10px;
     border-width: 0ch;
     height: 40px;
@@ -83,6 +162,19 @@ body {
 }
 
 #fanswer {
+    margin-left: 88px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border-width: 0ch;
+    height: 40px;
+    width: 800px;
+    background-color: #aaaaaa;
+    border-color: #aaaaaa;
+    color: black;
+    font-size: 15px;
+}
+
+#fcategory {
     margin-left: 88px;
     margin-top: 25px;
     border-radius: 10px;

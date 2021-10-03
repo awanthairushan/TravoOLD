@@ -1,6 +1,11 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])) {
+    include '../../db/db_connection.php';
+    $temp = $_SESSION['username'];
+    $sqlForSession = "SELECT username FROM admin WHERE username = '$temp'";
+    $resultForSession = mysqli_query($con, $sqlForSession);
+    if (mysqli_num_rows($resultForSession) === 1) {
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -242,6 +247,10 @@
 </body>
 </html>
 <?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
 }else{
   header("location: ../../index.html");
   exit();

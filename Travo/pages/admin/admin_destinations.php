@@ -1,6 +1,11 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])) {
+    include '../../db/db_connection.php';
+    $temp = $_SESSION['username'];
+    $sqlForSession = "SELECT username FROM admin WHERE username = '$temp'";
+    $resultForSession = mysqli_query($con, $sqlForSession);
+    if (mysqli_num_rows($resultForSession) === 1) {
  ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,11 +27,8 @@
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
     <!--End Navigation bar-->
 
-    <div class="main">
-
+<div class="main">
     <h1 class="heading-one">MANAGE DESTINATIONS & VISITING PLACES</h1>
-
-
 <!--Start "Destinations & visiting places" table-->
 <div class="table">
     <table class="content-table" id="conn_table" >
@@ -41,7 +43,7 @@
         <tbody>
             <tr>
                 <td>Galle</td>
-                <td class="col2">Galle Dutch Fort<br />
+                <td>Galle Dutch Fort<br />
                     Dutch Reformed Church<br />
                     The National Museum of Galle<br />
                     Japanese Peace Pagoda</td>
@@ -52,7 +54,8 @@
                 <td><input type="button" id="removebtn" value="REMOVE DESTINATION"><br />
                     <input type="button" id="addbtn" value="ADD NEW PLACE"></td>
             </tr>
-            <tr>
+
+          <tr>
                 <td>Rathnapura</td>
                 <td>Galle Dutch Fort<br />
                     Dutch Reformed Church<br />
@@ -85,82 +88,118 @@
 
 <!--Start form of adding new destination-->
 <div class="form-container">
-    <form>
+    <form class="form_add_destination" id="form_add_destination" action="../../php/unregistered/admin_add_destinations.php" method="POST">
+       <!-- Enter destination-->
         <label for="fdestination" class="fdes">DESTINATION</label>
             <input type="text" id="fdestination" name="fdestination">
 
+            <!-- Enter visiting places-->
+            <div class="site_details_div">
+              <input type="text" id="fvp" name="fvp" placeholder="  Sight">
+              <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
+              <input type="text" id="ftime" name="ftime" placeholder="  Time">
+              <select id="fcategory" name="fcategory">
+                  <option value="0">Select Category :</option>
+                  <option value="1">Cultural</option>
+                  <option value="2">Pilgrimage</option>
+                  <option value="3">Leisure</option>
+              </select>
+              <input type="text" id="flocation" name="flocation">
+              <img src="../../images/icons/placeholder.png" id="location">
+            </div>
 
-            <input type="text" id="fvp" name="fvp" placeholder="  Sight">
-            <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
-            <input type="text" id="ftime" name="ftime" placeholder="  Time">
-            <select id="fcategory" name="fcategory">
-                <option value="0">Select Category :</option>
-                <option value="1">Cultural</option>
-                <option value="2">Pilgrimage</option>
-                <option value="3">Leisure</option>
-            </select>
-            <input type="text" id="flocation" name="flocation">
-            <img src="../../images/icons/placeholder.png" id="location"><br />
+            <div class="site_details_div">
+              <input type="text" id="fvp" name="fvp" placeholder="  Sight">
+              <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
+              <input type="text" id="ftime" name="ftime" placeholder="  Time">
+              <select id="fcategory" name="fcategory">
+                  <option value="0">Select Category :</option>
+                  <option value="1">Cultural</option>
+                  <option value="2">Pilgrimage</option>
+                  <option value="3">Leisure</option>
+              </select>
+              <input type="text" id="flocation" name="flocation">
+              <img src="../../images/icons/placeholder.png" id="location">
+            </div>
 
-            <input type="text" id="fvp" name="fvp" placeholder="  Sight">
-            <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
-            <input type="text" id="ftime" name="ftime" placeholder="  Time">
-            <select id="fcategory" name="fcategory">
-                <option value="0">Select Category :</option>
-                <option value="1">Cultural</option>
-                <option value="2">Pilgrimage</option>
-                <option value="3">Leisure</option>
-            </select>
-            <input type="text" id="flocation" name="flocation">
-            <img src="../../images/icons/placeholder.png" id="location"><br />
+            <div class="site_details_div">
+              <input type="text" id="fvp" name="fvp" placeholder="  Sight">
+              <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
+              <input type="text" id="ftime" name="ftime" placeholder="  Time">
+              <select id="fcategory" name="fcategory">
+                  <option value="0">Select Category :</option>
+                  <option value="1">Cultural</option>
+                  <option value="2">Pilgrimage</option>
+                  <option value="3">Leisure</option>
+              </select>
+              <input type="text" id="flocation" name="flocation">
+              <img src="../../images/icons/placeholder.png" id="location">
+            </div>
 
-            <input type="text" id="fvp" name="fvp" placeholder="  Sight">
-            <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
-            <input type="text" id="ftime" name="ftime" placeholder="  Time">
-            <select id="fcategory" name="fcategory">
-                <option value="0">Select Category :</option>
-                <option value="1">Cultural</option>
-                <option value="2">Pilgrimage</option>
-                <option value="3">Leisure</option>
-            </select>
-            <input type="text" id="flocation" name="flocation">
-            <img src="../../images/icons/placeholder.png" id="location"><br />
-
-            <input type="text" id="fvp" name="fvp" placeholder="  Sight">
-            <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
-            <input type="text" id="ftime" name="ftime" placeholder="  Time">
-            <select id="fcategory" name="fcategory">
-                <option value="0">Select Category :</option>
-                <option value="1">Cultural</option>
-                <option value="2">Pilgrimage</option>
-                <option value="3">Leisure</option>
-            </select>
-            <input type="text" id="flocation" name="flocation">
-            <img src="../../images/icons/placeholder.png" id="location"><br />
+            <div class="site_details_div">
+              <input type="text" id="fvp" name="fvp" placeholder="  Sight">
+              <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
+              <input type="text" id="ftime" name="ftime" placeholder="  Time">
+              <select id="fcategory" name="fcategory">
+                  <option value="0">Select Category :</option>
+                  <option value="1">Cultural</option>
+                  <option value="2">Pilgrimage</option>
+                  <option value="3">Leisure</option>
+              </select>
+              <input type="text" id="flocation" name="flocation">
+              <img src="../../images/icons/placeholder.png" id="location">
+            </div>
 
 
-
-
-
-
-
-        <input type="button" id="addvpbtn" value="ADD NEW PLACE">
-        <input type="submit" id="submitvpbtn" value="SUBMIT">
+            <!-- This div is for copying this field when click on "Add new place" button-->
+            <!-- <div id="myP" class="myP">
+              <input type="text" id="fvp" name="fvp" placeholder="  Sight">
+              <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
+              <input type="text" id="ftime" name="ftime" placeholder="  Time">
+              <select id="fcategory" name="fcategory">
+                  <option value="0">Select Category :</option>
+                  <option value="1">Cultural</option>
+                  <option value="2">Pilgrimage</option>
+                  <option value="3">Leisure</option>
+              </select>
+              <input type="text" id="flocation" name="flocation">
+              <img src="../../images/icons/placeholder.png" id="location"><br/>
+            </div> -->
+            <!-- <div id="demo"></div> -->
+            <!-- This div is for copying that field to here-->
 
 
     </form>
-
-
+    <input type="button" id="addvpbtn" name="addvpbtn" value="ADD NEW PLACE" onclick="addPlace()">
+    <input type="submit" form="form_add_destination" id="submitvpbtn" name="submitvpbtn" value="SUBMIT">
 </div>
 <!--End form of adding new destination-->
+<!-- </div>
+<div class="site_details_div" id="site_details_div">
+  <input type="text" id="fvp" name="fvp" placeholder="  Sight">
+  <input type="text" id="fprice" name="fprice" placeholder="  Ticket price LKR">
+  <input type="text" id="ftime" name="ftime" placeholder="  Time">
+  <select id="fcategory" name="fcategory">
+      <option value="0">Select Category :</option>
+      <option value="1">Cultural</option>
+      <option value="2">Pilgrimage</option>
+      <option value="3">Leisure</option>
+  </select>
+  <input type="text" id="flocation" name="flocation">
+  <img src="../../images/icons/placeholder.png" id="location">
+</div> -->
+<script type="text/javascript" src="../../script/admin/admin_destinations.js"></script>
+<!--JS to get new row when click on "Add new place" -->
 
-</div>
 
-  <!--<script src="../../JS/filter.js"></script>-->
 </section>
 </body>
 </html>
 <?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
 }else{
   header("location: ../../index.html");
   exit();

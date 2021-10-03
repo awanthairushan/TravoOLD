@@ -21,7 +21,7 @@
             <div class="dropdown">
                 <img class="nav_bar-logo" src="../../images/icons/user.png">
                 <div class="dropdown-content">
-                    <div class="drop-title">USERNAME</div>
+                    <div class="drop-title">',$_SESSION['name'],'</div>
                     <div class="drop-box"><a class="drop-nav" href=../../pages/traveler/traveler_update.php>UPDATE</a></div>
                     <div class="drop-box"><button class="deleteAccount_btn" id="deleteAccount_btn">DELETE ACCOUNT</button></div>                    <div class="drop-box"><a class="drop-nav" href="../../pages/traveler/traveler_feedback.php">GIVE FEEDBACKS</a></div>
                     <div class="drop-box"><a class="drop-nav" href=../../php/unregistered/end-log_out.php>LOG OUT</a></div>

@@ -23,27 +23,32 @@ body {
 
 .content-table {
     border-collapse: collapse;
-    margin: 25px 15px;
-    width: 1100px;
-    max-height: 100px;
+    margin: auto;
+    width: 100%;
     border-radius: 5px 5px 0 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .table {
-    height: 390px;
+    max-height: 70vh;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-left: auto;
-    margin-right: auto;
+    width: 82%;
+    margin: auto;
+}
+.table::-webkit-scrollbar {
+  width: 5px;
 }
 
-.content-table tbody {
-    height: 100px;
-    width: 1250px;
+.table::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
+.table::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
 
 .content-table th {
     background-color: #323534;
@@ -92,7 +97,9 @@ tbody a {
     text-decoration: none;
     color: black;
 }
+.myP {
 
+}
 
 /*Buttons*/
 
@@ -151,9 +158,25 @@ tbody a {
     margin-right: auto;
     margin-bottom: 5%;
     width: 1080px;
-    height: 400px;
+    height: 60vh;
+}
+.form_add_destination {
+  height: 45vh;
+  overflow-y: auto;
 }
 
+.form_add_destination::-webkit-scrollbar {
+  width: 5px;
+}
+
+.form_add_destination::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.form_add_destination::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
 .fdes {
     font-weight: 700;
     margin-left: 30px;
@@ -252,8 +275,9 @@ tbody a {
 
 #location {
     padding-top: 10px;
-    width: 25px;
-    height: 25px;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: bottom;
 }
 
 .heading-one {
@@ -261,7 +285,21 @@ tbody a {
     font-size: 20px;
     font-weight: bold;
 }
-
+/* .mvp {
+  font-weight: 500;
+  margin-left: 30px;
+  margin-left: 30px;
+  margin-right: 1px;
+  margin-top: 25px;
+  border-radius: 10px;
+  border-width: 0ch;
+  height: 30px;
+  width: 189px;
+  background-color: #aaaaaa;
+  border-color: #aaaaaa;
+  color: black;
+  font-size: 15px;
+} */
 
 /*.heading-two {
     font-size: 20px;

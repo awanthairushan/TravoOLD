@@ -1,12 +1,17 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])) {
+    include '../../db/db_connection.php';
+    $temp = $_SESSION['username'];
+    $sqlForSession = "SELECT username FROM admin WHERE username = '$temp'";
+    $resultForSession = mysqli_query($con, $sqlForSession);
+    if (mysqli_num_rows($resultForSession) === 1) {
  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <?php
-    $result = require '../../db/db_admin_traveler.php';
+    $result = require '../../db/admin/admin_traveler.php';
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +26,7 @@
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
     <!--End Navigation bar-->
 
-<!-- .....................modal box for traveler remove...................... -->
+    <!-- .....................modal box for traveler remove...................... -->
     <div class="delete_modal">
       <div class="deleteAccount_confirm_box">
             <h3>Delete Account</h3>
@@ -33,7 +38,6 @@
       </div>
       </div>
 <!-- .....................ebd of modal box for traveler remove...................... -->
-
 
 
 <div class="main">
@@ -64,7 +68,7 @@
                 <th>EMAIL</th>
                 <th>CONTACT NO 1</th>
                 <th>CONTACT NO 2</th>
-                <th>COMPLETED TRIPS</th>
+                <!--<th>PLANNED TRIPS</th>-->
                 <th></th>
             </tr>
         </thead>
@@ -81,121 +85,20 @@
                 <td>".$rows['email']."</td>
                 <td>".$rows['contact1']."</td>
                 <td>".$rows['contact2']."</td>
-                <td></td>
-                <td>
-                <form method='post' action=' '>
-                    <input type='hidden' value='$rows[0]' name=con_id>
-                    <input type='button' id='removebtn' value='REMOVE'>
+               <td>
+                <form method='post' action='../../db/admin/admin_delete_traveler.php'>
+                    <input type='hidden' value='$rows[0]' name=travelerID>
+                    <input type='hidden' value='$rows[6]' name=email>
+                    <input type='submit' id='removebtn' name ='removebtn' class='removebtn' value='REMOVE'>
                 </form>
                 </td>
             </tr>";
         }
             ?>
-            <!--  <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Awantha Irushan</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Viranga Gunarathna</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>Amarabandu Rupasinghe</td>
-                <td>Address</td>
-                <td>amare@yahoo.com</td>
-                <td>011234567</td>
-                <td>Link</td>
-                <td>02</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr> -->
-
         </tbody>
     </table>
 </div>
 <!--End "Registered vehicle" table-->
-
 
 </section>
 <!--JS file for search & filter-->
@@ -204,8 +107,11 @@
 <script type="text/javascript" src="../../script/admin/admin_traveler_remove.js"></script>
 </body>
 </html>
-
 <?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
 }else{
   header("location: ../../index.html");
   exit();

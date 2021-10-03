@@ -1,6 +1,11 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])) {
+    include '../../db/db_connection.php';
+    $temp = $_SESSION['username'];
+    $sqlForSession = "SELECT username FROM admin WHERE username = '$temp'";
+    $resultForSession = mysqli_query($con, $sqlForSession);
+    if (mysqli_num_rows($resultForSession) === 1) {
  ?>
 
 <!DOCTYPE html>
@@ -8,7 +13,7 @@
 <head>
 <?php
 
-$result = require '../../db/db_admin_vehicles.php';
+$result = require '../../db/admin/admin_vehicles.php';
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +56,7 @@ $result = require '../../db/db_admin_vehicles.php';
                 <th></th>
             </tr>
         </thead>
-        
+
         <tbody class="table-body">
         <?php
             while ($rows = mysqli_fetch_array($result)){
@@ -59,7 +64,7 @@ $result = require '../../db/db_admin_vehicles.php';
                     <td>".$rows['row_no']."</td>
                     <td>".$rows['vehicle_no']."</td>
                     <td>".$rows['type']."</td>
-                    <td>".$rows['city']."</td> 
+                    <td>".$rows['city']."</td>
                     <td>
                     <form method='post' action=' '>
                         <input type='hidden' value='$rows[0]' name=con_id>
@@ -71,14 +76,14 @@ $result = require '../../db/db_admin_vehicles.php';
                         <input type='hidden' value='$rows[0]' name=con_id>
                         <input type='button' id='morebtn' value='MORE'>
                     </form>
-                    </td> 
+                    </td>
                     <td>
                     <form method='post' action=' '>
                         <input type='hidden' value='$rows[0]' name=con_id>
                         <input type='button' id='removebtn' value='REMOVE'>
                     </form>
                     </td>
-                    
+
                 </tr>";
             }
             ?>
@@ -232,7 +237,7 @@ $result = require '../../db/db_admin_vehicles.php';
 </div>
 <!--End "Registered vehicle" table-->
 
-  
+
 </section>
 <!--JS file for search & filter-->
     <script src="../../script/admin/admin_filter_vehicles.js"></script>
@@ -240,6 +245,10 @@ $result = require '../../db/db_admin_vehicles.php';
 </body>
 </html>
 <?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
 }else{
   header("location: ../../index.html");
   exit();

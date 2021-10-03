@@ -1,13 +1,17 @@
 <?php
   session_start();
   if(isset($_SESSION['username'])) {
+    include '../../db/db_connection.php';
+    $temp = $_SESSION['username'];
+    $sqlForSession = "SELECT username FROM admin WHERE username = '$temp'";
+    $resultForSession = mysqli_query($con, $sqlForSession);
+    if (mysqli_num_rows($resultForSession) === 1) {
  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <?php
-
-
+    $result = require '../../db/admin/admin_feedback.php';
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +28,18 @@
 <div class="main">
 
     <h1 class="heading-one">FEEDBACKS</h1>
-    <!--Start search option-->
-        <label for="filter" class="filter-labels">SEARCH BY DATE :</label>
-        <input type="text" name="search" id="search" class="search-input" placeholder="YYYY-MM-DD">
-        <td><input type="button" id="morebtn" value="SEARCH"></td>
-    <!--End search option-->
+        <!--Start search option-->
+        <label for="filter" class="filter-labels">SEARCH BY :</label>
+            <select name="filter" id="filter" class="filter-input">
+                <option value="fdate">DATE</option>
+                <option value="feedback">FEEDBACK</option>
+            </select>
+            <input type="text" name="search" id="search" class="search-input" placeholder="Enter Value"><br>
+        <!--End search option-->
 
 <!--Start "Registered vehicle" table-->
 <div class="table">
-    <table class="content-table" id="conn_table" >
+    <table class="content-table" id="feedback_table" >
         <thead>
             <tr>
                 <th>DATE</th>
@@ -41,60 +48,20 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of
-                    the printing and typesetting industry lorem ipsum has been
-                    the industry's standard dummy text ever since the 1500s
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book it has?</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of
-                    the printing and typesetting industry lorem ipsum has been
-                    the industry's standard dummy text ever since the 1500s
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book it has?</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of
-                    the printing and typesetting industry lorem ipsum has been
-                    the industry's standard dummy text ever since the 1500s
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book it has?</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of
-                    the printing and typesetting industry lorem ipsum has been
-                    the industry's standard dummy text ever since the 1500s
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book it has?</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of
-                    the printing and typesetting industry lorem ipsum has been
-                    the industry's standard dummy text ever since the 1500s
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book it has?</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>2021-08-22</td>
-                <td>What is lorem ipsum lorem ipsum is simply dummy text of
-                    the printing and typesetting industry lorem ipsum has been
-                    the industry's standard dummy text ever since the 1500s
-                    when an unknown printer took a galley of type and scrambled
-                    it to make a type specimen book it has?</td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
+        <?php
+            while ($rows = mysqli_fetch_array($result)){
+                echo "<tr>
+                    <td>".$rows['date']."</td>
+                    <td>".$rows['feedback']."</td>
+                    <td>
+                    <form method='post' >
+                        <input type='hidden' value='$rows[0]' name=feedback_id>
+                        <input type='submit' id='removebtn' name ='removebtn' class='removebtn' value='REMOVE'>
+                    </form>
+                    </td>
+                </tr>";
+            }
+          ?>
         </tbody>
     </table>
 </div>
@@ -102,9 +69,15 @@
 
   <!--<script src="../../JS/filter.js"></script>-->
 </section>
+ <!--JS file for search & filter-->
+    <script src="../../script/admin/admin_filter_feedback.js"></script>
 </body>
 </html>
 <?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
 }else{
   header("location: ../../index.html");
   exit();

@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+  session_start();
+  if(isset($_SESSION['username'])) {
+    include '../../db/db_connection.php';
+    $temp = $_SESSION['username'];
+    $sqlForSession = "SELECT travelerID FROM travelers WHERE email = '$temp'";
+    $resultForSession = mysqli_query($con, $sqlForSession);
+    if (mysqli_num_rows($resultForSession) === 1) {
+ ?>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -52,3 +60,13 @@
     <script src="../../script/unregistered/sign_up-traveler.js"></script>
   </body>
 </html>
+<?php
+  } else{
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+    exit();
+  }
+}else{
+  header("location: ../../index.html");
+  exit();
+}
+ ?>
