@@ -24,11 +24,18 @@ if (isset($_POST['submitbtn'])) {
     $ac =  $_POST['ac'];
     $image = $_POST['images'];
 
+    $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
+    $resultForExistedEmail = mysqli_query($con,$sqlForExistedEmail);
+    if (mysqli_num_rows($resultForExistedEmail) > 0) {
+    echo '<script>window.alert("Username is already exist!")</script>';
+    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+      exit();
+    }
+
     $password = password_hash($password, PASSWORD_DEFAULT); // Password hashing
     $sql = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac, vehicle_image) VALUES ('$vehicle_id', '$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac', '$image')";
 
     if (mysqli_query($con, $sql)) {
-        //echo "New record created successfully !";
         header('location: ../../pages/unregistered/log_in.php');
     } else {
         echo "Error: " . $con->error;
