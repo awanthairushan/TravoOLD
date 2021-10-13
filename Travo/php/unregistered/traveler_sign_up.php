@@ -1,10 +1,10 @@
 <?php
+session_start();
 include('../../db/db_connection.php');
 
 
 
 if(isset($_POST['submitbtn'])){
-    echo "Awooo";
     $traveler_id = uniqid("tr_");
     $name=$_POST['name'];
     $email=$_POST['email'];
@@ -15,16 +15,25 @@ if(isset($_POST['submitbtn'])){
     $adressLine2=$_POST['address-line2'];
     $city=$_POST['city'];
 
-    $password = password_hash($password, PASSWORD_DEFAULT);
-    $sql="INSERT INTO travelers VALUES ('$traveler_id', '$name', '$adressLine1', '$adressLine2', '$city', '$email', '$password', '$contact2', '$contact1')";
-    $result=$con->query($sql);
-    if($result){
-        header("Location: ../../pages/unregistered/log_in.php");
-    }else{
-        echo "Error:".$con->error;
-        mysqli_close($con);
-    }
 
+    $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
+    $resultForExistedEmail = mysqli_query($con,$sqlForExistedEmail);
+    if (mysqli_num_rows($resultForExistedEmail) > 0) {
+        $_SESSION['value'] = "username_exist";
+        echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+        exit();
+    } else {
+        $password = password_hash($password, PASSWORD_DEFAULT);
+        $sql="INSERT INTO travelers VALUES ('$traveler_id', '$name', '$adressLine1', '$adressLine2', '$city', '$email', '$password', '$contact2', '$contact1')";
+        $result=$con->query($sql);
+        if($result){
+            header("Location: ../../pages/unregistered/log_in.php");
+        }else{
+            echo "Error:".$con->error;
+            mysqli_close($con);
+        }
+        session_destroy();
+    }
 }
 
 

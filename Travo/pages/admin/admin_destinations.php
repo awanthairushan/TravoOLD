@@ -18,7 +18,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-DESTINATIONS</title>
     <link rel="stylesheet" href="../../css/admin/admin_destinations.css">
-
+<!--abcdef-->
 </head>
 <body>
 <section class="admin-destinations">

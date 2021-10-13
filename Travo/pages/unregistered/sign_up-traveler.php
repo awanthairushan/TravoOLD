@@ -1,3 +1,6 @@
+<?php 
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,6 +10,23 @@
     <!-- defer indicate that script is executed after the document has been parsed -->
   </head>
   <body>
+
+  <?php 
+    if (isset($_SESSION['value'])) {
+      if($_SESSION['value']==="username_exist"){
+        echo '<div class="username_exist_modal">
+        <div class="username_exist_confirm_box">
+              <h3>Username Exist.!</h3>
+              <hr>
+              <p>Someone already has that username. Try another..!</p>
+              <hr>
+              <button type="button" name="okay_btn" class="username_exist_okay_btn" id="username_exist_okay_btn">Okay...!</button>
+        </div>
+        </div>';
+      }
+    }
+  ?>
+
     <section class="sign_up-traveler">
       <?php include '../../repeatable_contents/nav_bar.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar.css'; ?>  </style>
@@ -58,12 +78,16 @@
       <br>
         <span class="error-msg"></span>
       </div>
-      <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="" required><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="#">Terms & Conditions</a> of travo.lk</label>
-      <br><br><br>
+      <div class="tc_div_form_signup_traveler">
+        <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="" required><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="#">Terms & Conditions</a> of travo.lk</label>
+        <br><br>
+      </div>
 
     </form>
     </div>
-
+    <?php 
+      $_SESSION['value'] = "good";
+    ?>
     <br>
     <div class="buttons-sign_up-traveler">
           <input type="button" class="refreshbtn" value="REFRESH" onclick="window.location.reload();">

@@ -1,3 +1,8 @@
+<?php 
+  session_start();
+
+  
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -6,6 +11,24 @@
     <style> <?php include '../../css/unregistered/sign_up-vehicle.css'; ?> </style>
   </head>
   <body>
+  <?php 
+    if (isset($_SESSION['value'])) {
+      if($_SESSION['value']==="username_exist"){
+        echo '<div class="username_exist_modal">
+        <div class="username_exist_confirm_box">
+              <h3>Username Exist.!</h3>
+              <hr>
+              <p>Someone already has that username. Try another..!</p>
+              <hr>
+              <button type="button" name="okay_btn" class="username_exist_okay_btn" id="username_exist_okay_btn">Okay...!</button>
+        </div>
+        </div>';
+      }
+    }
+  ?>
+
+
+
     <section class="sign_up-traveler">
 
       <?php include '../../repeatable_contents/nav_bar.php';?>
@@ -13,7 +36,7 @@
 
     <!--Start form-->
     <div class="box-sign_up-traveler">
-      <form class="form-sign_up-traveler" id="signup_form_vehicle" onsubmit="return validateInput()" action="../../php/unregistered/Signup_vehicle.php" method="POST">
+      <form class="form-sign_up-traveler" id="signup_form_vehicle" action="../../php/unregistered/Signup_vehicle.php" method="POST">
         <br><br>
       <div class="form-control">
         <label for="name">Owner Name</label>
@@ -93,15 +116,18 @@
         <label for="ac">A/C</label>
         <input type="hidden" name="ac" value="no" />
         <input class="ac-checkbox-form-sign_up-traveler" type="checkbox" name="ac" id="ac" value="yes"> <span></span> <br>
-
-        <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="yes" required><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="../../pages/unregistered/tc.php">Terms & Conditions</a> of travo.lk</label>
+        <div class="tc_div_form_signup_traveler">
+          <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="yes" required><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="../../pages/unregistered/tc.php">Terms & Conditions</a> of travo.lk</label>
+        </div>
       </div>
 
 
 
       </form>
     </div>
-
+    <?php 
+      $_SESSION['value'] = "good";
+    ?>
     <div class="buttons-sign_up-traveler">
           <input type="button" class="refreshbtn" value="REFRESH" onclick="window.location.reload();">
           <input type="submit" form="signup_form_vehicle" class="submitbtn" name="submitbtn" id="submitbtn" value="SUBMIT">

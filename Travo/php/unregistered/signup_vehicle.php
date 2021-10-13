@@ -1,5 +1,5 @@
 <?php
-
+    session_start();
 //connecting to the database
 
 include '../../db/db_connection.php';
@@ -27,18 +27,21 @@ if (isset($_POST['submitbtn'])) {
     $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
     $resultForExistedEmail = mysqli_query($con,$sqlForExistedEmail);
     if (mysqli_num_rows($resultForExistedEmail) > 0) {
-    echo '<script>window.alert("Username is already exist!")</script>';
-    echo '<script type="text/javascript">javascript:history.go(-1)</script>';
-      exit();
-    }
-
-    $password = password_hash($password, PASSWORD_DEFAULT); // Password hashing
-    $sql = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac, vehicle_image) VALUES ('$vehicle_id', '$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac', '$image')";
-
-    if (mysqli_query($con, $sql)) {
-        header('location: ../../pages/unregistered/log_in.php');
+        $_SESSION['value'] = "username_exist";
+        //echo '<script>window.alert("Username is already exist!")</script>';
+        echo '<script type="text/javascript">javascript:history.go(-1)</script>';
+        exit();
     } else {
-        echo "Error: " . $con->error;
-        mysqli_close($con);
+        $password = password_hash($password, PASSWORD_DEFAULT); // Password hashing
+        $sql = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac, vehicle_image) VALUES ('$vehicle_id', '$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac', '$image')";
+
+        $result=$con->query($sql);
+        if($result){
+            header("Location: ../../pages/unregistered/log_in.php");
+        }else{
+            echo "Error:".$con->error;
+            mysqli_close($con);
+        }
+        session_destroy();
     }
 }

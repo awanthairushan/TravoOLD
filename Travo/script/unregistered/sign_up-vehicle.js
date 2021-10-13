@@ -34,7 +34,7 @@ form.addEventListener("submit", (event) => {
     }
 
     // Check contact numbers
-    let con_format = /^[0-9]{10}$/;
+    let con_format = /^[0-9]{10}$|^+([0-9]{11})$/;
     for (let i = 0; i < 2; i++) {
         if (fields[i].value != "" && fields[i].value.match(con_format) == null) {
             fields[i].style.border = "2px solid rgba(250, 39, 39, 0.801)";
@@ -79,3 +79,15 @@ form.addEventListener("submit", (event) => {
 
     return validity;
 });
+
+var username_modal = document.querySelector(".username_exist_modal");
+var username_ok_Btn = document.querySelector("#username_exist_okay_btn");
+
+window.onclick = function(e) {
+  if (event.target == username_modal) {
+    username_modal.style.display = "none";
+  }
+}
+username_ok_Btn.addEventListener("click", function(){
+    username_modal.style.display = "none";
+ });

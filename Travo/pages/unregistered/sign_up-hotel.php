@@ -1,3 +1,6 @@
+<?php 
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,6 +10,23 @@
     <!-- This code will run after the body tag  -->
   </head>
   <body>
+
+  <?php 
+    if (isset($_SESSION['value'])) {
+      if($_SESSION['value']==="username_exist"){
+        echo '<div class="username_exist_modal">
+        <div class="username_exist_confirm_box">
+              <h3>Username Exist.!</h3>
+              <hr>
+              <p>Someone already has that username. Try another..!</p>
+              <hr>
+              <button type="button" name="okay_btn" class="username_exist_okay_btn" id="username_exist_okay_btn">Okay...!</button>
+        </div>
+        </div>';
+      }
+    }
+  ?>
+
     <section class="sign_up-traveler">
       <?php include '../../repeatable_contents/nav_bar.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar.css'; ?>  </style>
@@ -169,13 +189,16 @@
                </tr>
              </table>
              <br>
-  <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="" required>
-  <label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="#">Terms & Conditions</a> of travo.lk</label>
-
+          <div class="tc_div_form_signup_traveler">
+             <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="" required>
+              <label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="#">Terms & Conditions</a> of travo.lk</label>
+</div>
   </div>
       </form>
     </div>
-    
+    <?php 
+      $_SESSION['value'] = "good";
+    ?>
     <div class="buttons-sign_up-traveler">
       <input type="button" class="refreshbtn" value="REFRESH" onclick="window.location.reload();">
       <input type="submit" form="sign_up_form-hotel" class="submitbtn" value="SUBMIT" name="submitbtn" id="submitbtn">
