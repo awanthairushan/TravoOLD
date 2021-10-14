@@ -4,22 +4,23 @@ include("../../db/db_connection.php");
 
 
 if (isset($_POST['submitbtn'])) {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $contact1 = $_POST['contact1'];
-    $contact2 = $_POST['contact2'];
-    $password1 = $_POST['password'];
-    $line1 = $_POST['address-line1'];
-    $line2 = $_POST['address-line2'];
-    $city = $_POST['city'];
-    $decription = $_POST['description'];
-    $location = $_POST['location'];
-    $rep_name = $_POST['rep_name'];
-    $rep_email = $_POST['rep_email'];
-    $rep_contact1 = $_POST['rep_contact1'];
-    $rep_contact2 = $_POST['rep_contact2'];
+    $name = mysqli_real_escape_string($con,$_POST['name']);
+    $email = mysqli_real_escape_string($con,$_POST['email']);
+    $contact1 = mysqli_real_escape_string($con,$_POST['contact1']);
+    $contact2 = mysqli_real_escape_string($con,$_POST['contact2']);
+    $password1 = mysqli_real_escape_string($con,$_POST['password']);
+    $line1 = mysqli_real_escape_string($con,$_POST['address-line1']);
+    $line2 = mysqli_real_escape_string($con,$_POST['address-line2']);
+    $city = mysqli_real_escape_string($con,$_POST['city']);
+    $decription = mysqli_real_escape_string($con,$_POST['description']);
+    $location = mysqli_real_escape_string($con,$_POST['location']);
+    $rep_name = mysqli_real_escape_string($con,$_POST['rep_name']);
+    $rep_email = mysqli_real_escape_string($con,$_POST['rep_email']);
+    $rep_contact1 = mysqli_real_escape_string($con,$_POST['rep_contact1']);
+    $rep_contact2 = mysqli_real_escape_string($con,$_POST['rep_contact2']);
     $hotel_type = $_POST['hotel_type-type'];
     $images = $_POST['images'];
+
 
 
     $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";

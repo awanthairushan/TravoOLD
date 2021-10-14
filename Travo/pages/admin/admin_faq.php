@@ -55,7 +55,7 @@
                     </form>
                     </td>
                     <td class='tdbtn'>
-                    <form method='post' >
+                    <form method='post' action='../../db/admin/admin_delete_faq.php'>
                         <input type='hidden' value='$rows[0]' name=feedback_id>
                         <input type='submit' id='removebtn' name ='removebtn' class='removebtn' value='REMOVE'>
                     </form>

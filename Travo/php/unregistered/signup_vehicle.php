@@ -8,19 +8,19 @@ include '../../db/db_connection.php';
 
 if (isset($_POST['submitbtn'])) {
     $vehicle_id = uniqid("veh_");
-    $owner_name = $_POST['owner_name'];
-    $email = $_POST['email'];
-    $contact1 = $_POST['contact1'];
-    $contact2 = $_POST['contact2'];
-    $password = $_POST['password1'];
-    $city = $_POST['city'];
-    $vehicle_no = $_POST['vehicle_no'];
-    $type = $_POST['type'];
-    $no_of_passengers = $_POST['no_of_passengers'];
-    $price_for_1km =  $_POST['price_for_1km'];
-    $price_for_day = $_POST['price_for_day'];
+    $owner_name = mysqli_real_escape_string($con,$_POST['owner_name']);
+    $email = mysqli_real_escape_string($con,$_POST['email']);
+    $contact1 = mysqli_real_escape_string($con,$_POST['contact1']);
+    $contact2 = mysqli_real_escape_string($con,$_POST['contact2']);
+    $password = mysqli_real_escape_string($con,$_POST['password1']);
+    $city = mysqli_real_escape_string($con,$_POST['city']);
+    $vehicle_no = mysqli_real_escape_string($con,$_POST['vehicle_no']);
+    $type = mysqli_real_escape_string($con,$_POST['type']);
+    $no_of_passengers = mysqli_real_escape_string($con,$_POST['no_of_passengers']);
+    $price_for_1km =  mysqli_real_escape_string($con,$_POST['price_for_1km']);
+    $price_for_day = mysqli_real_escape_string($con,$_POST['price_for_day']);
     $driver_type = $_POST['driver_type'];
-    $driver_charge =  $_POST['driver_charge'];
+    $driver_charge =  mysqli_real_escape_string($con,$_POST['driver_charge']);
     $ac =  $_POST['ac'];
     $image = $_POST['images'];
 
