@@ -8,8 +8,8 @@ include '../../db/db_connection.php';
 
 if (isset($_POST['submitbtn'])) {
     $faq_id = uniqid("faq_");
-    $question = $_POST['fquestion'];
-    $answer = $_POST['fanswer'];
+    $question = mysqli_real_escape_string($con, $_POST['fquestion']);
+    $answer = mysqli_real_escape_string($con, $_POST['fanswer']);
     
     $sql = "INSERT INTO faq (faq_id, question, answer) VALUES ('$faq_id', '$question', '$answer')";
 

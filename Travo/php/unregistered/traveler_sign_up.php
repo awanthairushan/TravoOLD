@@ -6,14 +6,14 @@ include('../../db/db_connection.php');
 
 if(isset($_POST['submitbtn'])){
     $traveler_id = uniqid("tr_");
-    $name=$_POST['name'];
-    $email=$_POST['email'];
-    $contact2=$_POST['contact2'];
-    $contact1=$_POST['contact1'];
-    $password=$_POST['password'];
-    $adressLine1=$_POST['address-line1'];
-    $adressLine2=$_POST['address-line2'];
-    $city=$_POST['city'];
+    $name=mysqli_real_escape_string($con,$_POST['name']);
+    $email=mysqli_real_escape_string($con,$_POST['email']);
+    $contact2=mysqli_real_escape_string($con,$_POST['contact2']);
+    $contact1=mysqli_real_escape_string($con,$_POST['contact1']);
+    $password=mysqli_real_escape_string($con,$_POST['password']);
+    $adressLine1=mysqli_real_escape_string($con,$_POST['address-line1']);
+    $adressLine2=mysqli_real_escape_string($con,$_POST['address-line2']);
+    $city=mysqli_real_escape_string($con,$_POST['city']);
 
 
     $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
@@ -35,8 +35,4 @@ if(isset($_POST['submitbtn'])){
         session_destroy();
     }
 }
-
-
-
-
 ?>
