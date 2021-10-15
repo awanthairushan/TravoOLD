@@ -38,11 +38,11 @@
                         <div class="next" onclick="plusSlides(1)"></div>
                     </div>
                     <div class="cols2">
-                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip2';" id="selecttrip">READ MORE</button></div>
 
-                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip3';" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip4';" id="selecttrip">READ MORE</button></div>
                     </div>
                 </div>
 
@@ -53,11 +53,11 @@
                         <div class="next" onclick="plusSlides(1)"></div>
                     </div>
                     <div class="cols2">
-                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip1';" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip2';" id="selecttrip">READ MORE</button></div>
 
-                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'"id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'"id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip3';" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip4';" id="selecttrip">READ MORE</button></div>
                     </div>
                 </div>
 
@@ -68,11 +68,11 @@
                         <div class="next" onclick="plusSlides(1)"></div>
                     </div>
                     <div class="cols2">
-                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip1';" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip2';" id="selecttrip">READ MORE</button></div>
 
-                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip3';" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Destination 1</dt> <dt>Destination 2</dt> <dt>Destination 3</dt> <dt>Date</dt></dl><button onclick="window.location.href='#trip4';" id="selecttrip">READ MORE</button></div>
                     </div>
                 </div>
 

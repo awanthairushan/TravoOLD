@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title></title>
     <style> <?php include '../../css/unregistered/feedback.css'; ?> </style>
+    <?php
+      $result = require '../../db/traveler/traveler_feedbacklist.php';
+    ?>
   </head>
   <body>
     <section class="feedback">
@@ -20,74 +23,15 @@
           </tr>
         </thead>
         <tbody class="feedback_tbody-feedback">
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 1</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 2</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 3</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 4</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 5</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 6</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 7</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 8</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 9</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 10</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 11</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 12</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 13</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 14</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 15</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 16</td>
-          </tr>
-          <tr>
-            <td class="date-feedback">YYYY-MM-DD</td>
-            <td class="feedback-feedback">feedback 17</td>
-          </tr>
+        <tbody class="feedback_tbody-feedback">
+          <?php
+            while ($rows = mysqli_fetch_array($result)){
+              echo "<tr>
+                <td class='date-feedback'>".$rows['date']."</td>
+                <td class='feedback-feedback'>".$rows['feedback']."</td>
+              </tr>";
+            }
+          ?>
         </tbody>
       </table>
     </div>

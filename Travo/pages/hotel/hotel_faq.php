@@ -13,6 +13,9 @@
     <meta charset="utf-8">
     <title></title>
     <style> <?php include '../../css/hotel/hotel_faq.css'; ?> </style>
+    <?php
+      $result = require '../../db/all/all_faq.php';
+    ?>
   </head>
   <body>
     <section class="faq">
@@ -23,66 +26,16 @@
     <div class="question_and_answers-faq">
       <br>
       <table class="faq_table-faq">
-        <tr>
-          <td class="question-faq">question 1</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 1</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 2</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 2</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 3</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 3</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 4</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 4</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 5</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 5</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 6</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 6</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 7</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 7</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 8</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 8</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 9</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 9</td>
-        </tr>
-        <tr>
-          <td class="question-faq">question 10</td>
-        </tr>
-        <tr>
-          <td class="answer-faq">Answer 10</td>
-        </tr>
+      <?php
+          while ($rows = mysqli_fetch_array($result)){
+              echo "<tr>
+                <td class='question-faq'>".$rows['question']."</td>
+              </tr>
+            <tr>
+              <td class='answer-faq'>".$rows['answer']."</td>
+            </tr>";
+          }
+        ?>
       </table>
     </div>
     </section>

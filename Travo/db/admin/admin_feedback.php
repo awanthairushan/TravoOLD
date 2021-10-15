@@ -2,7 +2,7 @@
 
     $con = require 'db_connection.php';
 
-    $query = "SELECT date,feedback FROM feedback";
+    $query = "SELECT feedback_id,date,feedback FROM feedback";
 
     $result = mysqli_query($con, $query);
 

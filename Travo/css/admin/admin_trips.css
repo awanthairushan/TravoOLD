@@ -187,60 +187,7 @@ tbody a {
     font-weight: bold;
 }
 
-/* ....................modal box for cutomer details............................... */
-.more_traveler_details_modal {
-    display: none;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    position: fixed;
-    background-color: rgba(0,0,0,0.3);
-  }
-.more_traveler_details_modal_box{
-    height: 35vh;
-    width: 45%;
-    background-color: rgba(255,255,255,1);
-    margin: auto;
-    z-index: 1;
-    position: fixed;
-    left: 30%;
-    top: 30vh;
-  }
-.more_traveler_details_modal_box table{
-    width: 100%;
-    margin: 0.5rem auto auto auto;
-    text-align: left;
-  }
-.more_traveler_details_modal_box td{
-    color: black;
-    line-height: 1.5rem;
-    padding-left: 1rem;
-  }
-  .more_traveler_details_modal_box td:first-child{
-    font-weight: bold;
-    width: 5%;
-  }
-.more_traveler_details_modal_box h3,p {
-      margin-left: 1rem;
-      color: #000000;
-      padding: 1rem;
-  }
-.more_traveler_cancel_btn {
-    width: 20%;
-    margin: auto 0.7rem auto auto;
-    height: 2rem;
-    border-radius: 0.2rem;
-    border-width: 0px;
-    background-color: rgb(41, 180, 161);
-    font-weight: bold;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    color: #ffffff;
-    cursor: pointer;
-    box-shadow: 1px 2px #888888;
-    float: right;
-    }
-  /* ........................end of modal box for cutomer details.......... */
+
 /*.heading-two {
     font-size: 20px;
     font-weight: bold;

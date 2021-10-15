@@ -176,7 +176,7 @@ tbody a {
 }
 
 
-/* ....................modal Box for traveler remove................................ */
+/* ....................modal Box................................ */
 .delete_modal {
   display: none;
   width: 100%;
@@ -231,7 +231,7 @@ tbody a {
   box-shadow: 1px 2px #888888;
   float: right;
 }
-/* ........................end of model of travelers remove........... */
+
 
 /*.heading-one {
     font-size: 30px;

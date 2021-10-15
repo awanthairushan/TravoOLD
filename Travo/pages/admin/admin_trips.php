@@ -27,35 +27,6 @@
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
     <!--End Navigation bar-->
 
-    <!-- .....................modal box for cutomer details ...................... -->
-    <div class="more_traveler_details_modal">
-      <div class="more_traveler_details_modal_box">
-          <table>
-              <tr>
-                  <td>Traveler ID</td>
-                  <td>Sample Traveler ID</td>
-              </tr>
-              <tr>
-                  <td>Name</td>
-                  <td>sample name</td>
-              </tr>
-              <tr>
-                  <td>Email</td>
-                  <td>sample email</td>
-              </tr>
-              <tr>
-                  <td>Contact</td>
-                  <td>sample contacts</td>
-              </tr>
-              <tr>
-                  <td>Address</td>
-                  <td>sample Address line 1 <br> sample Address line 2 <br> sample Address line 3 </td>
-              </tr>
-          </table>
-            <button type="button" name="more_traveler_cancel_btn" class="more_traveler_cancel_btn" id="more_traveler_cancel_btn">CANCEL</button>
-      </div>
-      </div>
-<!-- .....................ebd of modal box for cutomer details..................... -->
 <div class="middle">
     <!--Start "New Trips" table-->
     <h1 class="heading-one">NEW TRIPS</h1>
@@ -78,6 +49,7 @@
                     <th>PICKUP LOCATION</th>
                     <th>TRIP DETAILS</th>
                     <th>CUSTOMER DETAILS</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -86,40 +58,45 @@
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="PAID"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="PAID"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="PAID"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="PAID"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
+                    <td><input type="button" id="morebtn" value="PAID"></td>
                 </tr>
             </tbody>
         </table>
@@ -157,7 +134,7 @@
                     <td>2021-08-20</td>
                     <td>Location</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
                 <tr>
@@ -166,7 +143,7 @@
                     <td>2021-08-20</td>
                     <td>Location</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
                 <tr>
@@ -175,7 +152,7 @@
                     <td>2021-08-20</td>
                     <td>Location</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
                 <tr>
@@ -184,7 +161,7 @@
                     <td>2021-08-20</td>
                     <td>Location</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
                 <tr>
@@ -193,7 +170,7 @@
                     <td>2021-08-20</td>
                     <td>Location</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
             </tbody>
@@ -229,35 +206,35 @@
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE"class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                 </tr>
                 <tr>
                     <td>12345</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="morebtn" value="MORE"></td>
                 </tr>
             </tbody>
         </table>
@@ -267,8 +244,6 @@
 
 <!--<script src="../../JS/filter.js"></script>-->
 </section>
- <!--JS file for cutomer details-->
- <script src="../../script/admin/admin_trips.js"></script>
 </body>
 </html>
 <?php
