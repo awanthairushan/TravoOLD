@@ -50,13 +50,13 @@
                     <td class='tdtxt'>".$rows['answer']."</td>
                     <td class='tdbtn'>
                     <form method='post' >
-                        <input type='hidden' value='$rows[0]' name=feedback_id>
+                        <input type='hidden' value='$rows[0]' name=faq_id>
                         <input type='submit' id='removebtn' name ='removebtn' class='removebtn' value='EDIT'>
                     </form>
                     </td>
                     <td class='tdbtn'>
                     <form method='post' action='../../db/admin/admin_delete_faq.php'>
-                        <input type='hidden' value='$rows[0]' name=feedback_id>
+                        <input type='hidden' value='$rows[0]' name=faq_id>
                         <input type='submit' id='removebtn' name ='removebtn' class='removebtn' value='REMOVE'>
                     </form>
                     </td>

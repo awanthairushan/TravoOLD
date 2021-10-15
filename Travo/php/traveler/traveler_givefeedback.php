@@ -8,7 +8,7 @@ include '../../db/db_connection.php';
 
 if (isset($_POST['submitbtn'])) {
     $feedback_id = uniqid("fee_");
-    $feedback = $_POST['response'];
+    $feedback = mysqli_real_escape_string($con,$_POST['response']);
     
     $sql = "INSERT INTO feedback (feedback_id, date, feedback) VALUES ('$feedback_id', curdate(), '$feedback')";
 

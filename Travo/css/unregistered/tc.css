@@ -1,37 +1,67 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
+
 .faq {
-  background-image: url("../../images/background_images/unregisteredbg.jpg");
-  background-size: cover;
-  height: 100vh;
-  margin: 0px;
+    background-image: url("../../images/background_images/unregisteredbg.jpg");
+    background-size: cover;
+    height: 100vh;
+    margin: 0px;
 }
+
 .for_manage_height {
     height: 10vh;
 }
+
 .question_and_answers-faq {
-  background-color: rgba(255,255,255,0.4);
-  height: 80vh;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
+
 .question_and_answers-faq ol {
-  width: 85%;
-  text-align: justify;
-  margin: auto;
+    width: 85%;
+    text-align: justify;
+    margin: auto;
+    max-height: 65vh;
 }
+
 .question_and_answers-faq::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
+
 .question_and_answers-faq::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
+
 .question_and_answers-faq::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+.question_and_answers-faq h1 {
+    margin: auto;
+}
+
+.question_and_answers-faq h2 {
+    margin: auto;
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+}
+
+.question_and_answers-faq p {
+    line-height: 1.5rem;
+    margin-top: 0;
+}
+
+.copywright {
+    font-weight: bold;
+    display: block;
+    margin: auto;
 }

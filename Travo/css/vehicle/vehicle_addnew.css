@@ -4,7 +4,7 @@ body {
 }
 
 .sign_up-traveler {
-    background-image: url("../../images/background_images/travelerbg.jpg");
+    background-image: url("../../images/background_images/vehiclebg.jpg");
     background-size: cover;
     height: 100vh;
     margin: 0px;
@@ -12,20 +12,20 @@ body {
 
 .box-sign_up-traveler {
     background-color: rgba(255, 255, 255, 0.4);
-    height: 70vh;
+    height: 60vh;
     width: 90%;
-    margin: auto auto 1rem auto;
+    margin: 0.5rem auto 0.5rem auto;
 }
 
 .form-sign_up-traveler {
     width: 80%;
-    margin: 0.8% auto 0.8% auto;
+    margin: 2rem auto auto auto;
     height: 70vh;
 }
 
 .form-sign_up-traveler label {
     max-width: 30%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     display: block;
     float: left;
 }
@@ -36,7 +36,7 @@ body {
     border-width: thin;
     border-color: #000000;
     width: 70%;
-    height: 1.3rem;
+    height: 1.1rem;
     margin: 0px;
     float: right;
 }
@@ -59,17 +59,37 @@ body {
     border-color: #000000;
     height: 1.3rem;
     width: 1.3rem;
-    margin: 1% auto auto 25%;
+    margin: auto auto auto 25%;
     float: left;
 }
 
 #tc-label-form-sign_up-traveler {
     width: 70%;
     max-width: 70%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     float: right;
     display: block;
-    margin: 1% auto auto auto;
+    margin: auto auto auto auto;
+}
+
+.drop-down-form-sign_up-traveler {
+    background-color: rgba(0, 0, 0, 0);
+    border-style: solid;
+    border-width: thin;
+    border-color: #000000;
+    width: 34.8%;
+    height: 1.55rem;
+    margin: 0px 0px 0px 1.25%;
+    float: right;
+}
+
+.ac-checkbox-form-sign_up-traveler {
+    border-style: solid;
+    border-width: thin;
+    border-color: #000000;
+    height: 1.3rem;
+    width: 1.3rem;
+    margin: auto auto auto 25.4%;
 }
 
 .buttons-sign_up-traveler {
@@ -109,27 +129,6 @@ body {
     box-shadow: 1px 2px #888888;
 }
 
-
-/*Tooltip in password*/
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 400px;
-    background-color: black;
-    color: white;
-    font-size: small;
-    text-align: left;
-    padding: 5px 3px;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 1;
-    transition: opacity 1s;
-}
-
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+.form_input {
+    margin-bottom: 1rem;
 }
