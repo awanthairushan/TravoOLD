@@ -26,6 +26,20 @@ if(isset($_SESSION['username'])) {
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
     <!--End Navigation bar-->
 
+<!-- .....................modal box for traveler remove...................... -->
+    <div class="remove_modal">
+      <div class="remove_modal_box">
+            <h3>Remove hotel</h3>
+            <hr>
+            <p>There is no recovery option. Are you sure you want to remove this hotel ?</p>
+            <hr>
+            <button type="button" name="remove_confirm_btn" class="remove_confirm_btn" id="remove_confirm_btn">REMOVE</button>
+            <button type="button" name="remove_cancel_btn" class="remove_cancel_btn" id="remove_cancel_btn">CANCEL</button>
+      </div>
+      </div>
+<!-- .....................ebd of modal box for traveler remove...................... -->
+
+
 <div class="middle">
     <!--Start "New Hotels" table-->
     <h1 class="heading-one">NEW HOTELS</h1>
@@ -44,10 +58,8 @@ if(isset($_SESSION['username'])) {
                 <tr>
                     <th>NO</th>
                     <th>HOTEL NAME</th>
-                    <th>CITY</th>
-                    <th>LOCATION</th>
-                    <th>HOTEL DETAILS</th>
-                    <th>REPRESENTATIVE DETAILS</th>
+                    <th>ADDRESS</th>
+                    <th></th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -58,30 +70,23 @@ if(isset($_SESSION['username'])) {
                 echo "<tr>
                     <td>".$rows['row_no']."</td>
                     <td>".$rows['name']."</td>
-                    <td>".$rows['city']."</td>
-                    <td><a href>".$rows['location']."</a></td>
+                    <td>".$rows['address_line1'].$rows['address_line2'].$rows['city']."</td>
                     <td>
                     <form method='post' action=' '>
                         <input type='hidden' value='$rows[0]' name=con_id>
-                        <input type='button' id='morebtn' value='MORE'>
-                    </form>
-                    </td>
-                    <td>
-                    <form method='post' action=' '>
-                        <input type='hidden' value='$rows[0]' name=con_id>
-                        <input type='button' id='morebtn' value='MORE'>
+                        <input type='button' id='morebtn' value='MORE' onclick=\"window.location.href='admin_hotels_more.php'\";>
                     </form>
                     </td>
                     <td>
                     <form method='post' action=' '>
                     <input type='hidden' value='$rows[0]' name=con_id>
-                    <input type='button' id='morebtn' value='ACCEPT'>
+                    <input type='button' class='hotel_morebtn' id='morebtn' value='ACCEPT'>
                     </form>
                     </td>
                     <td>
                     <form method='post' action=' '>
                         <input type='hidden' value='$rows[0]' name=con_id>
-                        <input type='button' id='removebtn' value='DECLINE'>
+                        <input type='button' id='decline_hotel_btn' class='remove_hotel_btn' value='DECLINE'>
                     </form>
                     </td>
 
@@ -150,10 +155,8 @@ if(isset($_SESSION['username'])) {
             <tr>
                     <th>NO</th>
                     <th>HOTEL NAME</th>
-                    <th>CITY</th>
-                    <th>LOCATION</th>
-                    <th>HOTEL DETAILS</th>
-                    <th>REPRESENTATIVE DETAILS</th>
+                    <th>ADDRESS</th>
+                    <th>DETAILS</th>
                     <th></th>
                 </tr>
             </thead>
@@ -161,11 +164,9 @@ if(isset($_SESSION['username'])) {
                 <tr>
                 <td>NO</td>
                 <td>Hotel Name</td>
-                <td>CITY</td>
-                <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="removebtn" value="REMOVE"></td>
+                <td>Address</td>
+                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='admin_hotels_more.php'";></td>
+                <td><input type="button" id="remove_hotel_btn" class="remove_hotel_btn" value="REMOVE"></td>
                 </tr>
                 <tr>
                 <!--<td>Hotel Name</td>
@@ -217,5 +218,7 @@ if(isset($_SESSION['username'])) {
  ?>
  <!--JS file for search & filter-->
     <script src="../../script/admin/admin_filter_hotels.js"></script>
+ <!--JS file for remove hotel-->
+ <script src="../../script/admin/admin_hotels.js"></script>
 </body>
 </html>

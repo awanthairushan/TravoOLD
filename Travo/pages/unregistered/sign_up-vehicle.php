@@ -11,7 +11,7 @@
     <style> <?php include '../../css/unregistered/sign_up-vehicle.css'; ?> </style>
   </head>
   <body>
-  <?php 
+ <?php 
     if (isset($_SESSION['value'])) {
       if($_SESSION['value']==="username_exist"){
         echo '<div class="username_exist_modal">

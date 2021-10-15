@@ -9,7 +9,7 @@
  ?>
 <html>
     <head>
-        <style> <?php include '../../css/traveler/traveler_vehicle.css'; ?> </style>
+        <style> <?php include '../../css/vehicle/vehicle_view_vehicle.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -19,7 +19,7 @@
             <script type="text/javascript" src="../../repeatable_contents/nav_bar_vehicle.js"></script>
             <br>
             <div class="content">
-                <form>
+                <!-- <form>
                   <table class="filter_table">
                     <tr>
                       <td>
@@ -77,7 +77,7 @@
                       </td>
                     </tr>
                   </table>
-            </form>
+            </form> -->
             <div class="vehicledetails_div">
               <table class="vehicledetails">
                   <!-- vehicle 1 -->
