@@ -57,11 +57,12 @@
           </select><br>
           <br>
           <label for="ac">A/C</label><input class="ac-checkbox-form-sign_up-traveler" type="checkbox" name="ac" id="ac" value="yes"> <span></span> <br>
-           </form>
+          <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="yes"><label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="#">Terms & Conditions</a> of travo.lk</label>
+        </form>
       </div>
       <div class="buttons-sign_up-traveler">
           <input type="button" class="refreshbtn" value="REFRESH" onclick="window.location.reload();">
-          <input type="submit" form="signup_form_vehicle" class="submitbtn" name="submitbtn" id="submitbtn" value="UPDATE">
+          <input type="submit" form="signup_form_vehicle" class="submitbtn" name="submitbtn" id="submitbtn" value="SUBMIT">
       </div>
     </section>
     <section id="contact_us-section">

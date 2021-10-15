@@ -36,27 +36,36 @@
       <br><br>
 
       <div class="form-control">
-      <label for="name">Hotel Name</label> <input class="text-form-sign_up-traveler" type="text" name="name" id="name" value="" ><br>
-      <br>
-      <span class="error-msg"></span>
-      </div>
-
-      <div class="form-control">
-      <label for="hotel_type">Hotel Type</label><select class="drop-down-form-sign_up-traveler" name="hotel_type-type" id="hotel_type-type">
-          <option value="Deluxe">Deluxe</option>
-          <option value="Luxury">Luxury</option>
-          <option value="Superior">Superior</option>
-          <option value="Standard">Standard</option>
-          </select><br>
-          <br>
+        <label for="name">Name</label> 
+        <input class="text-form-sign_up-traveler" type="text" name="name" id="name" value=""  ></br><br>
         <span class="error-msg"></span>
       </div>
 
-      <label for="regNO">Registration Number</label> <input class="text-form-sign_up-traveler" type="text" name="regNO" id="regNO" value=""><br>
-      <br>
+      <div class="form-control">
+      <label for="email">Email Address</label> 
+        <input class="text-form-sign_up-traveler" type="text" name="email" id="email" value=""  ></br>
+        <br>
+        <span class="error-msg"></span>
+      </div>
 
-      <label for="licenceNo">Licence Number</label> <input class="text-form-sign_up-traveler" type="text" name="licenceNo" id="licenceNo" value=""><br>
-      <br>
+      <div class="form-control">
+      <label for="contact">Contact Number</label> 
+        <input class="text-small-form-sign_up-traveler" type="text" name="contact2" id="contact2" value="" placeholder=" Contact Number 2">
+        <input class="text-small-form-sign_up-traveler" type="text" name="contact1" id="contact1" value=""  placeholder=" Contact Number 1"></br>
+        <br>
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="form-control">
+      <label for="password">Password</label> 
+        <input class="text-small-form-sign_up-traveler" type="password" name="retype-password" id="retype-password" value= "" placeholder=" Confirm Password">
+        <div class="tooltip">
+        <span class="tooltiptext">*Please enter a password between 8 to 15 characters which contains at least one uppercase letter and one special character</span>
+        <input class="text-small-form-sign_up-traveler" type="password" name="password" id="password" value="" ><br><br><br>
+        </div>
+        <br>
+        <span class="error-msg"></span>
+      </div>
 
       <div class="form-control">
       <label for="adress">Address</label> 
@@ -70,6 +79,14 @@
       </div>
 
       <div class="form-control">
+      <label for="description">Description</label>
+      <textarea class="description-form-hotel" id="description" name="description" rows="8" cols="80" ></textarea ></br>
+      <br><br><br>
+        <span class="error-msg"></span>
+      </div>
+
+
+      <div class="form-control">
       <label for="location">Location</label>
       <div class="tooltip">
       <span class="tooltiptext">*Please get the google map URL of your location and paste it here</span>
@@ -79,61 +96,9 @@
         <span class="error-msg"></span>
       </div>
 
-      <div class="form-control">
-      <label for="contact">Contact Number</label> 
-        <input class="text-small-form-sign_up-traveler" type="text" name="contact2" id="contact2" value="" placeholder=" Contact Number 2">
-        <input class="text-small-form-sign_up-traveler" type="text" name="contact1" id="contact1" value=""  placeholder=" Contact Number 1"></br>
-        <br>
-        <span class="error-msg"></span>
-      </div>
 
       <div class="form-control">
-      <label for="email">Email Address</label> 
-        <input class="text-form-sign_up-traveler" type="text" name="email" id="email" value=""  ></br>
-        <br>
-        <span class="error-msg"></span>
-      </div>
-
-      <div class="form-control">
-      <label for="password">Password</label> 
-        <input class="text-small-form-sign_up-traveler" type="password" name="retype-password" id="retype-password" value= "" placeholder=" Confirm Password">
-        <div class="tooltip">
-        <span class="tooltiptext">*Please enter a password between 8 to 15 characters which contains at least one uppercase letter and one special character</span>
-        <input class="text-small-form-sign_up-traveler" type="password" name="password" id="password" value="" ><br><br>
-        </div>
-        <span class="error-msg"></span>
-      </div>
-
-      <div class="form-control">
-      <label for="description">Description</label>
-      <textarea class="description-form-hotel" id="description" name="description" rows="8" cols="80" ></textarea ></br>
-      <br><br><br>
-        <span class="error-msg"></span>
-      </div>
-
-      <div class="form-control">
-      <label for="web">Website URL</label> 
-      <div class="tooltip">
-      <span class="tooltiptext">*Please enter your website URL if a website is available</span>
-      <input class="text-form-sign_up-traveler" type="text" name="web" id="web" value=""  ></br>
-      <br>
-      </div>
-        <span class="error-msg"></span>
-      </div>
-
-      <div class="form-control">
-      <label for="images">Input Images</label> 
-      <input type="file" class="images-small-form-sign_up-traveler" name="images" id="images" multiple="" ></br>
-      <br>
-        <span class="error-msg"></span>
-      </div>
-
-
-
-
-
-      <div class="form-control">
-      <label for="rep_name">Representative's Name</label> 
+      <label for="rep_name">Representative Name</label> 
       <input class="text-form-sign_up-traveler" type="text" name="rep_name" id="rep_name" value="" ></br>
       <br>
         <span class="error-msg"></span>
@@ -156,10 +121,24 @@
       </div>
 
 
+      <div class="form-control">
+      <label for="hotel_type">Hotel type</label>
+      <select class="drop-down-form-sign_up-traveler" name="hotel_type-type" id="hotel_type-type">
+      <option value="">Select Hotel Type</option>
+      <option value="Standerd">Standard</option>
+      <option value="Luxury">Luxury</option>
+      </select ><br>
+      <br>
+        <span class="error-msg"></span>
+      </div>
 
 
-
-
+      <div class="form-control">
+      <label for="images">Input Images</label> 
+      <input type="file" class="images-small-form-sign_up-traveler" name="images" id="images" multiple="" ></br>
+      <br>
+        <span class="error-msg"></span>
+      </div>
 
       <table class="room_details-form-sign_up-hotel">
                <tr>
@@ -212,7 +191,7 @@
              <br>
           <div class="tc_div_form_signup_traveler">
              <input class="tc-checkbox-form-sign_up-traveler" type="checkbox" name="tc" id="tc" value="" required>
-              <label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="#">Terms & Conditions</a> of travo.lk</label>
+              <label id="tc-label-form-sign_up-traveler" for="tc">I agree to all the <a href="../../pages/unregistered/tc.php">Terms & Conditions</a> of travo.lk</label>
 </div>
   </div>
       </form>

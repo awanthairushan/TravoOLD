@@ -14,7 +14,7 @@ const fields4 = document.getElementById("hotel_type-type");
 const fields5 = document.getElementsByClassName("number-form-sign_up-traveler");
 
 //Create an array to get all inputs with the class name = "number-form-sign_up-traveler"
-const fields6 = document.getElementsByClassName("price-form-sign_up-traveler");
+const fields6 = document.getElementsByClassName("price-form-sign_up-traveler" );
 
 //Get form submit button
 submitbtn = document.getElementById("submitbtn");
@@ -46,35 +46,35 @@ form.addEventListener("submit", (event) => {
     }
 
     if (fields3.value == "") {
-        fields3.style.border = "2px solid rgb(228, 29, 22)";
-        fields3.style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        //fields3.placeholder = "This Field is Compulsory!";
-        validity = false;
+      fields3.style.border = "2px solid rgb(228, 29, 22)";
+      fields3.style.backgroundColor = "rgba(238, 156, 156, 0.788)";
+      //fields3.placeholder = "This Field is Compulsory!";
+      validity = false;
     }
 
     if (fields4.value == "") {
-        fields4.style.border = "2px solid rgb(228, 29, 22)";
-        fields4.style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        //fields3.placeholder = "This Field is Compulsory!";
-        validity = false;
+      fields4.style.border = "2px solid rgb(228, 29, 22)";
+      fields4.style.backgroundColor = "rgba(238, 156, 156, 0.788)";
+      //fields3.placeholder = "This Field is Compulsory!";
+      validity = false;
     }
 
     for (let i = 0; i < fields5.length; i++) {
-        if (fields5[i].value == "") {
-            fields5[i].style.border = "2px solid rgb(228, 29, 22)";
-            fields5[i].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-            //fields5[i].placeholder = "This Field is Compulsory!";
-            validity = false;
-        }
+      if (fields5[i].value == "") {
+          fields5[i].style.border = "2px solid rgb(228, 29, 22)";
+          fields5[i].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
+          //fields5[i].placeholder = "This Field is Compulsory!";
+          validity = false;
+      }
     }
 
     for (let i = 0; i < fields6.length; i++) {
-        if (fields6[i].value == "") {
-            fields6[i].style.border = "2px solid rgb(228, 29, 22)";
-            fields6[i].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-            //fields6[i].placeholder = "This Field is Compulsory!";
-            validity = false;
-        }
+      if (fields6[i].value == "") {
+          fields6[i].style.border = "2px solid rgb(228, 29, 22)";
+          fields6[i].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
+          //fields6[i].placeholder = "This Field is Compulsory!";
+          validity = false;
+      }
     }
 
     // Check contact numbers
@@ -88,27 +88,27 @@ form.addEventListener("submit", (event) => {
             validity = false;
         }
 
-        if (i == 1) {
-            i = 3;
+        if(i==1){
+          i=3;
         }
     }
 
     //Check email
     let mail_format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (fields2[7].value != "" && fields2[1].value.match(mail_format) == null) {
-        fields2[7].style.border = "2px solid rgba(250, 39, 39, 0.801)";
-        fields2[7].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        fields2[7].value = "";
-        fields2[7].placeholder = "Invalid Email !";
+    if (fields2[1].value != "" && fields2[1].value.match(mail_format) == null) {
+        fields2[1].style.border = "2px solid rgba(250, 39, 39, 0.801)";
+        fields2[1].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
+        fields2[1].value = "";
+        fields2[1].placeholder = "Invalid Email !";
         validity = false;
     }
-    if (fields2[9].value != "" && fields2[7].value.match(mail_format) == null) {
-        fields2[9].style.border = "2px solid rgba(250, 39, 39, 0.801)";
-        fields2[9].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        fields2[9].value = "";
-        fields2[9].placeholder = "Invalid Email !";
-        validity = false;
-    }
+    if (fields2[7].value != "" && fields2[7].value.match(mail_format) == null) {
+      fields2[7].style.border = "2px solid rgba(250, 39, 39, 0.801)";
+      fields2[7].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
+      fields2[7].value = "";
+      fields2[7].placeholder = "Invalid Email !";
+      validity = false;
+  }
 
     //Check password strong
     let password_format = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
@@ -139,10 +139,10 @@ var username_modal = document.querySelector(".username_exist_modal");
 var username_ok_Btn = document.querySelector("#username_exist_okay_btn");
 
 window.onclick = function(e) {
-    if (event.target == username_modal) {
-        username_modal.style.display = "none";
-    }
-}
-username_ok_Btn.addEventListener("click", function() {
+  if (event.target == username_modal) {
     username_modal.style.display = "none";
-});
+  }
+}
+username_ok_Btn.addEventListener("click", function(){
+    username_modal.style.display = "none";
+ });

@@ -5,8 +5,6 @@ include("../../db/db_connection.php");
 
 if (isset($_POST['submitbtn'])) {
     $name = mysqli_real_escape_string($con,$_POST['name']);
-    $regNo = mysqli_real_escape_string($con,$_POST['regNO']);
-    $licenceNo = mysqli_real_escape_string($con,$_POST['licenceNo']);
     $email = mysqli_real_escape_string($con,$_POST['email']);
     $contact1 = mysqli_real_escape_string($con,$_POST['contact1']);
     $contact2 = mysqli_real_escape_string($con,$_POST['contact2']);
@@ -15,7 +13,6 @@ if (isset($_POST['submitbtn'])) {
     $line2 = mysqli_real_escape_string($con,$_POST['address-line2']);
     $city = mysqli_real_escape_string($con,$_POST['city']);
     $decription = mysqli_real_escape_string($con,$_POST['description']);
-    $website = mysqli_real_escape_string($con,$_POST['web']);
     $location = mysqli_real_escape_string($con,$_POST['location']);
     $rep_name = mysqli_real_escape_string($con,$_POST['rep_name']);
     $rep_email = mysqli_real_escape_string($con,$_POST['rep_email']);
@@ -34,7 +31,7 @@ if (isset($_POST['submitbtn'])) {
         exit();
     } else {
         $password1 = password_hash($password1, PASSWORD_DEFAULT); // Password hashing
-        $sql = "INSERT INTO hotels VALUES (NULL, '$name','$regNo', '$licenceNo', '$line1', '$line2', '$city', '$location', '$contact1','$contact2','$decription', '$website', '$email','$password1','$hotel_type','$rep_name', '$rep_email', '$rep_contact1', '$rep_contact2','NEW')";
+        $sql = "INSERT INTO hotels VALUES (NULL, '$name', '$line1', '$line2', '$city', '$location', '$contact1','$contact2','$decription','$email','$password1','$hotel_type','$rep_name', '$rep_email', '$rep_contact1', '$rep_contact2','NEW')";
         $result= mysqli_query($con,$sql);
             if($result){
                 $status=FALSE;

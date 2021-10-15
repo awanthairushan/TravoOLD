@@ -4,24 +4,12 @@ const fields = document.getElementsByClassName("text-small-form-sign_up-traveler
 //Create an array to get all inputs with the class name = "text-form-sign_up-traveler"
 const fields2 = document.getElementsByClassName("text-form-sign_up-traveler");
 
-//get the input of hotel description
-const fields3 = document.getElementById("description");
-
-//get the input of hotel type
-const fields4 = document.getElementById("hotel_type-type");
-
-//Create an array to get all inputs with the class name = "number-form-sign_up-traveler"
-const fields5 = document.getElementsByClassName("number-form-sign_up-traveler");
-
-//Create an array to get all inputs with the class name = "number-form-sign_up-traveler"
-const fields6 = document.getElementsByClassName("price-form-sign_up-traveler");
-
 //Get form submit button
 submitbtn = document.getElementById("submitbtn");
 
 let validity = true;
 
-const form = document.getElementById("sign_up_form-hotel");
+const form = document.getElementById("signup_form_vehicle");
 
 form.addEventListener("submit", (event) => {
     validity = true;
@@ -45,51 +33,15 @@ form.addEventListener("submit", (event) => {
         }
     }
 
-    if (fields3.value == "") {
-        fields3.style.border = "2px solid rgb(228, 29, 22)";
-        fields3.style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        //fields3.placeholder = "This Field is Compulsory!";
-        validity = false;
-    }
-
-    if (fields4.value == "") {
-        fields4.style.border = "2px solid rgb(228, 29, 22)";
-        fields4.style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        //fields3.placeholder = "This Field is Compulsory!";
-        validity = false;
-    }
-
-    for (let i = 0; i < fields5.length; i++) {
-        if (fields5[i].value == "") {
-            fields5[i].style.border = "2px solid rgb(228, 29, 22)";
-            fields5[i].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-            //fields5[i].placeholder = "This Field is Compulsory!";
-            validity = false;
-        }
-    }
-
-    for (let i = 0; i < fields6.length; i++) {
-        if (fields6[i].value == "") {
-            fields6[i].style.border = "2px solid rgb(228, 29, 22)";
-            fields6[i].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-            //fields6[i].placeholder = "This Field is Compulsory!";
-            validity = false;
-        }
-    }
-
     // Check contact numbers
-    let con_format = /^[0-9]{10}$/;
-    for (let i = 0; i < 6; i++) {
+    let con_format = /^[0-9]{10}$|^+([0-9]{11})$/;
+    for (let i = 0; i < 2; i++) {
         if (fields[i].value != "" && fields[i].value.match(con_format) == null) {
             fields[i].style.border = "2px solid rgba(250, 39, 39, 0.801)";
             fields[i].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
             fields[i].value = "";
             fields[i].placeholder = "Wrong Contact Number Format !";
             validity = false;
-        }
-
-        if (i == 1) {
-            i = 3;
         }
     }
 
@@ -100,13 +52,6 @@ form.addEventListener("submit", (event) => {
         fields2[1].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
         fields2[1].value = "";
         fields2[1].placeholder = "Invalid Email !";
-        validity = false;
-    }
-    if (fields2[7].value != "" && fields2[7].value.match(mail_format) == null) {
-        fields2[7].style.border = "2px solid rgba(250, 39, 39, 0.801)";
-        fields2[7].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        fields2[7].value = "";
-        fields2[7].placeholder = "Invalid Email !";
         validity = false;
     }
 
@@ -135,14 +80,14 @@ form.addEventListener("submit", (event) => {
     return validity;
 });
 
-/*var username_modal = document.querySelector(".username_exist_modal");
+var username_modal = document.querySelector(".username_exist_modal");
 var username_ok_Btn = document.querySelector("#username_exist_okay_btn");
 
 window.onclick = function(e) {
-    if (event.target == username_modal) {
-        username_modal.style.display = "none";
-    }
-}
-username_ok_Btn.addEventListener("click", function() {
+  if (event.target == username_modal) {
     username_modal.style.display = "none";
-});*/
+  }
+}
+username_ok_Btn.addEventListener("click", function(){
+    username_modal.style.display = "none";
+ });

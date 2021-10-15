@@ -13,8 +13,6 @@
           <td><a href="../../pages/vehicle/vehicle_faq.php">FAQ</a></td>
           <td><a href="../../pages/vehicle/vehicle_home.php#about_us-section">ABOUT</a></td>
           <td><a href=#contact_us-section>CONTACT</a></td>
-          <td><a href="../../pages/vehicle/vehicle_view_vehicle.php">VIEW MY VEHICLES</a></td>
-          <td><a href="../../pages/vehicle/vehicle_addnew.php">ADD NEW VEHICLE</a></td>
           <td>
           <div class="dropdown">
               <img class="nav_bar-img" src="../../images/icons/user.png">
