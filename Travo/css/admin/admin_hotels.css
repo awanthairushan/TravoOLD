@@ -1,138 +1,124 @@
-/* Whole page*/
-
-* {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: black;
-}
 
 
 /*Content of the page*/
 
 .middle {
-    margin-top: 5%;
-    margin-bottom: 1%;
+    margin: 3% auto 1% auto;
+    width: 85%;
 }
-
+.heading-one {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
 
 /* Filter option */
 
+.search_div {
+    margin-bottom: 1rem;
+}
+.filter-labels {
+    margin-right: 1rem;
+}
 .filter-input {
     width: 20%;
+    height: 2rem;
+    cursor: pointer;
+    color: #333333;
+    background-color: #eeeeee;
+    width: 20%;
+    border: 0;
+    padding: 0 0 0 1rem;
 }
-
-.filter-labels {
-    padding: 80px;
-}
-
 
 /* Search option */
 
 .search-input {
     cursor: auto;
     margin-left: 10px;
-    margin-bottom: 15px;
-    padding: 8px 12px;
     width: 20%;
-    height: 10px;
-    border-radius: 4px;
-    border: 1px solid #dddddd;
+    height: 2rem;
+    padding: 0 0 0 1rem;
     background-color: #eeeeee;
     color: #333333;
-    font-weight: 700;
+    border: 0;
 }
-
-.search-input:hover,
-.search-input:focus,
-select:hover,
-select:focus {
-    outline: none;
-    border: 1px solid #bbbbbb;
-    color: #000000;
+.search-input:hover,.search-input:focus,select:hover,select:focus {
+    transform: scale(1.03);
 }
+/*Registered Hotels table*/
 
-select {
-    cursor: pointer;
-    color: #333333;
-    border: 1px solid #dddddd;
-    background-color: #eeeeee;
-    padding: 8px 12px;
-    margin-left: 0px;
-    margin-bottom: 10px;
-    width: 5%;
-    height: 35px;
-    border-radius: 5px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-}
-
-.heading-one {
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-
-/*Registered vehicle table*/
-
-.content-table {
+.content_table {    
+    max-height: 10.5rem;
+    overflow-y: auto;
     border-collapse: collapse;
     margin: auto;
     width: 100%;
     border-radius: 5px 5px 0 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    table-layout: fixed;
 }
-
-.table {
-    max-height: 15rem;
+.content_table thead {
+    display: table;
+    width: 100%;
+}
+.content_table tbody{
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
-    overflow-x: hidden;
-    width: 82%;
-    margin: auto;
+    max-height: 60vh;
+    table-layout: fixed;
 }
-.table::-webkit-scrollbar {
-  width: 5px;
+.content_table {
+    padding: 0%;
 }
-
-.table::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.table::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-}
-
-
-.content-table th {
+.content_table th {
     background-color: #323534;
-    padding: 12px 20px;
+    height: 3rem;
     text-align: center;
     border-bottom: 2px solid #000000;
-    font-weight: 700;
+    padding: 0;
 }
-
-.content-table td {
-    padding: 12px;
+.content_table th:first-child{
+    width: 5vw;
+}
+.content_table th:nth-child(2){
+    width: 25vw;
+}
+.content_table th:nth-child(3){
+    width: 25vw;
+}
+.content_table th:nth-child(4){
+    width: 10vw;
+}
+.content_table th:nth-child(5){
+    width: 20vw;
+}
+.content_table td {
+    height: 3.5rem;
     text-align: center;
+    padding: 0;
 }
-
-.content-table tbody tr {
+.content_table td:first-child{
+    width: 5vw;
+}
+.content_table td:nth-child(2){
+    width: 25vw;
+}
+.content_table td:nth-child(3){
+    width: 25vw;
+}
+.content_table td:nth-child(4){
+    width: 10vw;
+}
+.content_table td:nth-child(5){
+    width: 20vw;
+}
+.content_table tbody tr {
     background-color: #323534;
     border-bottom: 2px solid #000000;
 }
-
-.content-table tbody tr:last-child {
-    border-bottom: 2px solid #323534;
-}
-
-.content-table tbody tr:hover {
+.content_table tbody tr:hover {
     background-color: rgb(71, 138, 149);
 }
 
@@ -144,21 +130,25 @@ tbody a {
 
 /* buttons*/
 
-#morebtn {
+.hotel_morebtn {
     background-color: rgb(41, 180, 161);
     border-radius: 8px;
-    width: 70px;
-    height: 25px;
+    width: 5rem;
+    height: 1.5rem;
     cursor: pointer;
     border-width: 0.01ch;
     border-color: rgb(41, 180, 161);
+}
+.hotel_morebtn_accept {
+    float: left;
+    margin-left: 3rem;
 }
 
 #completedbtn {
     background-color: rgb(41, 180, 161);
     border-radius: 8px;
-    width: 90px;
-    height: 25px;
+    width: 5rem;
+    height: 1.5rem;
     cursor: pointer;
     border-width: 0.01ch;
     border-color: rgb(41, 180, 161);
@@ -167,13 +157,16 @@ tbody a {
 .remove_hotel_btn {
     background-color: rgb(204, 78, 109);
     border-radius: 8px;
-    width: 70px;
-    height: 25px;
+    width: 5rem;
+    height: 1.5rem;
     cursor: pointer;
     border-width: 0.01ch;
     border-color: rgb(204, 78, 109);
 }
-
+.remove_hotel_btn_decline {
+    float: right;
+    margin-right: 3rem;
+   }
 .action {
     padding: 10px;
     border: 2px solid #323534;
@@ -186,10 +179,6 @@ tbody a {
     color: white;
 }
 
-.heading-one {
-    font-size: 20px;
-    font-weight: bold;
-}
 /* ....................modal Box for traveler remove................................ */
 .remove_modal {
     display: none;
@@ -213,11 +202,11 @@ tbody a {
   .remove_modal_box h3,p {
       margin-left: 1rem;
       color: #000000;
-      padding: 1rem;
+      padding: 0;
   }
   .remove_confirm_btn {
     width: 20%;
-    margin: 0.7rem 1rem auto 1rem;
+    margin: 0.5rem 1rem auto 1rem;
     height: 2rem;
     border-radius: 0.2rem;
     border-width: 0px;
@@ -232,7 +221,7 @@ tbody a {
   }
   .remove_cancel_btn {
     width: 20%;
-    margin: 0.7rem auto auto auto;
+    margin: 0.5rem auto auto auto;
     height: 2rem;
     border-radius: 0.2rem;
     border-width: 0px;

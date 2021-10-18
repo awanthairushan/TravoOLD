@@ -17,6 +17,11 @@ if(isset($_SESSION['username'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-HOTELS</title>
     <link rel="stylesheet" href="../../css/admin/admin_hotels.css">
+    <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -37,13 +42,14 @@ if(isset($_SESSION['username'])) {
             <button type="button" name="remove_cancel_btn" class="remove_cancel_btn" id="remove_cancel_btn">CANCEL</button>
       </div>
       </div>
-<!-- .....................ebd of modal box for traveler remove...................... -->
+<!-- .....................end of modal box for traveler remove...................... -->
 
 
 <div class="middle">
     <!--Start "New Hotels" table-->
     <h1 class="heading-one">NEW HOTELS</h1>
         <!--Start search option-->
+        <div class="search_div">
             <label for="filter" class="filter-labels">SEARCH BY :</label>
             <select name="filter" id="filter" class="filter-input">
                 <option value="hname">HOTEL NAME</option>
@@ -51,17 +57,16 @@ if(isset($_SESSION['username'])) {
             </select>
             <input type="text" name="search" id="search" class="search-input" placeholder="Enter Value"><br>
         <!--End search option-->
-
+    </div>
     <div class="table">
-        <table class="content-table" id="hotel_table" >
+        <table class="content_table" id="hotel_table" >
             <thead>
                 <tr>
                     <th>NO</th>
                     <th>HOTEL NAME</th>
                     <th>ADDRESS</th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
+                    <th>MORE</th>
+                    <th colspan = "2">ACCEPT</th>
                 </tr>
             </thead>
             <tbody>
@@ -74,19 +79,17 @@ if(isset($_SESSION['username'])) {
                     <td>
                     <form method='post' action=' '>
                         <input type='hidden' value='$rows[0]' name=con_id>
-                        <input type='button' id='morebtn' value='MORE' onclick=\"window.location.href='admin_hotels_more.php'\";>
+                        <input type='button' id='morebtn' class='hotel_morebtn' value='MORE' onclick=\"window.location.href='admin_hotels_more.php'\";>
                     </form>
                     </td>
                     <td>
                     <form method='post' action=' '>
                     <input type='hidden' value='$rows[0]' name=con_id>
-                    <input type='button' class='hotel_morebtn' id='morebtn' value='ACCEPT'>
+                    <input type='button' class='hotel_morebtn hotel_morebtn_accept' id='morebtn' value='ACCEPT'>
                     </form>
-                    </td>
-                    <td>
                     <form method='post' action=' '>
                         <input type='hidden' value='$rows[0]' name=con_id>
-                        <input type='button' id='decline_hotel_btn' class='remove_hotel_btn' value='DECLINE'>
+                        <input type='button' id='decline_hotel_btn' class='remove_hotel_btn remove_hotel_btn_decline' value='DECLINE'>
                     </form>
                     </td>
 
@@ -141,23 +144,25 @@ if(isset($_SESSION['username'])) {
     <!--Start "Exsisting Hotels" table-->
     <h1 class="heading-one"><br />EXSISTING HOTELS</h1>
         <!--Start search option-->
+        <div class="search_div">
             <label for="filter" class="filter-labels">SEARCH BY :</label>
             <select name="filter" id="filter" class="filter-input">
                 <option value="vnumber">HOTEL NAME</option>
                 <option value="vnumber">ADDRESS</option>
             </select>
             <input type="text" name="search" id="search" class="search-input" placeholder="Enter Value"><br>
-        <!--End search option-->
+        </div>
+            <!--End search option-->
 
     <div class="table">
-        <table class="content-table" id="conn_table" >
+        <table class="content_table" id="conn_table" >
             <thead>
             <tr>
                     <th>NO</th>
                     <th>HOTEL NAME</th>
                     <th>ADDRESS</th>
                     <th>DETAILS</th>
-                    <th></th>
+                    <th>REMOVE</th>
                 </tr>
             </thead>
             <tbody>
@@ -165,7 +170,7 @@ if(isset($_SESSION['username'])) {
                 <td>NO</td>
                 <td>Hotel Name</td>
                 <td>Address</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='admin_hotels_more.php'";></td>
+                <td><input type="button" id="morebtn" value="MORE" class='hotel_morebtn' onclick="window.location.href='admin_hotels_more.php'";></td>
                 <td><input type="button" id="remove_hotel_btn" class="remove_hotel_btn" value="REMOVE"></td>
                 </tr>
                 <tr>

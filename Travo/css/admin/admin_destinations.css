@@ -1,95 +1,80 @@
-/* Whole page*/
-
-* {
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: black;
-}
-
-
-/*Content of the page*/
 
 .main {
-    margin-top: 5%;
+    margin: 3% auto 2% auto;
+    width: 85%;
 }
 
-
+.heading-one {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
 /*Destinations & visiting places table*/
 
-.content-table {
+.content_table {    
+    max-height: 60vh;
+    overflow-y: auto;
     border-collapse: collapse;
     margin: auto;
     width: 100%;
     border-radius: 5px 5px 0 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    table-layout: fixed;
+    padding: 0;
 }
-
-.table {
-    max-height: 70vh;
+.content_table thead {
+    display: table;
+    width: 100%;
+}
+.content_table tbody{
+    display: flex;
+    flex-direction: column;
     overflow-y: auto;
-    overflow-x: hidden;
-    width: 82%;
-    margin: auto;
-}
-.table::-webkit-scrollbar {
-  width: 5px;
+    max-height: 50vh;
+    table-layout: fixed;
 }
 
-.table::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.table::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey;
-}
-
-
-.content-table th {
+.content_table th {
     background-color: #323534;
-    padding: 12px 20px;
+    height: 3rem;
     text-align: center;
     border-bottom: 2px solid #000000;
-    font-weight: 700;
+    padding: 0;
 }
-
-.content-table td {
-    padding: 12px 40px;
+.content_table th:nth-child(1){
+    width: 45vw;
+}
+.content_table th:nth-child(2){
+    width: 40vw;
+}
+.content_table td {    
+    height: 3rem;
     text-align: left;
+    padding: 0.5rem 1rem 0.5rem 1rem;
     line-height: 200%;
 }
-
-.content-table td:nth-child(1) {
-    width: fit-content;
+.content_table td:nth-child(1){
+    width: 20vw;
+}
+.content_table td:nth-child(2){
+    width: 25vw;
+}
+.content_table td:nth-child(3){
+    width: 20vw;
+    padding: 0;
+    text-align: center;
+}
+.content_table td:nth-child(4){
+    width: 20vw;
+    padding: 0;
+    text-align: center;
 }
 
-.content-table td:nth-child(2) {
-    width: fit-content;
-}
-
-.content-table td:nth-child(3) {
-    width: fit-content;
-}
-
-.content-table td:nth-child(4) {
-    width: fit-content;
-}
-
-.content-table tbody tr {
+.content_table tbody tr {
     background-color: #323534;
     border-bottom: 2px solid #000000;
 }
-
-.content-table tbody tr:last-child {
-    border-bottom: 2px solid #323534;
-}
-
-.content-table tbody tr:hover {
+.content_table tbody tr:hover {
     background-color: rgb(71, 138, 149);
 }
 
@@ -97,9 +82,7 @@ tbody a {
     text-decoration: none;
     color: black;
 }
-.myP {
 
-}
 
 /*Buttons*/
 
@@ -114,7 +97,7 @@ tbody a {
 }
 
 #addvpbtn {
-    margin-top: 50px;
+    margin-top: 1rem;
     margin-left: 370px;
     background-color: rgb(41, 180, 161);
     border-radius: 8px;
@@ -126,7 +109,7 @@ tbody a {
 }
 
 #submitvpbtn {
-    margin-top: 50px;
+    margin-top: 1rem;
     margin-left: 20px;
     background-color: rgb(41, 180, 161);
     border-radius: 8px;
@@ -151,14 +134,13 @@ tbody a {
 /*Form to add new destination*/
 
 .form-container {
-    margin-top: 5%;
+    margin-top: 3vh;
     background-color: #323534;
-    padding: 20px 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
-    width: 1080px;
-    height: 60vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    height: 55vh;
 }
 .form_add_destination {
   height: 45vh;
@@ -179,91 +161,36 @@ tbody a {
 }
 .fdes {
     font-weight: 700;
-    margin-left: 30px;
+    margin-left: 2rem;
 }
 
 #fdestination {
-    margin-left: 75px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border-width: 0ch;
-    height: 30px;
-    width: 800px;
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    border-radius: 0.5rem;
+    border-width: 0;
+    height: 2rem;
+    width: 80%;
     background-color: #aaaaaa;
     border-color: #aaaaaa;
     color: black;
     font-size: 15px;
 }
 
-.fvp {
-    font-weight: 500;
-    margin-left: 30px;
-}
-
-#fvp {
-    margin-left: 30px;
+.site_details_div input,select{
     margin-right: 1px;
     margin-top: 25px;
     border-radius: 10px;
     border-width: 0ch;
-    height: 30px;
-    width: 189px;
+    height: 2rem;
+    width: 13rem;
     background-color: #aaaaaa;
     border-color: #aaaaaa;
     color: black;
     font-size: 15px;
 }
-
-#fprice {
-    margin-left: 0.1px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border-width: 0ch;
-    height: 30px;
-    width: 189px;
-    background-color: #aaaaaa;
-    border-color: #aaaaaa;
-    color: black;
-    font-size: 15px;
-}
-
-#ftime {
-    margin-left: 0.1px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border-width: 0ch;
-    height: 30px;
-    width: 189px;
-    background-color: #aaaaaa;
-    border-color: #aaaaaa;
-    color: black;
-    font-size: 15px;
-}
-
-#fcategory {
-    margin-left: 0.1px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border-width: 0ch;
-    height: 30px;
-    width: 189px;
-    background-color: #aaaaaa;
-    border-color: #aaaaaa;
-    color: black;
-    font-size: 12px;
-}
-
-#flocation {
-    margin-left: 0.1px;
-    margin-top: 25px;
-    border-radius: 10px;
-    border-width: 0ch;
-    height: 30px;
-    width: 189px;
-    background-color: #aaaaaa;
-    border-color: #aaaaaa;
-    color: black;
-    font-size: 15px;
+.site_details_div input:first-child{
+    margin-left: 2rem;
 }
 
 ::placeholder {

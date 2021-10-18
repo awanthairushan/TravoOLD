@@ -18,6 +18,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-DESTINATIONS</title>
     <link rel="stylesheet" href="../../css/admin/admin_destinations.css">
+    <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 <!--abcdef-->
 </head>
 <body>
@@ -31,13 +36,11 @@
     <h1 class="heading-one">MANAGE DESTINATIONS & VISITING PLACES</h1>
 <!--Start "Destinations & visiting places" table-->
 <div class="table">
-    <table class="content-table" id="conn_table" >
+    <table class="content_table" id="conn_table" >
         <thead>
             <tr>
-                <th>DESTINATION</th>
-                <th>VISITING PLACES</th>
-                <th></th>
-                <th></th>
+                <th colspan = "2">DESTINATION</th>
+                <th colspan = "2">VISITING PLACES</th>
             </tr>
         </thead>
         <tbody>

@@ -17,6 +17,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-FAQ</title>
     <link rel="stylesheet" href="../../css/admin/admin_faq.css">
+    <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -33,22 +38,21 @@
 
 <!--Start "FAQ" table-->
 <div class="table">
-    <table class="content-table" id="faq_table" >
+    <table class="content_table" id="faq_table" >
         <thead>
             <tr>
                 <th>QUESTION</th>
                 <th>ANSWER</th>
-                <th></th>
-                <th></th>
+                <th colspan = "2">CHANGES</th>
             </tr>
         </thead>
         <tbody>
         <?php
             while ($rows = mysqli_fetch_array($result)){
                 echo "<tr>
-                    <td class='tdtxt'>".$rows['question']."</td>
-                    <td class='tdtxt'>".$rows['answer']."</td>
-                    <td class='tdbtn'>
+                    <td>".$rows['question']."</td>
+                    <td>".$rows['answer']."</td>
+                    <td>
                     <form method='post' >
                         <input type='hidden' value='$rows[0]' name=faq_id>
                         <input type='submit' id='removebtn' name ='removebtn' class='removebtn' value='EDIT'>

@@ -16,7 +16,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-TRAVELERS</title>
-    <link rel="stylesheet" href="../../css/admin/admin_travelers.css">
+    <link rel="stylesheet" href="../../css/admin/admin_travelers.css">    
+    <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
 
 </head>
 <body>
@@ -45,6 +50,7 @@
     <h1 class="heading-one">REGISTERED TRAVELERS</h1>
 
     <!--Start search option-->
+    <div class="search_div">
         <label for="filter" class="filter-labels">SEARCH BY :</label>
         <select name="filter" id="filter" class="filter-input">
             <option value="fname" selected>NAME</option>
@@ -54,11 +60,12 @@
             <option value="fcontact">CONTACT NUMBER</option>
         </select>
         <input type="text" name="search" id="search" class="search-input" placeholder="Enter Value"><br>
-    <!--End search option-->
+        </div>
+        <!--End search option-->
 
 <!--Start "Registered traveler" table-->
 <div class="table">
-    <table class="content-table" id="traveler_table" >
+    <table class="content_table" id="traveler_table" >
         <thead>
             <tr>
                 <th>NO</th>
@@ -66,10 +73,9 @@
                 <th>ADDRESS</th>
                 <th>CITY</th>
                 <th>EMAIL</th>
-                <th>CONTACT NO 1</th>
-                <th>CONTACT NO 2</th>
+                <th>CONTACT</th>
                 <!--<th>PLANNED TRIPS</th>-->
-                <th></th>
+                <th>REMOVE</th>
             </tr>
         </thead>
         <tbody class="scroll">
@@ -83,8 +89,7 @@
                 <td>".$rows['address_line1'].$rows['address_line2']."</td>
                 <td>".$rows['city']."</td>
                 <td>".$rows['email']."</td>
-                <td>".$rows['contact1']."</td>
-                <td>".$rows['contact2']."</td>
+                <td>".$rows['contact1']."<br>".$rows['contact2']."</td>
                <td>
                 <form method='post' action='../../db/admin/admin_delete_traveler.php'>
                     <input type='hidden' value='$rows[0]' name=travelerID>

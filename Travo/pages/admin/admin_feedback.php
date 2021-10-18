@@ -17,6 +17,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin-FEEDBACK</title>
     <link rel="stylesheet" href="../../css/admin/admin_feedback.css">
+    <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -29,22 +33,24 @@
 
     <h1 class="heading-one">FEEDBACKS</h1>
         <!--Start search option-->
+        <div class="search_div">
         <label for="filter" class="filter-labels">SEARCH BY :</label>
             <select name="filter" id="filter" class="filter-input">
                 <option value="fdate">DATE</option>
                 <option value="feedback">FEEDBACK</option>
             </select>
             <input type="text" name="search" id="search" class="search-input" placeholder="Enter Value"><br>
-        <!--End search option-->
+      </div>      
+            <!--End search option-->
 
 <!--Start "Registered vehicle" table-->
 <div class="table">
-    <table class="content-table" id="feedback_table" >
+    <table class="content_table" id="feedback_table" >
         <thead>
             <tr>
                 <th>DATE</th>
                 <th>FEEDBACK</th>
-                <th></th>
+                <th>REMOVE</th>
             </tr>
         </thead>
         <tbody>
