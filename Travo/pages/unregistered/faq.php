@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <title></title>
+  <title>FAQ</title>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <style> <?php include '../../css/unregistered/faq.css'; ?> </style>
+    <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
+    <link rel="icon" href="../../images/icons/favicon.ico">
+
     <?php
       $result = require '../../db/all/all_faq.php';
     ?>
@@ -12,6 +16,7 @@
     <section class="faq">
       <?php include '../../repeatable_contents/nav_bar.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar.js"></script>
       <br>
     <div class="question_and_answers-faq">
       <br>
@@ -32,6 +37,6 @@
     <section id="contact_us-section">
       <?php include '../../repeatable_contents/footer.php';?>
       <style> <?php include '../../repeatable_contents/footer.css'; ?>  </style>
-        </section>
+    </section>
   </body>
 </html>

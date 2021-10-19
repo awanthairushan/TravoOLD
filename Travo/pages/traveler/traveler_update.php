@@ -10,8 +10,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>UPDATE</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/traveler/traveler_update.css'; ?> </style>
+    <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
     <!-- defer indicate that script is executed after the document has been parsed -->
     <?php
       $result = require '../../db/traveler/traveler_updateprofile.php';

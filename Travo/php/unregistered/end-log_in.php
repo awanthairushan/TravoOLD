@@ -69,6 +69,7 @@
           $row = mysqli_fetch_assoc($resultvehicle); //The fetch_assoc() / mysqli_fetch_assoc() function fetches a result row as an associative array.
           if($row['email'] == $username && password_verify($password, $row['password'])){
             $_SESSION['username'] = $row['email'];
+            $_SESSION['owner_name'] = $row['owner_name'];
             $_SESSION['vehicle_no'] = $row['vehicle_no'];
             header("location: ../../pages/vehicle/vehicle_home.php");
             exit();

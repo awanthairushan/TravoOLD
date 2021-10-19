@@ -1,8 +1,20 @@
 body {
-  background-color: #ffffff;
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
+}
+::-webkit-scrollbar {
+width: 5px;
+}
+
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: darkgrey;
+outline: 1px solid slategrey;
 }
 /*.................navigation bar...............*/
 
@@ -21,6 +33,9 @@ table td a {
   color: #000000;
   text-decoration: none;
 }
+.nav_bar_table_home{
+  font-weight: bolder;
+}
 .nav_bar-logo {
   height: auto;
   width: 3rem;
@@ -34,18 +49,23 @@ table td a {
   width: 100%;
   background-image: url("../images/background_images/unregisteredbg.jpg");
   background-size: cover;
-  margin: 0px;
+  margin: 0;
+}
+.home-watermark_and_started-div{
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 20vh;
 }
 .watermark {
   font-size: 10rem;
   color: white;
   font-weight: bold;
-  display: inline-block;
-  margin: 10% auto auto 17%;
+  display: block;
+  margin: auto;
   font-family: "Times New Roman", Times, serif;
 }
 .get_started-btn{
-  margin:0% auto auto 40%;
+  margin:auto;
   font-size: 1.5rem;
   font-weight: bold;
   color: #ffffff;
@@ -63,6 +83,7 @@ table td a {
 
 .about_us-section {
   height: 100vh;
+  font-family: 'Merienda', cursive;  font-size: 1rem;
 }
 .h1-about_us {
   font-size: 2rem;
@@ -123,11 +144,12 @@ margin: 0px;
   width: 2.5rem;
   margin: 12.5vh 0rem 12.5vh 0.5rem;
   cursor: pointer;
+  text-align: center;
 }
 .left_arrow-about_us {
-  height: 10vh;
-  width: auto;
-  margin: 2.5vh -0.4rem;
+  height: 90%;
+  width: 90%;
+  margin: 10% auto;
 }
 .next_btn-about_us {
   float: right;
@@ -137,11 +159,12 @@ margin: 0px;
   width: 2.5rem;
   margin: 12.5vh 0.5rem 12.5vh 0rem;
   cursor: pointer;
+  text-align: center;
 }
 .right_arrow-about_us {
-  height: 10vh;
-  width: auto;
-  margin: 2.5vh -0.4rem;
+  height: 90%;
+  width: 90%;
+  margin: 10% auto;
 }
 .slide-about_us img:hover {
   transform: scale(1.03);

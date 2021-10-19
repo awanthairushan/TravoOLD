@@ -63,11 +63,12 @@ margin: 0px;
   width: 2.5rem;
   margin: 12.5vh 0rem 12.5vh 0.5rem;
   cursor: pointer;
+  text-align: center;
 }
 .left_arrow-about_us {
-  height: 10vh;
-  width: auto;
-  margin: 2.5vh -0.4rem;
+  height: 90%;
+  width: 90%;
+  margin: 10% auto;
 }
 .next_btn-about_us {
   float: right;
@@ -77,11 +78,12 @@ margin: 0px;
   width: 2.5rem;
   margin: 12.5vh 0.5rem 12.5vh 0rem;
   cursor: pointer;
+  text-align: center;
 }
 .right_arrow-about_us {
-  height: 10vh;
-  width: auto;
-  margin: 2.5vh -0.4rem;
+  height: 90%;
+  width: 90%;
+  margin: 10% auto;
 }
 .slide-about_us img:hover {
   transform: scale(1.03);

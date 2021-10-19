@@ -3,20 +3,19 @@ body {
   margin: 0px;
 }
 .faq {
-  background-image: url("../../images/background_images/travelerbg.jpg");
+  background-image: url("../../images/background_images/Hotelbg.jpg");
   background-size: cover;
   height: 100vh;
   margin: 0px;
 }
 .question_and_answers-faq {
+  border-radius: 1.5rem;
   background-color: rgba(255,255,255,0.4);
   height: 80vh;
   width: 90%;
   margin: auto;
 }
-.topic-faq {
 
-}
 .faq_table-faq {
   background-color: rgba(255,255,255,0.0);
   width: 90%;

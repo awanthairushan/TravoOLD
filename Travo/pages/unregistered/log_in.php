@@ -11,13 +11,17 @@ if(isset($_SESSION['username'])) {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>LOGIN</title>
     <style> <?php include '../../css/unregistered/log_in.css'; ?> </style>
+    <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
+    <link rel="icon" href="../../images/icons/favicon.ico">
+
   </head>
   <body>
     <section class="log_in">
       <?php include '../../repeatable_contents/nav_bar.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar.js"></script>
     <div class="box-log_in">
       <br>
       <div class="border-img-log_in">

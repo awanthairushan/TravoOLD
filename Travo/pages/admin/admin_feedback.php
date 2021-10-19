@@ -15,7 +15,8 @@
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-FEEDBACK</title>
+    <title>FEEDBACK</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <link rel="stylesheet" href="../../css/admin/admin_feedback.css">
     <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +29,7 @@
     <!--Start Navigation bar-->
     <?php include '../../repeatable_contents/nav_bar_admin.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_admin.js"></script>
     <!--End Navigation bar-->
 <div class="main">
 

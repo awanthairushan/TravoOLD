@@ -9,6 +9,9 @@
     <meta charset="utf-8">
     <title></title>
     <style> <?php include '../../css/unregistered/sign_up-vehicle.css'; ?> </style>
+    <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
+    <link rel="icon" href="../../images/icons/favicon.ico">
+
   </head>
   <body>
  <?php 

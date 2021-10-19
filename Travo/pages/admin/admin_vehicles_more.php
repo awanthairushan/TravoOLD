@@ -12,6 +12,8 @@
     <head>
         <style> <?php include '../../css/admin/admin_vehicles_more.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VEHICLES</title>
+        <link rel="icon" href="../../images/icons/favicon.ico">
     </head>
     <body>
         <section class="uppersection">

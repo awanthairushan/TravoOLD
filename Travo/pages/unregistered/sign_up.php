@@ -2,13 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>SIGNUP</title>
     <style> <?php include '../../css/unregistered/sign_up.css'; ?> </style>
+    <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
+    <link rel="icon" href="../../images/icons/favicon.ico">
+
   </head>
   <body>
     <section class="sign_up">
       <?php include '../../repeatable_contents/nav_bar.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar.js"></script>
       <br>
     <div class="box-sign_up">
       <br>

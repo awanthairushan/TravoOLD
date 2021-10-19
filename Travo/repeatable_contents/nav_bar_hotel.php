@@ -8,12 +8,12 @@
           <td> <img class="nav_bar-logo" src="../../images/Logo/Travo.png" alt="LOGO"> </td>
           <td></td>
           <td></td>
-          <td><a href="../../pages/hotel/hotel_home.php">HOME</a></td>
-          <td><a href="../../pages/hotel/hotel_faq.php">FAQ</a></td>
-          <td><a href="../../pages/hotel/hotel_home.php#about_us-section">ABOUT</a></td>
-          <td><a href="#contact_us-section">CONTACT</a></td>
-          <td><a href="../../pages/hotel/hotel_booking.php">BOOKINGS</a></td>
-          <td><a href="../../pages/hotel/hotel_availability.php">UPDATE AVAILABILITY </a></td>
+          <td class="navigations_name"><a href="../../pages/hotel/hotel_home.php">HOME</a></td>
+          <td class="navigations_name"><a href="../../pages/hotel/hotel_faq.php">FAQ</a></td>
+          <td class="navigations_name"><a href="../../pages/hotel/hotel_home.php#about_us-section">ABOUT</a></td>
+          <td class="navigations_name"><a href="#contact_us-section">CONTACT</a></td>
+          <td class="navigations_name"><a href="../../pages/hotel/hotel_booking.php">BOOKINGS</a></td>
+          <td class="navigations_name"><a href="../../pages/hotel/hotel_availability.php">UPDATE AVAILABILITY </a></td>
           <td>
           <div class="dropdown">
               <img class="nav_bar-img" src="../../images/icons/user.png">

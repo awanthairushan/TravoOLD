@@ -9,17 +9,17 @@
           <td></td>
           <td></td>
           <td></td>
-          <td><a href="../../pages/vehicle/vehicle_home.php">HOME</a></td>
-          <td><a href="../../pages/vehicle/vehicle_faq.php">FAQ</a></td>
-          <td><a href="../../pages/vehicle/vehicle_home.php#about_us-section">ABOUT</a></td>
-          <td><a href=#contact_us-section>CONTACT</a></td>
-          <td><a href="../../pages/vehicle/vehicle_view_vehicle.php">VIEW MY VEHICLES</a></td>
-          <td><a href="../../pages/vehicle/vehicle_addnew.php">ADD NEW VEHICLE</a></td>
+          <td class="navigations_name"><a href="../../pages/vehicle/vehicle_home.php">HOME</a></td>
+          <td class="navigations_name"><a href="../../pages/vehicle/vehicle_faq.php">FAQ</a></td>
+          <td class="navigations_name"><a href="../../pages/vehicle/vehicle_home.php#about_us-section">ABOUT</a></td>
+          <td class="navigations_name"><a href=#contact_us-section>CONTACT</a></td>
+          <td class="navigations_name"><a href="../../pages/vehicle/vehicle_view_vehicle.php">VIEW MY VEHICLES</a></td>
+          <td class="navigations_name"><a href="../../pages/vehicle/vehicle_addnew.php">ADD NEW VEHICLE</a></td>
           <td>
           <div class="dropdown">
               <img class="nav_bar-img" src="../../images/icons/user.png">
               <div class="dropdown-content">
-                  <div class="drop-title">',$_SESSION['vehicle_no'],'</div>
+                  <div class="drop-title">',$_SESSION['owner_name'],'</div>
                   <div class="drop-box"><button class="deleteAccount_btn" id="deleteAccount_btn" >DELETE ACCOUNT</button></div>
                   <div class="drop-box"><a class="drop-nav" href=../../pages/vehicle/vehicle_update.php>UPDATE</a></div>
                   <div class="drop-box"><a class="drop-nav" href=../../php/unregistered/end-log_out.php>LOG OUT</a></div>

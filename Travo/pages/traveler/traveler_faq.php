@@ -11,8 +11,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>FAQ</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/traveler/traveler_faq.css'; ?> </style>
+    <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
     <?php
       $result = require '../../db/all/all_faq.php';
     ?>

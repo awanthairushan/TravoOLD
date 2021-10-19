@@ -10,7 +10,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <title>HOTEL</title>
+      <link rel="icon" href="../../images/icons/favicon.ico">
         <style> <?php include '../../css/traveler/traveler_hotel_booking.css'; ?> </style>
+        <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../../script/traveler/traveler_hotel_booking.js"></script>
     </head>

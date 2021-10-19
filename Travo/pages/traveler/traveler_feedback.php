@@ -9,7 +9,10 @@
  ?>
 <html>
     <head>
+      <title>FEEDBACK</title>
+      <link rel="icon" href="../../images/icons/favicon.ico">
         <style> <?php include '../../css/traveler/traveler_feedback.css'; ?> </style>
+        <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>

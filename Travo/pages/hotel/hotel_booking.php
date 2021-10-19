@@ -9,7 +9,10 @@
  ?>
 <html>
 <head>
+      <title>BOOKINGS</title>
+      <link rel="icon" href="../../images/icons/favicon.ico">
     <link rel="stylesheet" type="text/css" href="../../css/hotel/hotel_bookings.css">
+    <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
     <style> <?php include '../../css/hotel/hotel_bookings.css'; ?> </style>
 
 </head>
@@ -37,7 +40,7 @@
 
     <div class="rectangle">
             <table class="b" rules= "none">
-                <tr class = "tr.no-bottom-border td">
+                <tr class = "no-bottom-border td">
                     <th class ="b">CHECK-IN</th>
                     <th class ="b">CHECK-OUT</th>
                     <th class ="b">SINGLE ROOMS</th>

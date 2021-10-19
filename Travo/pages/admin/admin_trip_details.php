@@ -11,6 +11,8 @@
     <head>
       <style> <?php include '../../css/admin/admin_trip_details.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TRIPS</title>
+        <link rel="icon" href="../../images/icons/favicon.ico">
     </head>
     <body>
         <section class="uppersection">

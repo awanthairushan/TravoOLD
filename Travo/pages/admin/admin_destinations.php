@@ -16,13 +16,13 @@
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-DESTINATIONS</title>
+    <title>DESTINATIONS</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <link rel="stylesheet" href="../../css/admin/admin_destinations.css">
     <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-
 <!--abcdef-->
 </head>
 <body>
@@ -30,6 +30,7 @@
     <!--Start Navigation bar-->
     <?php include '../../repeatable_contents/nav_bar_admin.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_admin.js"></script>
     <!--End Navigation bar-->
 
 <div class="main">

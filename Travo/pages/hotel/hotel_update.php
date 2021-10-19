@@ -11,8 +11,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>UPDATE</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/hotel/hotel_update.css'; ?> </style>
+    <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
     <?php
       $result = require '../../db/hotel/hotel_updateprofile.php';
     ?>

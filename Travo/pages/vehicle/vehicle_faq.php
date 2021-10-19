@@ -11,7 +11,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>FAQ</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_faq.css'; ?> </style>
   </head>
   <body>

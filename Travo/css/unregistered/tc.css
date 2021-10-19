@@ -30,20 +30,6 @@ body {
     margin: auto;
     max-height: 65vh;
 }
-
-.question_and_answers-faq::-webkit-scrollbar {
-    width: 5px;
-}
-
-.question_and_answers-faq::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-.question_and_answers-faq::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
-}
-
 .question_and_answers-faq h1 {
     margin: auto;
 }

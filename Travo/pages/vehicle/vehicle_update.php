@@ -11,7 +11,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>UPDATE</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_update.css'; ?> </style>
   </head>
   <body>
@@ -20,6 +21,7 @@
       <style> <?php include '../../repeatable_contents/nav_bar_vehicle.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_vehicle.js"></script>
       <div class="box-sign_up-traveler">
+        <br>
         <form class="form-sign_up-traveler" id="signup_form_vehicle" action="../../php/unregistered/signup_vehicle.php" method="POST">
           <label for="name">Name</label>
             <input class="text-form-sign_up-traveler" type="text" name="owner_name" id="owner_name" placeholder=""><br>

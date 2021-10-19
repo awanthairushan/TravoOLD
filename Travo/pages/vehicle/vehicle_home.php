@@ -11,7 +11,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HOME</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_home.css'; ?> </style>
     </script>
   </head>
@@ -22,7 +23,10 @@
       <style> <?php include '../../repeatable_contents/nav_bar_vehicle.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_vehicle.js"></script>
       <br>
-      <p class = "watermark">TRAVO.lk</p><br>
+      <div class="home-watermark_and_started-div">
+      <div class = "watermark">TRAVO.lk</div><br>
+      <br>
+      <button type="button" name="button" class="get_started-btn" onclick="window.location.href='../../pages/vehicle/vehicle_view_vehicle.php'">GET STARTED</button>
       </div>
     </section>
 

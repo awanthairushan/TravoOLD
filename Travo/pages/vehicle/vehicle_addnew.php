@@ -11,7 +11,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ADD NEW</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_addnew.css'; ?> </style>
   </head>
   <body>

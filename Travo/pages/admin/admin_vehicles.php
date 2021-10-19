@@ -17,7 +17,8 @@ $result = require '../../db/admin/admin_vehicles.php';
 ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-VEHICLES</title>
+    <title>VEHICLES</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <link rel="stylesheet" href="../../css/admin/admin_vehicles.css">
     <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +31,7 @@ $result = require '../../db/admin/admin_vehicles.php';
     <!--Start Navigation bar-->
     <?php include '../../repeatable_contents/nav_bar_admin.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_admin.js"></script>
     <!--End Navigation bar-->
 
 <!-- .....................modal box for traveler remove...................... -->
@@ -100,144 +102,6 @@ $result = require '../../db/admin/admin_vehicles.php';
                 </tr>";
             }
             ?>
-         <!--   <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="morebtn" value="MORE" ></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_vehicles_more.php'"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr>
-            <tr>
-                <td>5678</td>
-                <td>Van</td>
-                <td>Colombo</td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="morebtn" value="MORE"></td>
-                <td><input type="button" id="removebtn" value="REMOVE"></td>
-            </tr> -->
-
         </tbody>
     </table>
 </div>

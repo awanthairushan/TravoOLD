@@ -16,14 +16,14 @@ body {
   color: white;
   font-weight: bold;
   display: block;
-  margin: 3rem auto auto auto;
+  margin: 17vh auto auto auto;
   padding: 0px;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
 .container{
   height: 15vh;
-  margin: 10rem auto auto auto;
+  margin: 15vh auto auto auto;
   width: 80%;
 }
 

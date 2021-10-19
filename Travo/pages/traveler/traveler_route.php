@@ -9,8 +9,11 @@
  ?>
 <html>
     <head>
+      <title>ROUTE</title>
         <style> <?php include '../../css/traveler/traveler_trip_details.css'; ?> </style>
+        <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../../images/icons/favicon.ico">
     </head>
     <body>
         <section class="uppersection">
@@ -34,7 +37,7 @@
         </div>
 
         <div class="buttons">
-            <button class="button" id="savebtn">SAVE</button>
+            <button class="button" id="savebtn" onclick="window.location.href='../../pages/traveler/traveler_trip_to_go.php'">SAVE</button>
             <button class="button" id="paybtn">PAY NOW</button>
         </div>
         </div>

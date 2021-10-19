@@ -7,6 +7,9 @@
     <meta charset="utf-8">
     <title></title>
     <style> <?php include '../../css/unregistered/sign_up-traveler.css'; ?> </style>
+    <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
+    <link rel="icon" href="../../images/icons/favicon.ico">
+
     <!-- defer indicate that script is executed after the document has been parsed -->
   </head>
   <body>

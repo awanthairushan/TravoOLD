@@ -11,8 +11,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HOME</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/hotel/hotel_home.css'; ?> </style>
+    <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
     </script>
   </head>
   <body>
@@ -22,7 +24,10 @@
       <style> <?php include '../../repeatable_contents/nav_bar_hotel.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_hotel.js"></script>
       <br>
-      <p class = "watermark">TRAVO.lk</p><br>
+      <div class="home-watermark_and_started-div">
+      <div class = "watermark">TRAVO.lk</div><br>
+      <br>
+      <button type="button" name="button" class="get_started-btn" onclick="window.location.href='../../pages/hotel/hotel_availability.php'">GET STARTED</button>
       </div>
     </section>
 

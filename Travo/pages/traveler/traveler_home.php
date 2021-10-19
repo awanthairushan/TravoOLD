@@ -11,8 +11,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>HOME</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/traveler/traveler_home.css'; ?> </style>
+    <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
+    <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
     </script>
   </head>
   <body>
@@ -29,7 +32,7 @@
     <div class="container" id="containerstart">
             <div class="details">
 
-              <form class="" action="index.html" method="post">
+              <form class="" action="../../pages/traveler/traveler_plantrip.php" method="post">
                 <table class="main">
                       <tr>
                           <th class="trow heading">PEOPLE COUNT</th>
@@ -47,7 +50,7 @@
                               </select>
                           </td>
                   </table>
-                  <button id="nextbtn" onclick="window.location.href='pages/traveler/traveler_plantrip.php'">NEXT</button>
+                  <button id="nextbtn" onclick="window.location.href='../../pages/traveler/traveler_plantrip.php'">NEXT</button>
                 </form>
             </div>
         </div>

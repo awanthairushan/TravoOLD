@@ -1,4 +1,8 @@
-.nav_bar-div {
+.navigations_name {
+  font-weight: normal;
+}
+.navigations_bold_style {
+  font-weight: bolder;
 }
 .nav_bar-table {
     width: 100%;

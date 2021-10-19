@@ -8,14 +8,14 @@
         <td> <img class="nav_bar-logo" src="../../images/Logo/Travo.png" alt="LOGO"> </td>
         <td></td>
         <td></td>
-        <td><a href="../../pages/traveler/traveler_home.php">HOME</a></td>
-        <td><a href="../../pages/traveler/traveler_faq.php">FAQ</a></td>
-        <td><a href="../../pages/traveler/traveler_home.php#about_us-section">ABOUT</a></td>
-        <td><a href="#contact_us-section">CONTACT</a></td>
-        <td><a href="../../pages/traveler/traveler_feedback list.php">FEEDBACK</a></td>
-        <td><a href="../../pages/traveler/traveler_plantrip.php">PLAN</a></td>
-        <td><a href="../../pages/traveler/traveler_trip_to_go.php">MY TRIPS</a></td>
-        <td><a href="../../pages/traveler/traveler_vehicle.php">VEHICLES </a></td>
+        <td class="navigations_name"><a href="../../pages/traveler/traveler_home.php">HOME</a></td>
+        <td class="navigations_name"><a href="../../pages/traveler/traveler_faq.php">FAQ</a></td>
+        <td class="navigations_name"><a href="../../pages/traveler/traveler_home.php#about_us-section">ABOUT</a></td>
+        <td class="navigations_name"><a href="#contact_us-section">CONTACT</a></td>
+        <td class="navigations_name"><a href="../../pages/traveler/traveler_feedback list.php">FEEDBACK</a></td>
+        <td class="navigations_name"><a href="../../pages/traveler/traveler_plantrip.php">PLAN</a></td>
+        <td class="navigations_name"><a href="../../pages/traveler/traveler_trip_to_go.php">MY TRIPS</a></td>
+        <td class="navigations_name"><a href="../../pages/traveler/traveler_vehicle.php">VEHICLES </a></td>
         <td> </td>
         <td>
             <div class="dropdown">

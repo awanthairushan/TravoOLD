@@ -11,8 +11,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>FEEDBACK</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/traveler/traveler_feedback_list.css'; ?> </style>
+    <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
     <?php
       $result = require '../../db/traveler/traveler_feedbacklist.php';
     ?>

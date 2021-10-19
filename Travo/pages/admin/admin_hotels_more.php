@@ -12,6 +12,8 @@ if(isset($_SESSION['username'])) {
     <head>
         <style> <?php include '../../css/admin/admin_hotels_more.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOTELS</title>
+        <link rel="icon" href="../../images/icons/favicon.ico">
         <script src="../../script/traveler/traveler_hotel_booking.js"></script>
     </head>
     <body>

@@ -13,18 +13,18 @@ body {
 .box-sign_up-traveler {
     background-color: rgba(255, 255, 255, 0.4);
     height: 70vh;
-    width: 90%;
+    width: 85vw;
     margin: auto auto 1rem auto;
 }
 
 .form-sign_up-traveler {
-    width: 80%;
+    width: 75vw;
     margin: 0.8% auto 0.8% auto;
     height: 70vh;
 }
 
 .form-sign_up-traveler label {
-    max-width: 30%;
+    max-width: 22.5vw;
     font-size: 1.2rem;
     display: block;
     float: left;
@@ -35,7 +35,7 @@ body {
     border-style: solid;
     border-width: thin;
     border-color: #000000;
-    width: 70%;
+    width: 52.5vw;
     height: 1.3rem;
     margin: 0px;
     float: right;
@@ -46,9 +46,10 @@ body {
     border-style: solid;
     border-width: thin;
     border-color: #000000;
-    width: 34%;
+    width: 25.5vw;
     height: 1.3rem;
-    margin: 0px 0px 0px 1.25%;
+    margin: 0;
+    margin-left: 1.5vw;
     float: right;
 }
 

@@ -15,7 +15,8 @@ if(isset($_SESSION['username'])) {
     ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin-HOTELS</title>
+    <title>HOTELS</title>
+    <link rel="icon" href="../../images/icons/favicon.ico">
     <link rel="stylesheet" href="../../css/admin/admin_hotels.css">
     <link rel="stylesheet" href="../../css/admin/admin_repeating_css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,6 +30,7 @@ if(isset($_SESSION['username'])) {
     <!--Start Navigation bar-->
     <?php include '../../repeatable_contents/nav_bar_admin.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_admin.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/nav_bar_admin.js"></script>
     <!--End Navigation bar-->
 
 <!-- .....................modal box for traveler remove...................... -->
@@ -96,46 +98,6 @@ if(isset($_SESSION['username'])) {
                 </tr>";
             }
             ?>
-          <!--      <tr>
-                <td>Hotel Name</td>
-                <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="submit" id="morebtn" value="ACCEPT">
-                        <input type="button" id="removebtn" value="DECLINE"></td>
-                </tr>
-                <tr>
-                <td>Hotel Name</td>
-                <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="submit" id="morebtn" value="ACCEPT">
-                        <input type="button" id="removebtn" value="DECLINE"></td>
-                </tr>
-                <tr>
-                <td>Hotel Name</td>
-                <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="submit" id="morebtn" value="ACCEPT">
-                        <input type="button" id="removebtn" value="DECLINE"></td>
-                </tr>
-                <tr>
-                <td>Hotel Name</td>
-                    <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="submit" id="morebtn" value="ACCEPT">
-                        <input type="button" id="removebtn" value="DECLINE"></td>
-                </tr>
-                <tr>
-                    <td>Hotel Name</td>
-                    <td>Location</td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="button" id="morebtn" value="MORE"></td>
-                    <td><input type="submit" id="morebtn" value="ACCEPT">
-                        <input type="button" id="removebtn" value="DECLINE"></td>
-                </tr> -->
             </tbody>
         </table>
     </div>
