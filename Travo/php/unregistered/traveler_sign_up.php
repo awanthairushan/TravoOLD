@@ -14,6 +14,7 @@ if(isset($_POST['submitbtn'])){
     $adressLine1=mysqli_real_escape_string($con,$_POST['address-line1']);
     $adressLine2=mysqli_real_escape_string($con,$_POST['address-line2']);
     $city=mysqli_real_escape_string($con,$_POST['city']);
+    $otp = rand(1000, 9999);
 
 
   $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
@@ -24,7 +25,7 @@ if(isset($_POST['submitbtn'])){
         exit();
     } else {
         $password = password_hash($password, PASSWORD_DEFAULT);
-        $sql="INSERT INTO travelers VALUES ('$traveler_id', '$name', '$adressLine1', '$adressLine2', '$city', '$email', '$password', '$contact2', '$contact1')";
+        $sql="INSERT INTO travelers VALUES ('$traveler_id', '$name', '$adressLine1', '$adressLine2', '$city', '$email', '$password', '$contact2', '$contact1', '$otp')";
         $result=$con->query($sql);
         if($result){
             header("Location: ../../pages/unregistered/log_in.php");

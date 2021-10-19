@@ -23,6 +23,7 @@ if (isset($_POST['submitbtn'])) {
     $rep_contact2 = mysqli_real_escape_string($con,$_POST['rep_contact2']);
     $hotel_type = $_POST['hotel_type-type'];
     $images = $_POST['images'];
+    $otp = rand(1000, 9999);
 
 
 
@@ -34,7 +35,7 @@ if (isset($_POST['submitbtn'])) {
         exit();
     } else {
         $password1 = password_hash($password1, PASSWORD_DEFAULT); // Password hashing
-        $sql = "INSERT INTO hotels VALUES (NULL, '$name','$regNo', '$licenceNo', '$line1', '$line2', '$city', '$location', '$contact1','$contact2','$decription', '$website', '$email','$password1','$hotel_type','$rep_name', '$rep_email', '$rep_contact1', '$rep_contact2','NEW')";
+        $sql = "INSERT INTO hotels VALUES (NULL, '$name','$regNo', '$licenceNo', '$line1', '$line2', '$city', '$location', '$contact1','$contact2','$decription', '$website', '$email','$password1','$hotel_type','$rep_name', '$rep_email', '$rep_contact1', '$rep_contact2','NEW', '$otp')";
         $result= mysqli_query($con,$sql);
             if($result){
                 $status=FALSE;
