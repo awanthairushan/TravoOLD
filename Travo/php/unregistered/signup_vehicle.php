@@ -23,6 +23,7 @@ if (isset($_POST['submitbtn'])) {
     $driver_charge =  mysqli_real_escape_string($con,$_POST['driver_charge']);
     $ac =  $_POST['ac'];
     $image = $_POST['images'];
+    $otp = rand(1000, 9999);
 
    $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
     $resultForExistedEmail = mysqli_query($con,$sqlForExistedEmail);
@@ -33,7 +34,7 @@ if (isset($_POST['submitbtn'])) {
         exit();
     } else {
         $password = password_hash($password, PASSWORD_DEFAULT); // Password hashing
-        $sql = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac, vehicle_image) VALUES ('$vehicle_id', '$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac', '$image')";
+        $sql = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac, vehicle_image, otp) VALUES ('$vehicle_id', '$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac', '$image', '$otp')";
 
         $result=$con->query($sql);
         if($result){
