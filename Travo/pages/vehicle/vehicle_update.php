@@ -3,7 +3,7 @@
   if(isset($_SESSION['username'])) {
       include '../../db/db_connection.php';
       $temp = $_SESSION['username'];
-      $sqlForSession = "SELECT vehicle_id FROM vehicles WHERE email = '$temp'";
+      $sqlForSession = "SELECT owner_id FROM vehicle_owners WHERE email = '$temp'";
       $resultForSession = mysqli_query($con, $sqlForSession);
       if (mysqli_num_rows($resultForSession) === 1) {
  ?>
@@ -14,6 +14,9 @@
     <title>UPDATE</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_update.css'; ?> </style>
+    <?php
+      $result = require '../../db/vehicle/vehicle_update_profile.php';
+    ?>
   </head>
   <body>
     <section class="sign_up-traveler">
@@ -22,22 +25,22 @@
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_vehicle.js"></script>
       <div class="box-sign_up-traveler">
         <br>
-        <form class="form-sign_up-traveler" id="signup_form_vehicle" action="../../php/unregistered/signup_vehicle.php" method="POST">
+        <form class="form-sign_up-traveler" id="signup_form_vehicle" action="../../php/vehicle/vehicle_update_profile.php" method="POST">
           <label for="name">Name</label>
-            <input class="text-form-sign_up-traveler" type="text" name="owner_name" id="owner_name" placeholder=""><br>
+            <input class="text-form-sign_up-traveler" type="text" name="owner_name" id="owner_name" placeholder=" <?php echo $name ?>"><br><br>
           <br>
           <label for="email">Email Address</label>
-            <input class="text-form-sign_up-traveler" type="text" name="email" id="email" placeholder=""><br>
+            <input class="text-form-sign_up-traveler" type="text" name="email" id="email" placeholder=" <?php echo $email ?>"><br><br>
           <br>
           <label for="contact">Contact Number</label>
-            <input class="text-small-form-sign_up-traveler" type="text" name="contact2" id="contact2" placeholder="">
-            <input class="text-small-form-sign_up-traveler" type="text" name="contact1" id="contact1" placeholder=""><br>
+            <input class="text-small-form-sign_up-traveler" type="text" name="contact2" id="contact2" placeholder=" <?php echo $contact2 ?>">
+            <input class="text-small-form-sign_up-traveler" type="text" name="contact1" id="contact1" placeholder=" <?php echo $contact1 ?>"><br><br>
           <br>
           <label for="password">Password</label>
-            <input class="text-small-form-sign_up-traveler" type="password" name="password2" id="password2" placeholder="retype-password">
-            <input class="text-small-form-sign_up-traveler" type="password" name="password1" id="password1" placeholder=""><br>
+            <input class="text-small-form-sign_up-traveler" type="password" name="password2" id="password2" placeholder=" Confirm Password">
+            <input class="text-small-form-sign_up-traveler" type="password" name="password1" id="password1" placeholder=" New Password"><br>
           <br>
-          <label for="city">Location</label>
+        <!--  <label for="city">Location</label>
             <input class="text-form-sign_up-traveler" type="text" name="city" id="city" placeholder="city"><br>
           <br>
           <label for="vehicle-no">Vehicle Number</label>
@@ -58,7 +61,7 @@
               <option value="with-without-driver">With or Without Driver</option>
           </select><br>
           <br>
-          <label for="ac">A/C</label><input class="ac-checkbox-form-sign_up-traveler" type="checkbox" name="ac" id="ac" value="yes"> <span></span> <br>
+          <label for="ac">A/C</label><input class="ac-checkbox-form-sign_up-traveler" type="checkbox" name="ac" id="ac" value="yes"> <span></span> <br> -->
            </form>
       </div>
       <div class="buttons-sign_up-traveler">

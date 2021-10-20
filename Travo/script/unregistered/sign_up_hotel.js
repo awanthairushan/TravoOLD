@@ -78,7 +78,7 @@ form.addEventListener("submit", (event) => {
     }
 
     // Check contact numbers
-    let con_format = /^[0-9]{10}$|^+[0-9]{11}$/;
+    let con_format = /^[0-9]{10}$/;
     for (let i = 0; i < 6; i++) {
         if (fields[i].value != "" && fields[i].value.match(con_format) == null) {
             fields[i].style.border = "2px solid rgba(250, 39, 39, 0.801)";
@@ -95,18 +95,18 @@ form.addEventListener("submit", (event) => {
 
     //Check email
     let mail_format = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (fields2[7].value != "" && fields2[1].value.match(mail_format) == null) {
+    if (fields2[7].value != "" && fields2[7].value.match(mail_format) == null) {
         fields2[7].style.border = "2px solid rgba(250, 39, 39, 0.801)";
         fields2[7].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
         fields2[7].value = "";
         fields2[7].placeholder = "Invalid Email !";
         validity = false;
     }
-    if (fields2[9].value != "" && fields2[7].value.match(mail_format) == null) {
-        fields2[9].style.border = "2px solid rgba(250, 39, 39, 0.801)";
-        fields2[9].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
-        fields2[9].value = "";
-        fields2[9].placeholder = "Invalid Email !";
+    if (fields2[10].value != "" && fields2[10].value.match(mail_format) == null) {
+        fields2[10].style.border = "2px solid rgba(250, 39, 39, 0.801)";
+        fields2[10].style.backgroundColor = "rgba(238, 156, 156, 0.788)";
+        fields2[10].value = "";
+        fields2[10].placeholder = "Invalid Email !";
         validity = false;
     }
 

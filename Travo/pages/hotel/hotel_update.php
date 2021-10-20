@@ -77,8 +77,8 @@
             <span class="error-msg"></span>
           </div>
 
-          <label for="images">Input Images</label> <input type="file" class="images-small-form-sign_up-traveler" name="images" id="images" multiple=""><br>
-          <br>
+        <!--  <label for="images">Input Images</label> <input type="file" class="images-small-form-sign_up-traveler" name="images" id="images" multiple=""><br>
+          <br>-->
 
           <label for="rep_name">Representative's Name</label> <input class="text-form-sign_up-traveler" type="text" name="rep_name" id="rep_name" value="" placeholder="<?php echo $repName ?>"><br>
           <br>
@@ -90,7 +90,7 @@
           <br>
 
 
-        <table class="room_details-form-sign_up-hotel">
+   <!--     <table class="room_details-form-sign_up-hotel">
                  <tr>
                      <th id="first_column_room_details-form-sign_up-hotel">Room type</th>
                      <th>Persons</th>
@@ -137,7 +137,7 @@
                       <td><input type="text" id="massive_room_price" name="massive_room_price" placeholder="0.00"></td>
                     </tr>
                  </tr>
-               </table>
+               </table>-->
                <br>
   </form>
       </div>

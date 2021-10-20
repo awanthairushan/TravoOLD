@@ -36,9 +36,27 @@
             </div>
         </div>
 
+        <form method="post" id="payForm" name="payForm" class="payForm" action="https://sandbox.payhere.lk/pay/checkout">   
+            <input type="text" name="merchant_id" value="1218929">    <!-- Replace your Merchant ID -->
+            <input type="text" name="return_url" value="http://localhost//Travo.lk/Travo/pages/traveler/traveler_trip_to_go.php">
+            <input type="text" name="cancel_url" value="https://localhost//Travo.lk/Travo.lk/Travo/pages/traveler/traveler_budget.php">
+            <input type="text" name="notify_url" value="https://localhost//Travo.lk/Travo.lk/Travo/php/traveler/traveler_payment.php">  
+            <input type="text" name="order_id" value="1">
+            <input type="text" name="items" value="Trip"><br>
+            <input type="text" name="currency" value="LKR">
+            <input type="text" name="amount" value="1000">  
+            <input type="text" name="first_name" value="Saman">
+            <input type="text" name="last_name" value="Perera"><br>
+            <input type="text" name="email" value="samanp@gmail.com">
+            <input type="text" name="phone" value="0771234567"><br>
+            <input type="text" name="address" value="No.1, Galle Road">
+            <input type="text" name="city" value="Colombo">
+            <input type="text" name="country" value="Sri Lanka"><br><br>  
+        </form> 
+
         <div class="buttons">
-            <button class="button" id="savebtn" onclick="window.location.href='../../pages/traveler/traveler_trip_to_go.php'">SAVE</button>
-            <button class="button" id="paybtn">PAY NOW</button>
+            <button class="button"  id="savebtn" onclick="window.location.href='../../pages/traveler/traveler_trip_to_go.php'">SAVE</button>
+            <button class="button" form="payForm" id="paybtn">PAY NOW</button>
         </div>
         </div>
         </section>

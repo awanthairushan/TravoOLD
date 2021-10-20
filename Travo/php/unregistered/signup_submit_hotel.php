@@ -27,7 +27,7 @@ if (isset($_POST['submitbtn'])) {
 
 
 
-    $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
+    $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicle_owners WHERE email = '$email'";
     $resultForExistedEmail = mysqli_query($con,$sqlForExistedEmail);
     if (mysqli_num_rows($resultForExistedEmail) > 0) {
         $_SESSION['value'] = "username_exist";

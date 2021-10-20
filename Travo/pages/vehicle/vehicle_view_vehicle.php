@@ -3,7 +3,7 @@
   if(isset($_SESSION['username'])) {
     include '../../db/db_connection.php';
     $temp = $_SESSION['username'];
-    $sqlForSession = "SELECT vehicle_id FROM vehicles WHERE email = '$temp'";
+    $sqlForSession = "SELECT owner_id FROM vehicle_owners WHERE email = '$temp'";
     $resultForSession = mysqli_query($con, $sqlForSession);
     if (mysqli_num_rows($resultForSession) === 1) {
  ?>
@@ -39,6 +39,7 @@
             </div> -->
 
             <div class="vehicle_and_owner_details">
+                <form action="../vehicle/vehicle_update_vehicle.php">
                 <table class="vehicledetails">
                     <!-- vehicle 1 -->
                     <tr>
@@ -66,7 +67,7 @@
                 </table>
                 <table class="driver_details">
                     <tr>
-                        <th class="vehicleType">Mr.kmal</th>
+                        <th class="vehicleType">Mr.kamal</th>
                     </tr>
                     <tr>
                         <td>Kamal Sumudu Nagodaarachchi</td>
@@ -84,7 +85,12 @@
                         <td>LKR.1200.00 per day</td>
                     </tr>
                 </table>
-                <h3>Other vehicles of this driver</h3>
+
+                <div class="buttons-sign_up-traveler">
+                 <input type="submit" class="submitbtn" name="submitbtn" id="submitbtn"  value="UPDATE DETAILS">
+                </div>
+                </form>
+                
             </div>
         </section>
 

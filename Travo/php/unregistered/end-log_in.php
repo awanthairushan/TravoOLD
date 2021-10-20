@@ -17,7 +17,7 @@
     $resulttraveler = mysqli_query($con,$sqltraveler);
     $sqlhotel = "SELECT * FROM hotels WHERE email = '$username'";
     $resulthotel = mysqli_query($con,$sqlhotel);
-    $sqlvehicle = "SELECT * FROM vehicles WHERE email = '$username' ";
+    $sqlvehicle = "SELECT * FROM vehicle_owners WHERE email = '$username' ";
     $resultvehicle = mysqli_query($con,$sqlvehicle);
     $sqldeleted_accounts = "SELECT * FROM deleted_accounts WHERE email = '$username' ";
     $resultdeleted_accounts = mysqli_query($con,$sqldeleted_accounts);
