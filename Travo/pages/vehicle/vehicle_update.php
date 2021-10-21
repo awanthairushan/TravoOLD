@@ -14,6 +14,7 @@
     <title>UPDATE</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_update.css'; ?> </style>
+    <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
     <?php
       $result = require '../../db/vehicle/vehicle_update_profile.php';
     ?>

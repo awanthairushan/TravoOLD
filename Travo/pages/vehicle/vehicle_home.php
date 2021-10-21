@@ -14,6 +14,7 @@
     <title>HOME</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_home.css'; ?> </style>
+    <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
     </script>
   </head>
   <body>
@@ -34,6 +35,7 @@
     <section id="about_us-section">
       <?php include '../../repeatable_contents/about_us.php';?>
       <style> <?php include '../../repeatable_contents/about_us.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/about_us.js"></script>
       <br>
     </section>
 <!--__________________END about_us________________-->

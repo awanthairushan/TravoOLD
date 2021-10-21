@@ -17,6 +17,7 @@ if (isset($_SESSION['username'])) {
       <style>
         <?php include '../../css/vehicle/vehicle_faq.css'; ?>
       </style>
+      <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
       <?php
       $result = require '../../db/all/all_faq.php';
       ?>

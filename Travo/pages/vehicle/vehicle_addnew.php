@@ -14,6 +14,7 @@
     <title>ADD NEW</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_addnew.css'; ?> </style>
+    <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
   </head>
   <body>
     <section class="sign_up-traveler">

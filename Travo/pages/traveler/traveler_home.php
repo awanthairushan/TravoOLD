@@ -60,6 +60,7 @@
     <section id="about_us-section">
       <?php include '../../repeatable_contents/about_us.php';?>
       <style> <?php include '../../repeatable_contents/about_us.css'; ?>  </style>
+      <script type="text/javascript" src="../../repeatable_contents/about_us.js"></script>
       <br>
     </section>
 <!--__________________END about_us________________-->
