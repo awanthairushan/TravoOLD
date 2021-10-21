@@ -21,7 +21,7 @@
       </div>
       <div class="description-sign_up">
         <h2>Welcome to Travo.lk...</h2>
-        <h3>Get Stated Your Jorney With Travo.lk...</h3>
+        <h3>Get Started Your Journey With Travo.lk...</h3>
         <button type="button" name="button" onclick="window.location.href = '../../pages/unregistered/sign_up-traveler.php';">TRAVELER</button><br>
         <button type="button" name="button" onclick="window.location.href = '../../pages/unregistered/sign_up-vehicle.php';">VEHICLE</button><br>
         <button type="button" name="button" onclick="window.location.href = '../../pages/unregistered/sign_up-hotel.php';">HOTEL</button><br>

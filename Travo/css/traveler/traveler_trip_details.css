@@ -45,21 +45,36 @@ body{
         background: rgba(196, 196, 196, 0.5);
         align-content: center;
 
-        border-radius: 3rem;
+        border-radius: 2rem;
 }
 
 .main{
   margin: 1rem auto;
-  width: 80%;
+  width: 70%;
 
 }
 
 .main td{
-    padding: 5px;
+    padding: 10px 10px 10px 20px;
+    font-size: 1.2rem;
 }
 
+.main th{
+    padding: 10px 10px 10px 20px;
+    font-size: 1.2rem;
+}
 
-
+.main_details{
+    margin: 1rem auto;
+    width: 50%;
+  }
+  
+.main_details td{
+      padding: 5px;
+}
+.main_details td:first-child{
+    width: 5%;
+}
 .trow{
     padding: 1rem;
 }
@@ -72,8 +87,25 @@ body{
 .days{
   margin: 1rem auto;
   width: 80%;
+  border-radius: 1.5rem;
 }
-
+.days tr th:first-child {
+    padding-left: 2rem;
+    width: 10%;
+}
+.days tr td:first-child {
+    padding-left: 2rem;
+    width: 10%;
+}
+.days tr td:nth-child(2) {
+    width: 10%;
+}
+.days tr td:nth-child(3) {
+    width:17%;
+}
+.days tr td:nth-child(4) {
+    width:18%;
+}
 .row{
     text-align: left;
 }

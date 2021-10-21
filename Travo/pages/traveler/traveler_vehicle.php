@@ -90,7 +90,7 @@
                   <tr class="detail">
                       <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
                       <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
-                      <td class="trow"><img class="vimg" src="../../images/Sample_images/toyota-2010-prius-wallpaper-01.jpg"></td>
+                      <td class="trow"><img class="vimg" src="../../images/Sample_images/for_vehicles/car2.jpg"></td>
                       <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
                       <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
                   </tr>
@@ -103,7 +103,7 @@
                   <tr class="detail">
                       <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
                       <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
-                      <td class="trow"><img class="vimg"src="../../images/Sample_images/image-0-02-03-98850b797816cec1bd173332084faf1e9281c0e0b85d2e212d0f42b2d10fdc69-V.jpg"></td>
+                      <td class="trow"><img class="vimg"src="../../images/Sample_images/for_vehicles/car1.jpg"></td>
                       <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
                       <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
                   </tr>
@@ -116,7 +116,7 @@
                   <tr class="detail">
                       <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
                       <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
-                      <td class="trow"><img class="vimg"src="../../images/Sample_images/image-0-02-03-98850b797816cec1bd173332084faf1e9281c0e0b85d2e212d0f42b2d10fdc69-V.jpg"></td>
+                      <td class="trow"><img class="vimg"src="../../images/Sample_images/for_vehicles/car3.jpg"></td>
                       <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
                       <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
                   </tr>
@@ -129,7 +129,7 @@
                   <tr class="detail">
                       <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
                       <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
-                      <td class="trow"><img class="vimg"src="../../images/Sample_images/image-0-02-03-98850b797816cec1bd173332084faf1e9281c0e0b85d2e212d0f42b2d10fdc69-V.jpg"></td>
+                      <td class="trow"><img class="vimg"src="../../images/Sample_images/for_vehicles/car4.jpg"></td>
                       <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
                       <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
                   </tr>

@@ -88,7 +88,9 @@
                 </table>
 
                 <div class="buttons-sign_up-traveler">
-                 <input type="submit" class="submitbtn" name="submitbtn" id="submitbtn"  value="UPDATE DETAILS">
+                <input type="submit" class="updatebtn" name="submitbtn" id="submitbtn"  value="UPDATE DETAILS">
+                <input type="submit" class="deletebtn" name="submitbtn" id="submitbtn"  value="DELETE VEHICLE">
+                 
                 </div>
                 </form>
                 

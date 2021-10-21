@@ -32,19 +32,19 @@
                         <table class="main">
                             <tr>
                                 <td>Date : </td>
-                                <td>YYYY-MM-DD To YYYY-MM-DD</td>
+                                <td>2021-10-25 To 2021-10-27</td>
                             </tr>
                             <tr>
                                 <td>Number of Travelers : </td>
-                                <td>Count.</td>
+                                <td>4</td>
                             </tr>
                             <tr>
                                 <td>Category : </td>
-                                <td>Category</td>
+                                <td>Cultural</td>
                             </tr>
                             <tr>
                                 <td>Mileage : </td>
-                                <td></td>
+                                <td>358km</td>
                             </tr>
                         </table>
 
@@ -57,21 +57,21 @@
                             </tr>
                             <tr>
                                 <th class="row">Destination</th>
-                                <td class="trow">Destination1</td>
-                                <td class="trow">Destination2</td>
-                                <td class="trow">Destination3</td>
+                                <td class="trow">Anuradhapura</td>
+                                <td class="trow">Polonnaruwa</td>
+                                <td class="trow">Kegalle</td>
                             </tr>
                             <tr>
                                 <th class="row">Hotel</th>
-                                <td class="trow">Hotel 1</td>
-                                <td class="trow">Hotel 2</td>
-                                <td class="trow">Hotel 3</td>
+                                <td class="trow">Araliya Resort</td>
+                                <td class="trow">Tamarind</td>
+                                <td class="trow">Alakamandawa</td>
                             </tr>
                             <tr>
                                 <th class="row">Sights</th>
-                                <td class="trow">sight 1<br/>sight 2<br/>sight 3</td>
-                                <td class="trow">sight 1<br/>sight 2<br/>sight 3</td>
-                                <td class="trow">sight 1<br/>sight 2<br/>sight 3</td>
+                                <td class="trow">Thuparamaya<br/>Isurumuniya<br/>Ruwanweliseya</td>
+                                <td class="trow">Nelum Pokuna<br/>Gal Viharaya<br/>Hatadage</td>
+                                <td class="trow">Maha Viharaya<br/>Maligawa<br/>Ashokaramaya</td>
                             </tr>
                         </table>
                     </div>
@@ -84,34 +84,39 @@
               <br>
                 <table class="main">
                     <tr>
-                        <td>Accomodaions</td>
+                        <td>Hotel 1</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 3500.00</td>
                     </tr>
                     <tr>
-                        <td>hotel 1</td>
+                        <td>Hotel 2</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 4500.00</td>
                     </tr>
                     <tr>
-                        <td>hotel 2</td>
+                        <td>hotel 3</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 5000.00</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight:bold;">Accomodations</td>
+                        <td>=</td>
+                        <td>RS 13000.00</td>
                     </tr>
                     <tr>
                         <td>Service Charges</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 1000.00</td>
                     </tr>
                     <tr>
                         <td>Ticket fees</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>(Rs 500.00)</td>
                     </tr>
                     <tr>
-                        <th class="row">Total</th>
+                        <th class="row" style="font-weight:bold;">Total Budget</th>
                         <th class="row">=</th>
-                        <th class="row">RS XXXX.XX</th>
+                        <th class="row">RS 14000.00</th>
                     </tr>
                 </table>
             </div>

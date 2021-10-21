@@ -34,34 +34,39 @@
               <br>
                 <table class="main">
                     <tr>
-                        <td>Accomodaions</td>
+                        <td>Hotel 1</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 3500.00</td>
                     </tr>
                     <tr>
-                        <td>hotel 1</td>
+                        <td>Hotel 2</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 4500.00</td>
                     </tr>
                     <tr>
-                        <td>hotel 2</td>
+                        <td>Hotel 2</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 5000.00</td>
+                    </tr>
+                    <tr>
+                        <th class="row">Accomodaions</th>
+                        <th class="row">=</th>
+                        <th class="row">RS 13000.00</th>
                     </tr>
                     <tr>
                         <td>Service Charges</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>RS 1000.00</td>
                     </tr>
                     <tr>
                         <td>Ticket fees</td>
                         <td>=</td>
-                        <td>RS XXXX.XX</td>
+                        <td>(RS 500.00)</td>
                     </tr>
                     <tr>
-                        <th class="row">Total</th>
+                        <th class="row">Total Budget</th>
                         <th class="row">=</th>
-                        <th class="row">RS XXXX.XX</th>
+                        <th class="row">RS 14000.00</th>
                     </tr>
                 </table>
             </div>
@@ -69,9 +74,9 @@
 
         <form method="post" id="payForm" name="payForm" class="payForm" action="https://sandbox.payhere.lk/pay/checkout">   
             <input type="text" name="merchant_id" value="1218929">    <!-- Replace your Merchant ID -->
-            <input type="text" name="return_url" value="http://localhost//Travo.lk/Travo/pages/traveler/traveler_trip_to_go.php">
-            <input type="text" name="cancel_url" value="https://localhost//Travo.lk/Travo.lk/Travo/pages/traveler/traveler_budget.php">
-            <input type="text" name="notify_url" value="https://localhost//Travo.lk/Travo.lk/Travo/php/traveler/traveler_payment.php">  
+            <input type="text" name="return_url" value="http://localhost/Travo/pages/traveler/traveler_trip_to_go.php">
+            <input type="text" name="cancel_url" value="https://localhost/Travo/pages/traveler/traveler_budget.php">
+            <input type="text" name="notify_url" value="https://localhost/Travo/php/traveler/traveler_payment.php">  
             <input type="text" name="order_id" value="1">
             <input type="text" name="items" value="Trip"><br>
             <input type="text" name="currency" value="LKR">

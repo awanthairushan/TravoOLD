@@ -47,8 +47,8 @@
                               <dt>Mini Bar</dt>
                               <dt>A/C</dt>
                               <br>
-                              <dt class="price">LKR xxxx.00</dt>
-                              <dt class="left">LKR xxxx.00</dt>
+                              <dt class="price">LKR 6500.00</dt>
+                              <dt class="left">Only 2 left..!</dt>
                             </dl>
                           </div>
                         <div>
@@ -68,8 +68,8 @@
                             <dt>Mini Bar</dt>
                             <dt>A/C</dt>
                             <br>
-                            <dt class="price">LKR xxxx.00</dt>
-                            <dt class="left">LKR xxxx.00</dt>
+                            <dt class="price">LKR 12000.00</dt>
+                            <dt class="left">Only 5 left..!</dt>
                           </dl>
                         </div>
                         <div>
@@ -83,14 +83,14 @@
                         <div class="rname">Family Room</div>
                         <div class="roomtype r3">
                           <dl class="">
-                            <dt>3 Person</dt>
+                            <dt>4 Person</dt>
                             <br>
                             <dt>Breakfast included</dt>
                             <dt>Mini Bar</dt>
                             <dt>A/C</dt>
                             <br>
-                            <dt class="price">LKR xxxx.00</dt>
-                            <dt class="left">LKR xxxx.00</dt>
+                            <dt class="price">LKR 15000.00</dt>
+                            <dt class="left">Only 4 left..!</dt>
                           </dl>
                         </div>
                         <div>
@@ -104,14 +104,14 @@
                         <div class="rname">Massive Room</div>
                         <div class="roomtype r4">
                           <dl class="">
-                            <dt>4 Person</dt>
+                            <dt>6 Person</dt>
                             <br>
                             <dt>Breakfast included</dt>
                             <dt>Mini Bar</dt>
                             <dt>A/C</dt>
                             <br>
-                            <dt class="price">LKR xxxx.00</dt>
-                            <dt class="left">LKR xxxx.00</dt>
+                            <dt class="price">LKR 20000.00</dt>
+                            <dt class="left">Only 3 left..!</dt>
                           </dl>
                         </div>
                         <div>

@@ -28,9 +28,10 @@
                   <br>
                     <form id="form_plan">
                         <!-- destination  1 -->
-                        <div class="location">
-                          <label for="location">LOCATION:</label><input type="text" id="location" name="location"><br/>
+                        <div class="location_div">
+                          <label for="location">LOCATION:</label><input type="text" id="location" name="location">
                         </div>
+                        <br>
                         <div id="destinations">
                             <table class="tableday">
                                 <tr><td class="tdata"><label for="destination1">DESTINATION 1</label></td></tr>
@@ -38,23 +39,26 @@
                                     <td class="tdata">
                                         <select name="destination1" id="des1">
                                         <option selected>Destination 1</option>
-                                        <option value="district1">District 1</option>
-                                        <option value="district2">District 2</option>
-                                        <option value="district3">District 3</option>
-                                        <option value="district4">District 4</option>
-                                        <option value="district5">District 5</option>
+                                        <option value="Ampara">Ampara</option>
+                                        <option value="Anuradhapura">Anuradhapura</option>
+                                        <option value="Badulla">Badulla</option>
+                                        <option value="Batticaloa">Batticaloa</option>
+                                        <option value="Colombo">Colombo</option>
+                                        <option value="Galle">Galle</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr><td class="tdata"><button class="selecthotelpopupbtn"> FIRST NIGHT HOTEL</button></td></tr>
-                                <tr><td class="tdata"><label for="destination1">DESTINATION 1</label></td></tr>
+                                <!-- <tr><td class="tdata"><label for="destination1">DESTINATION 1</label></td></tr> -->
                                 <tr>
                                     <td class="tdata">
-                                        <div id="sights">
-                                        <input type="checkbox" id="sight1" name="sight1" value="sight1"><label for="sight1">SIGHT 1</label><br/>
-                                        <input type="checkbox" id="sight2" name="sight2" value="sight2"><label for="sight2">SIGHT 2</label><br/>
-                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">SIGHT 3</label><br/>
-                                        </div>
+                                        <div id="sights" class="sights">
+                                        <input type="checkbox" id="sight1" name="sight1" value="sight1"><label for="sight1">Ruwanweliseya</label><br/>
+                                        <input type="checkbox" id="sight2" name="sight2" value="sight2"><label for="sight2">Jetavanaramaya</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Rathna Prasada</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Isurumuniya </label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Jaya Sri Maha Bodhi</label><br/>    
+                                    </div>
                                     </td>
                                 </tr>
                             </table>
@@ -67,23 +71,26 @@
                                     <td class="tdata">
                                         <select name="destination2" id="des2">
                                         <option selected>Destination 2</option>
-                                        <option value="district1">District 1</option>
-                                        <option value="district2">District 2</option>
-                                        <option value="district3">District 3</option>
-                                        <option value="district4">District 4</option>
-                                        <option value="district5">District 5</option>
+                                        <option value="Ampara">Ampara</option>
+                                        <option value="Anuradhapura">Anuradhapura</option>
+                                        <option value="Badulla">Badulla</option>
+                                        <option value="Batticaloa">Batticaloa</option>
+                                        <option value="Colombo">Colombo</option>
+                                        <option value="Galle">Galle</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr><td class="tdata"><button class="selecthotelpopupbtn">SECOND NIGHT HOTEL</button></td></tr>
-                                <tr><td class="tdata"><label for="destination2">DESTINATION 2</label></td></tr>
+                                <!-- <tr><td class="tdata"><label for="destination2">DESTINATION 2</label></td></tr> -->
                                 <tr>
                                     <td class="tdata">
-                                        <div id="sights">
-                                        <input type="checkbox" id="sight1" name="sight1" value="sight1"><label for="sight1">SIGHT 1</label><br/>
-                                        <input type="checkbox" id="sight2" name="sight2" value="sight2"><label for="sight2">SIGHT 2</label><br/>
-                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">SIGHT 3</label><br/>
-                                        </div>
+                                        <div id="sights" class="sights">
+                                        <input type="checkbox" id="sight1" name="sight1" value="sight1"><label for="sight1">Galle Dutch Fort</label><br/>
+                                        <input type="checkbox" id="sight2" name="sight2" value="sight2"><label for="sight2">Dutch Reformed Church</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">The National Museum</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Jungle Beach</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Japanese Peace Pagoda</label><br/>    
+                                    </div>
                                     </td>
                                 </tr>
                             </table>
@@ -96,29 +103,33 @@
                                     <td class="tdata">
                                         <select name="destination3" id="des3">
                                         <option selected>Destination 3</option>
-                                        <option value="district1">District 1</option>
-                                        <option value="district2">District 2</option>
-                                        <option value="district3">District 3</option>
-                                        <option value="district4">District 4</option>
-                                        <option value="district5">District 5</option>
+                                        <option value="Ampara">Ampara</option>
+                                        <option value="Anuradhapura">Anuradhapura</option>
+                                        <option value="Badulla">Badulla</option>
+                                        <option value="Batticaloa">Batticaloa</option>
+                                        <option value="Colombo">Colombo</option>
+                                        <option value="Galle">Galle</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr><td class="tdata"><button  class="selecthotelpopupbtn">THIRD NIGHT HOTEL</button></td></tr>
-                                <tr><td class="tdata"><label for="destination1">DESTINATION 3</label></td></tr>
+                                <!-- <tr><td class="tdata"><label for="destination1">DESTINATION 3</label></td></tr> -->
                                 <tr>
                                     <td class="tdata">
-                                        <div id="sights">
-                                        <input type="checkbox" id="sight1" name="sight1" value="sight1"><label for="sight1">SIGHT 1</label><br/>
-                                        <input type="checkbox" id="sight2" name="sight2" value="sight2"><label for="sight2">SIGHT 2</label><br/>
-                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">SIGHT 3</label><br/>
+                                        <div id="sights" class="sights">
+                                        <input type="checkbox" id="sight1" name="sight1" value="sight1"><label for="sight1">Lotus Tower</label><br/>
+                                        <input type="checkbox" id="sight2" name="sight2" value="sight2"><label for="sight2">National Museum</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Sri Lanka Planetarium</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Viharamahadevi Park</label><br/>
+                                        <input type="checkbox" id="sight3" name="sight3" value="sight3"><label for="sight3">Mount Lavinia Beach</label><br/>
                                         </div>
                                     </td>
                                 </tr>
                             </table>
                         </div>
-                        <div class="other_email">
-                          <label for="mails">OTHER PERSON'S E-MAILS:</label><input type="email" id="mails" name="mails"><img id="img" src="../../images/icons/plus.png"><br/>
+                        <br><br>
+                        <div class="location_div">
+                          <label for="mails">OTHER E-MAILS:</label><input type="email" id="mails" name="mails"><br/>
                         </div>
                     </div>
                         <div class="buttons">
@@ -135,40 +146,42 @@
               <tr>
                   <td><a onclick="plusSlides(-1)"><div class="prev"></div></a></td>
                   <td class="hotels">
-                      <div class="slide hotels1">
-                          <div class="cols1">
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-5000</button></div>
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-6000</button></div>
-                          </div>
-                          <div class="cols2">
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-5000</button></div>
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 2000-3000</button></div>
-                          </div>
-                      </div>
+                  <div class="slide hotels1">
+                        <div class="cols1">
+                            <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn">Cinnamon Grand Colombo<br><br>Luxury<br><br>Rs.5,500 - Rs.12,000</button></div>
+                            <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Occidental Eden <br><br>Deluxe<br><br>Rs.10,000 - Rs.45,000</button></div>
+                        </div>
+                        <div class="cols2">
+                            <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Lavinia Hotel<br><br> Standard<br><br>Rs.1,500 - Rs.10,000</button></div>
+                            <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Nelly Marine <br><br> Luxury<br><br>Rs.3,500 - Rs.15,000</button></div>
+                        </div>
+                    </div>
 
                       <div class="slide hotels2">
                           <div class="cols1">
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 4500-5000</button></div>
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 2000-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> The Glamp - Kelaniya <br><br> Deluxe <br><br> Rs.7,500 - Rs.20,000 </button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Sigiriya Resort - Sigiriya <br><br> Luxury <br><br> Rs.4,000 - Rs.15,000 </button></div>
                           </div>
                           <div class="cols2">
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-5000</button></div>
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 6000-5000</button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Amaya Lake - Pasikuda <br><br> Superior <br><br> Rs.3,500 - Rs.12,000 </button></div>
+                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Amaara Forest - Kandy <br><br> Standard <br><br> Rs.1,500 - Rs.5,000 </button></div>
                           </div>
                       </div>
+
 
                       <div class="slide hotels3">
-                          <div class="cols1">
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
-                          </div>
-                          <div class="cols2">
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
-                              <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 1000-50</button></div>
-                          </div>
-                      </div>
+                            <div class="cols1">
+                                <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Shanaya Mansion <br><br> Superior <br><br> Rs.2,000 - Rs.8,000 </button></div>
+                                <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Marriott resort <br><br> Luxury <br><br> Rs.2,500 - Rs.12,500 </button></div>
+                            </div>
+                            <div class="cols2">
+                                <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Tamarind Hill <br><br> Deluxe <br><br>  Rs.3000 - Rs.20,000 </button></div>
+                                <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Shangri-La Hambantota <br><br> Deuluxe <br><br> Rs.4,000 - Rs.20,000 </button></div>
+                            </div>
+                        </div>
 
-                      <div class="slide hotels4">
+
+                      <!-- <div class="slide hotels4">
                           <div class="cols1">
                               <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
                               <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
@@ -177,7 +190,7 @@
                               <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
                               <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Hotel Name <br/> 00-5000</button></div>
                           </div>
-                      </div>
+                      </div> -->
                   </td>
                   <td><a onclick="plusSlides(1)"><div class="next"></div></a></td>
               </tr>

@@ -36,50 +36,68 @@ if(isset($_SESSION['username'])) {
             </div>
         <!-- .................end of image gallery.................. -->
 
-        <!-- ..................hotel details and representattive details........................ -->
-        <div class="hotel_account">
+<!-- ..................hotel details and representattive details........................ -->
+<div class="hotel_account">
           <table>
             <tr>
               <td>Hotel name</td>
-              <td>Sample hotel name</td>
-              <td rowspan = "7"><div class = "hotel_account_payment">LKR 55000</div></td>
+              <td>Grand Hilton Colombo</td>
+              <td rowspan = "2"><div class="checkbtn"><button id="checkbtn" onclick="window.location.href='https://www.sltda.gov.lk/en'";>CHECK VALIDITY</button></div></td>
             </tr>
             <tr>
               <td>Email</td>
-              <td>Sample hotel email</td>
+              <td>grandhilton@gmaiil.com</td>
             </tr>
             <tr>
               <td>Contact</td>
-              <td>Sample hotel contacts</td>
+              <td>0112879547</td>
+              <td rowspan = "5"><div class = "hotel_account_payment">LKR 55000</div></td>
             </tr>
             <tr>
-              <td>type</td>
-              <td>Sample hotel type</td>
+              <td>Type</td>
+              <td>Luxury</td>
             </tr>
             <tr>
-              <td>Registration id</td>
-              <td>Sample hotel reg_no</td>
+              <td>Registration No</td>
+              <td>SLTDA/SQA/HC/064</td>
             </tr>
             <tr>
-              <td>License id</td>
-              <td>Sample hotel licence_id</td>
+              <td>License No</td>
+              <td>HC/2021/0163</td>
             </tr>
             <tr>
               <td>Address</td>
-              <td>Sample hotel address</td>
+              <td>Grand Hilton, Colombo 5</td>
             </tr>
             <tr>
               <td>Representative name</td>
-              <td>Sample Representative name</td>
-              <td rowspan = "3"><div class="paybtn"><button id="paybtn">PAY NOW</button></div></td>
+              <td>Harsha Ranawaka</td>
+              <!-- <form method="post" id="payForm" name="payForm" class="payForm" action="https://sandbox.payhere.lk/pay/checkout">   
+            <input type="text" name="merchant_id" value="1218929">
+            <input type="text" name="return_url" value="http://localhost/Travo/pages/traveler/traveler_trip_to_go.php">
+            <input type="text" name="cancel_url" value="https://localhost/Travo/pages/traveler/traveler_budget.php">
+            <input type="text" name="notify_url" value="https://localhost/Travo/php/traveler/traveler_payment.php">  
+            <input type="text" name="order_id" value="1">
+            <input type="text" name="items" value="Trip"><br>
+            <input type="text" name="currency" value="LKR">
+            <input type="text" name="amount" value="1000">  
+            <input type="text" name="first_name" value="Saman">
+            <input type="text" name="last_name" value="Perera"><br>
+            <input type="text" name="email" value="samanp@gmail.com">
+            <input type="text" name="phone" value="0771234567"><br>
+            <input type="text" name="address" value="No.1, Galle Road">
+            <input type="text" name="city" value="Colombo">
+            <input type="text" name="country" value="Sri Lanka"><br><br>  
+        </form>  -->
+              <td rowspan = "3"><div class="paybtn"><button id="paybtn" form="payForm">PAY NOW</button></div></td>
             </tr>
             <tr>
               <td>Email</td>
-              <td>Sample Representative email</td>
+              <td>harsha.ranawaka@hilton.com</td>
             </tr>
             <tr>
               <td>Contact</td>
-              <td>Sample Representative contacts</td>
+              <td>0717964057s</td>
             </tr>
 
           </table>
@@ -103,38 +121,39 @@ if(isset($_SESSION['username'])) {
                 <tr>
                     <td id="first_column_room_details-form-sign_up-hotel">Single Room </td>
                     <td>1</td>
-                    <td><input class="number-form-sign_up-traveler" type="number" id="single_room_count" name="single_room_count" ></td>
-                    <td><input type="checkbox" id="single_room_minibar" name="single_room_minibar"></td>
-                    <td><input type="checkbox" id="single_room_food" name="single_room_food"></td>
-                    <td><input type="checkbox" id="single_room_food" name="single_room_food"></td>
-                    <td><input class="price-form-sign_up-traveler"  type="text" id="single_room_price" name="single_room_price" placeholder="0.00" ></td>
+                    <td>10</td>
+                    <td><input type="checkbox" id="single_room_minibar" name="single_room_minibar" checked></td>
+                    <td><input type="checkbox" id="single_room_food" name="single_room_food" checked></td>
+                    <td><input type="checkbox" id="single_room_food" name="single_room_food" checked></td>
+                    <td>2500.00</td>
                   </tr>
                   <tr>
                     <td id="first_column_room_details-form-sign_up-hotel">Double Room </td>
                     <td>2</td>
-                    <td><input class="number-form-sign_up-traveler" type="number" id="double_room_count" name="double_room_count" ></td>
-                    <td><input type="checkbox" id="double_room_minibar" name="double_room_minibar"></td>
-                    <td><input type="checkbox" id="double_room_food" name="double_room_food"></td>
-                    <td><input type="checkbox" id="double_room_ac" name="double_room_ac"></td>
-                    <td><input class="price-form-sign_up-traveler" type="text" id="double_room_price" name="double_room_price" placeholder="0.00" ></td>
+                    <td>10</td>
+                    <td><input type="checkbox" id="double_room_minibar" name="double_room_minibar" checked></td>
+                    <td><input type="checkbox" id="double_room_food" name="double_room_food" ></td>
+                    <td><input type="checkbox" id="double_room_ac" name="double_room_ac" checked></td>
+                    <td>3500.00</td>
                   </tr>
                   <tr>
                     <td id="first_column_room_details-form-sign_up-hotel">Family Room </td>
                     <td>4</td>
-                    <td><input class="number-form-sign_up-traveler" type="number" id="family_room_count" name="family_room_count" ></td>
-                    <td><input type="checkbox" id="family_room_minibar" name="family_room_minibar"></td>
+                    <td>10</td>
+                    <td><input type="checkbox" id="family_room_minibar" name="family_room_minibar" checked></td>
                     <td><input type="checkbox" id="family_room_food" name="family_room_food"></td>
                     <td><input type="checkbox" id="family_room_ac" name="family_room_ac"></td>
-                    <td><input class="price-form-sign_up-traveler"  type="text" id="family_room_price" name="family_room_price" placeholder="0.00" ></td>
+                    <td>5000.00</td>
                   </tr>
                   <tr>
                     <td id="first_column_room_details-form-sign_up-hotel">Massive Room </td>
-                    <td><input class="number-form-sign_up-traveler" type="number" id="massive_room_capacity" name="massive_room_capacity" ></td>
-                    <td><input class="number-form-sign_up-traveler" type="number" id="massive_room_count" name="massive_room_count" ></td>
+                    <!-- <td><input class="number-form-sign_up-traveler" type="number" id="massive_room_capacity" name="massive_room_capacity" ></td> -->
+                    <td>6</td>
+                    <td>10</td>
                     <td><input type="checkbox" id="massive_room_minibar" name="massive_room_minibar"></td>
                     <td><input type="checkbox" id="massive_room_food" name="massive_room_food"></td>
                     <td><input type="checkbox" id="massive_room_ac" name="massive_room_ac"></td>
-                    <td><input class="price-form-sign_up-traveler"  type="text" id="massive_room_price" name="massive_room_price" placeholder="0.00" ></td>
+                    <td>7000.00</td>
                   </tr>
                </tr>
              </table>

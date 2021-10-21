@@ -24,6 +24,20 @@
       </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_hotel.js"></script>
       <br>
+            <!-- .....................modal box for cutomer details ...................... -->
+    <div class="more_traveler_details_modal">
+      <div class="more_traveler_details_modal_box">
+          <ul>
+              <li>Devmini Perera</li>
+              <li>devminiperera@gmail.com</li>
+              <li>0705758984 0112487075</li>
+              <li>No 34, Third Lane</li>
+              <li>Gampaha</li>
+          </ul>
+            <button type="button" name="more_traveler_cancel_btn" class="more_traveler_cancel_btn" id="more_traveler_cancel_btn">DONE</button>
+      </div>
+      </div>
+<!-- .....................end of modal box for cutomer details..................... -->
 <center>
         <form>
             <div class="rectangle2">
@@ -39,7 +53,7 @@
          </br>
 
     <div class="rectangle">
-            <table class="b" rules= "none">
+    <table class="b" rules= "none">
                 <tr class = "no-bottom-border td">
                     <th class ="b">CHECK-IN</th>
                     <th class ="b">CHECK-OUT</th>
@@ -51,56 +65,56 @@
                     <th class ="b">CUSTOMER DETAILS</th> </br>
                   </tr>
                  <tr>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"  > </td>
-                    <td class ="b"  > </td>
-                    <td class ="b"  >
-                       <div class="price" placeholder="Rs. XXXX"></div>
+                    <td class ="b"> 2021-09-12 </td>
+                    <td class ="b"> 2021-09-15 </td>
+                    <td class ="b"> 1 </td>
+                    <td class ="b"> 2 </td>
+                    <td class ="b"> 0 </td>
+                    <td class ="b"> 0 </td>
+                    <td class ="b">
+                       <div class="price" placeholder="Rs. XXXX">RS. 7000</div>
                     </td>
                     <td class ="b"  >
                        <button class="morebtn">More</button>
                     </td>
                    </tr>
                    <tr>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"  > </td>
-                    <td class ="b"  > </td>
+                    <td class ="b"> 2021-09-12 </td>
+                    <td class ="b"> 2021-09-15 </td>
+                    <td class ="b"> 1 </td>
+                    <td class ="b"> 0 </td>
+                    <td class ="b"> 2 </td>
+                    <td class ="b"> 0 </td>
                     <td class ="b"  >
-                       <div class="price" placeholder="Rs. XXXX"></div>
+                       <div class="price" placeholder="Rs. XXXX">RS. 9000</div>
                     </td>
                     <td class ="b"  >
                        <button class="morebtn">More</button>
                     </td>
                     </tr>
                     <tr>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"  > </td>
-                    <td class ="b"  > </td>
+                    <td class ="b"> 2021-09-12 </td>
+                    <td class ="b"> 2021-09-15 </td>
+                    <td class ="b"> 0 </td>
+                    <td class ="b"> 3 </td>
+                    <td class ="b"> 0 </td>
+                    <td class ="b"> 1 </td>
                     <td class ="b"  >
-                       <div class="price" placeholder="Rs. XXXX"></div>
+                       <div class="price" placeholder="Rs. XXXX">RS. 12000</div>
                     </td>
                     <td class ="b"  >
                         <button class="morebtn">More</button>
                     </td>
                     </tr>
                     <tr>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"> </td>
-                    <td class ="b"  > </td>
-                    <td class ="b"  > </td>
+                    <td class ="b"> 2021-09-12 </td>
+                    <td class ="b"> 2021-09-15 </td>
+                    <td class ="b"> 1 </td>
+                    <td class ="b"> 1 </td>
+                    <td class ="b"> 1 </td>
+                    <td class ="b"> 1 </td>
                     <td class ="b"  >
-                        <div class="price" placeholder="Rs. XXXX"></div>
+                        <div class="price" placeholder="Rs. XXXX">RS. 12000</div>
                     </td>
                     <td class ="b"  >
                         <button class="morebtn">More</button>
@@ -114,7 +128,8 @@
       <?php include '../../repeatable_contents/footer.php';?>
       <style> <?php include '../../repeatable_contents/footer.css'; ?>  </style>
       </section>
-
+      <!--JS file for cutomer details-->
+      <script src="../../script/hotel/hotel_booking.js"></script>
     </body>
 </html>
 <?php

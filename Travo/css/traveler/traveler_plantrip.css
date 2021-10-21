@@ -18,23 +18,33 @@ body {
 .details {
     align-content: center;
     background: rgba(196, 196, 196, 0.5);
-    border-radius: 3.5rem;
+    border-radius: 2rem;
     margin: 0 auto;
     width: 80%;
     height: 76vh;
 }
 
-.location {
+.location_div {
     width: 90%;
     margin: auto;
+    margin-top: 1rem;
+    padding: 0;
+    height: 1rem;
 }
 
-.location label {
+.location_div label {
+
     float: left;
+    margin: 0;
+    margin-left: 5rem;
+    width: 20%;
 }
 
-.location input {
+.location_div input {
     float: right;
+    margin: 0;
+    margin-right: 0.25rem;
+    width: 60%;
 }
 
 .tableday {
@@ -47,22 +57,28 @@ body {
     padding: 15px;
     text-align: center;
 }
-
+.tdata select{
+    font-size: 1rem;
+}
+.tdata option{
+    font-size: 1rem;
+}
 #destinations {
     float: left;
     width: 33.33%;
+    margin-bottom: 1rem;
 }
 
 .selecthotelpopupbtn {
     width: 15rem;
     height: 4rem;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     color: #ffffff;
     border: none;
     background: rgba(103, 176, 186, 0.7);
-    border-radius: 30px;
+    border-radius: 1rem;
     cursor: pointer;
 }
 
@@ -72,21 +88,24 @@ select {
     background: none;
 }
 
-#sights {
+.sights {
     width: 15rem;
     height: 20vh;
-    padding: 20px;
+    padding: 0.5rem;
     margin-bottom: auto;
     border: 2px solid #000000;
     box-sizing: border-box;
-    border-radius: 15px;
+    border-radius: 1rem;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 1rem;
 }
 
 input[type=email],
 input[type="text"] {
     background: none;
     border: 2px solid #000000;
-    margin: 5px;
+    margin: 0px;
     border-radius: 0.5rem;
     width: 65%;
 }
@@ -126,11 +145,12 @@ input[type="text"] {
 }
 
 .hotel_names_popup {
+    padding-top: 2rem;
     display: none;
     height: 50vh;
     background: rgba(196, 196, 196, 0.5);
     width: 80%;
-    margin: auto;
+    margin: 15vh auto auto auto;
     border-radius: 3.5rem;
 }
 
@@ -144,7 +164,7 @@ table {
     border-right: 50px solid #555;
     border-bottom: 75px solid transparent;
     width: 5%;
-    float: left;
+    float: right;
     align-content: center;
     cursor: pointer;
 }
@@ -165,15 +185,27 @@ table {
     cursor: pointer;
 }
 
-.cols1,
-.cols2 {
+.cols1,.cols2 div{
     float: left;
     width: 50%;
     align-content: center;
+    padding: 0;
 }
-
+.cols1 button {
+    font-size: 1rem;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
+.cols2 button {
+    font-size: 1rem;
+    margin: auto;
+    padding: 0;
+    margin-bottom: 0.5rem;
+}
 .hotels1 {
     display: block;
+    
 }
 
 .hotels2,
@@ -195,6 +227,8 @@ table {
 }
 
 #cancelbtn {
+    font-size: 1.2rem;
+    font-weight: bold;
     font-family: sans-serif;
     width: 250px;
     height: 46px;

@@ -129,9 +129,9 @@ if(isset($_SESSION['username'])) {
             </thead>
             <tbody>
                 <tr>
-                <td>NO</td>
-                <td>Hotel Name</td>
-                <td>Address</td>
+                <td>1</td>
+                <td>Anantara Resort</td>
+                <td>Galle Rd, Kalutara</td>
                 <td><input type="button" id="morebtn" value="MORE" class='hotel_morebtn' onclick="window.location.href='admin_hotels_more.php'";></td>
                 <td><input type="button" id="remove_hotel_btn" class="remove_hotel_btn" value="REMOVE"></td>
                 </tr>

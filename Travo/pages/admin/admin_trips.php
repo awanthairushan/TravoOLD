@@ -73,36 +73,36 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>12345</td>
+                    <td>P_12</td>
+                    <td>2021-10-25</td>
+                    <td>2021-10-26</td>
+                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
+                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                </tr>
+                <tr>
+                    <td>L_67</td>
+                    <td>2021-11-15</td>
+                    <td>2021-11-17</td>
+                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
+                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                </tr>
+                <tr>
+                    <td>L_90</td>
+                    <td>2021-12-25</td>
+                    <td>2021-12-28</td>
+                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
+                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                </tr>
+                <tr>
+                    <td>P_34</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
-                </tr>
-                <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
-                </tr>
-                <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
-                </tr>
-                <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
+                    <td>C_23</td>
+                    <td>2021-08-14</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
@@ -139,7 +139,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>12345</td>
+                    <td>L_86</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
@@ -147,7 +147,15 @@
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
+                    <td>C_33</td>
+                    <td>2021-11-15</td>
+                    <td>2021-11-17</td>
+                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
+                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
+                    <td><input type="button" id="completedbtn" value="COMPLETED"></td>
+                </tr>
+                <tr>
+                    <td>P_128</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
@@ -155,25 +163,17 @@
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
+                    <td>L_78</td>
+                    <td>2021-10-25</td>
+                    <td>2021-10-26</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
-                    <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
-                    <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
-                    <td><input type="button" id="completedbtn" value="COMPLETED"></td>
-                </tr>
-                <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
+                    <td>C_34</td>
+                    <td>2021-10-25</td>
+                    <td>2021-10-26</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
                     <td><input type="button" id="completedbtn" value="COMPLETED"></td>
@@ -209,37 +209,37 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
+                    <td>P_45</td>
+                    <td>2021-09-15</td>
+                    <td>2021-09-20</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
+                    <td>L_66</td>
+                    <td>2021-07-25</td>
+                    <td>2021-07-27</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
+                    <td>L_67</td>
+                    <td>2021-06-15</td>
+                    <td>2021-06-26</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE"class="morebtn_traveler_details"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
+                    <td>C_90</td>
                     <td>2021-08-15</td>
                     <td>2021-08-20</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
                 </tr>
                 <tr>
-                    <td>12345</td>
-                    <td>2021-08-15</td>
-                    <td>2021-08-20</td>
+                    <td>C_23</td>
+                    <td>2021-04-13</td>
+                    <td>2021-04-14</td>
                     <td><input type="button" id="morebtn" value="MORE" onclick="window.location.href='../../pages/admin/admin_trip_details.php'"></td>
                     <td><input type="button" id="morebtn" value="MORE" class="morebtn_traveler_details"></td>
                 </tr>

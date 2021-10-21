@@ -138,13 +138,13 @@ select{
 }
 
 .buttons-sign_up-traveler {
-    width: 40%;
+    width: 35%;
     padding: 0px;
-    margin-left: 13rem;
+    margin-left: 15rem;
 }
 
-.submitbtn {
-    width: 50%;
+.updatebtn {
+    width: 12rem;
     height: 2rem;
     border-radius: 0.5rem;
     border-width: 0px;
@@ -154,10 +154,25 @@ select{
     letter-spacing: 1px;
     color: #ffffff;
     cursor: pointer;
+    float: left;
+    box-shadow: 1px 2px #888888;
+    margin-left: 0;
+}
+.deletebtn {
+    width: 12rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border-width: 0px;
+    background-color: rgb(204, 78, 109);
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
     float: right;
     box-shadow: 1px 2px #888888;
+    margin-left: 1rem;
 }
-
 
 /* input[type="checkbox"]{
     width: 10px;

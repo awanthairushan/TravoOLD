@@ -27,7 +27,7 @@
       <div class="home-watermark_and_started-div">
       <div class = "watermark">TRAVO.lk</div><br>
       <br>
-      <button type="button" name="button" class="get_started-btn" onclick="window.location.href='../../pages/hotel/hotel_availability.php'">GET STARTED</button>
+      <button type="button" name="button" class="get_started-btn" onclick="window.location.href='../../pages/hotel/hotel_booking.php'">GET STARTED</button>
       </div>
     </section>
 

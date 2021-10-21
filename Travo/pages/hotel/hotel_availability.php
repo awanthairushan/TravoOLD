@@ -10,13 +10,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>AVAILABILITY</title>
-        <link rel="icon" href="../../images/icons/favicon.ico">
         <link rel="stylesheet" href="../../css/hotel/hotel_availability.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../../script/hotel/hotel_availability.js"></script>
-        <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
-        <link rel="icon" href="../../images/icons/favicon.ico">
     </head>
     <body>
     <section class="sign_up-traveler">
@@ -44,41 +40,41 @@
                 <div class="rooms">
                     <div class="slide">
                         <div class ="text1">Single Room</div>
-                        <div class="roomtype r1">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR xxxx.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 1 left !</b></div>
+                        <div class="roomtype r1">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR 1000.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 2 left !</b></div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseSBValue()" value="Decrease Value">-</div>
+                            <input type="number" id="SBnumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseSBValue()" value="Increase Value">+</div>
                         </div>
                     </div>
 
                     <div class="slide">
                         <div class ="text1">Double Room</div>
-                        <div class="roomtype r2">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR xxxx.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 1 left !</b></div>
+                        <div class="roomtype r2">2 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR 2000.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 3 left !</b></div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseDBValue()" value="Decrease Value">-</div>
+                            <input type="number" id="DBnumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseDBValue()" value="Increase Value">+</div>
                         </div>
                     </div>
 
                     <div class="slide">
                         <div class ="text1">Family Room</div>
-                        <div class="roomtype r3">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR xxxx.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 1 left !</b></div>
+                        <div class="roomtype r3">4 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR 3000.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 5 left !</b></div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseFBValue()" value="Decrease Value">-</div>
+                            <input type="number" id="FBnumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseFBValue()" value="Increase Value">+</div>
                         </div>
                     </div>
 
                     <div class="slide">
                         <div class ="text1">Massive Room</div>
-                        <div class="roomtype r4">1 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR xxxx.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 1 left !</b></div>
+                        <div class="roomtype r4">6 Person<br/><br/>Breakfast included<br/>Attached bathroom<br/><br/>LKR 4000.00<br/>without Luxury facilities<br/><br/><b class="nos">Only 4 left !</b></div>
                         <div>
-                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
-                            <input type="number" id="number" value="0" />
-                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+                            <div class="value-button" id="decrease" onclick="decreaseMBValue()" value="Decrease Value">-</div>
+                            <input type="number" id="MBnumber" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseMBValue()" value="Increase Value">+</div>
                         </div>
                     </div>
                 </div>

@@ -78,7 +78,7 @@
             exit();
           }
       } elseif (mysqli_num_rows($resultdeleted_accounts) === 1) {
-        header('location: ../../pages/unregistered/log_in.php?error=අම්නෙ අපි ඔවාව අයිම් කලාම්නෙ. සොම්රි');
+        header('location: ../../pages/unregistered/log_in.php?error=Admin removed this account.');
         exit();
       } else {
           header('location: ../../pages/unregistered/log_in.php?error=Incorrect Username or Password');

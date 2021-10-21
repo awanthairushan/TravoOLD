@@ -38,22 +38,22 @@ if (isset($_SESSION['username'])) {
 
                     <div class="container">
                         <div class="details">
-                            <table class="main">
+                            <table class="main_details">
                                 <tr>
                                     <td>Date : </td>
-                                    <td>YYYY-MM-DD To YYYY-MM-DD</td>
+                                    <td>2021-11-10 To 2021-11-13</td>
                                 </tr>
                                 <tr>
                                     <td>Number of Travelers : </td>
-                                    <td>Count.</td>
+                                    <td>4</td>
                                 </tr>
                                 <tr>
                                     <td>Category : </td>
-                                    <td>Category</td>
+                                    <td>Cultural</td>
                                 </tr>
                                 <tr>
                                     <td>Mileage : </td>
-                                    <td></td>
+                                    <td>350km</td>
                                 </tr>
                             </table>
 
@@ -65,22 +65,22 @@ if (isset($_SESSION['username'])) {
                                     <th class="trow">Day 3</th>
                                 </tr>
                                 <tr>
-                                    <th class="row">Destination</th>
-                                    <td class="trow">Destination1</td>
-                                    <td class="trow">Destination2</td>
-                                    <td class="trow">Destination3</td>
+                                    <td class="trow">Destination</td>
+                                    <td class="trow">Anuradhapura</td>
+                                    <td class="trow">Galle</td>
+                                    <td class="trow">Colombo</td>
                                 </tr>
                                 <tr>
-                                    <th class="row">Hotel</th>
-                                    <td class="trow">Hotel 1</td>
-                                    <td class="trow">Hotel 2</td>
-                                    <td class="trow">Hotel 3</td>
+                                    <td class="trow">Hotel</td>
+                                    <td class="trow">Hotel Alakamanda</td>
+                                    <td class="trow">CocoBay Unawatuna</td>
+                                    <td class="trow">Cinnamon Grand Colombo</td>
                                 </tr>
                                 <tr>
-                                    <th class="row">Sights</th>
-                                    <td class="trow">sight 1<br />sight 2<br />sight 3</td>
-                                    <td class="trow">sight 1<br />sight 2<br />sight 3</td>
-                                    <td class="trow">sight 1<br />sight 2<br />sight 3</td>
+                                    <td class="trow">Sights</td>
+                                    <td class="trow">Ruwanweliseya<br />Rathna Prasada<br />Isurumuniya</td>
+                                    <td class="trow">Dutch Reformed Church<br />The National Museum<br />Japanese Peace Pagoda</td>
+                                    <td class="trow">National Museum<br />Viharamahadevi Park<br />Sri Lanka Planetarium</td>
                                 </tr>
                             </table>
                         </div>

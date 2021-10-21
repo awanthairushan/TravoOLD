@@ -59,6 +59,7 @@ form{
 
 .rname{
     /* font-size: 25px; */
+    font-size: 1rem;
 }
 
 .r1,.r2,.r3,.r4{
@@ -88,7 +89,7 @@ form{
 }
 .left{
   font-size: 1rem;
-  color: red;
+  color: rgb(185, 8, 8);
   font-weight: bold;
 }
 .price {

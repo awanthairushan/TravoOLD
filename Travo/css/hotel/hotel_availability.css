@@ -10,16 +10,16 @@ body{
     background-size: cover;
 }
   .dateselect{
-    width:28rem;
-    height: 4rem;
+    width:451px;
+    height: 70px;
   }
 /*Form part to input date*/
 input[type="date"]{
-    width: 25rem;
-    height: 3rem;
+    width: 400px;
+    height: 50px;
     background: rgba(255, 255, 255, 0.4);
-    border: 0;
-    border-radius: 0.5rem;
+    border: rgba(255, 255, 255, 0.4);
+    border-radius: 7px;
     text-align: center;
     font-size: 1rem;
 }
@@ -34,9 +34,9 @@ td.b{
     width: 10%;
 }
 .bg{
-  height: 72vh;
-  background-color: rgba(255,255,255,0.4);
-    border-radius: 1.5rem;
+  height: 75%;
+    background : rgba(196, 196, 196, 0.5);
+    border-radius: 50px;
     width: 80%;
     align-content: center;
 }
@@ -45,10 +45,17 @@ form{
     margin: auto;
 }
 
-
+.rooms{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background: rgba(196, 196, 196, 0.5);
+    border-radius: 40px;
+    padding-top: 10px;
+    text-align: center;
+}
 
 .slide{
-  margin-top: 0.6rem;
     display: inline-block;
     width: 23%;
     /*to center  .roomtype*/
@@ -73,10 +80,10 @@ form{
     display: inline-block;
 
     width: 90%;
-    height: 38vh;
+    height: 15rem;
     padding-top: 50px;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 0.8rem;
+    border-radius: 20px;
     color: #ffffff;
     margin:4px;
 
@@ -85,7 +92,7 @@ form{
 }
 
 b{
-    color: red;
+    color: rgb(182, 3, 3);
 }
 .b td {
   text-align: center;
@@ -99,13 +106,14 @@ b{
     width: 14rem;
     height: 3rem;
     background: rgba(93, 196, 189, 1.0);
-    border-radius: 0.6rem;
+    border-radius: 15px;
     color: #ffffff;
     border: none;
     margin: auto;
     font-size: 1.2rem;
     letter-spacing: 2px;
     cursor: pointer;
+    margin-bottom: 1rem;
 }
 
 /* css for changing no of rooms part */
@@ -133,12 +141,12 @@ b{
 
   form #decrease {
     margin-right: -4px;
-    border-radius: 0.5rem 0 0 0.5rem;
+    border-radius: 8px 0 0 8px;
   }
 
   form #increase {
     margin-left: -4px;
-    border-radius: 0 0.5rem 0.5rem 0;
+    border-radius: 0 8px 8px 0;
   }
 
   form #input-wrap {
@@ -146,7 +154,7 @@ b{
     padding: 0px;
   }
 
-  input#number {
+  input[type=number] {
     text-align: center;
     border: none;
     border-top: 1px solid #ddd;
