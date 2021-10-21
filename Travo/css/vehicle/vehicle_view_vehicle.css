@@ -2,13 +2,16 @@ body {
     font-family: sans-serif;
     margin: 0;
 }
+
 .uppersection {
-      background-image: url("../../images/background_Images/vehiclebg.jpg");
-      opacity: 90%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100vh;
+    background-image: url("../../images/background_Images/vehiclebg.jpg");
+    opacity: 90%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
+
+
 /* .content {
   width: 85vw;
   margin: auto;
@@ -60,82 +63,107 @@ select{
 
 } */
 
-.vehicle_and_owner_details{
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 1rem;
-  width: 85vw;
-  margin: auto;
-  height: 80vh;
-  max-height: 80vh;
-  overflow-y: auto;
+.vehicle_and_owner_details {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 1rem;
+    width: 85vw;
+    margin: auto;
+    height: 80vh;
+    max-height: 80vh;
+    overflow-y: auto;
 }
+
 .vehicle_and_owner_details h3 {
-  margin-left: 2.5vw;
-}
-.vehicledetails{
-  background: rgba(255, 255, 255, 0.5);
-  height: 23rem;
-  width: 48vw;
-  border-collapse: collapse;
-  float: left;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  margin-left:2.5vw;
-  border-radius: 1rem;
+    margin-left: 2.5vw;
 }
 
-.vehicleType{
-  border-radius: 1rem 1rem 0 0;
-  background: rgba(0, 0, 0, 0.5);
-  text-align: center;
-  text-align: center;
-  margin: 0;
-  height: 2rem;
-  padding: 0;
+.vehicledetails {
+    background: rgba(255, 255, 255, 0.5);
+    height: 23rem;
+    width: 48vw;
+    border-collapse: collapse;
+    float: left;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-left: 2.5vw;
+    border-radius: 1rem;
 }
+
+.vehicleType {
+    border-radius: 1rem 1rem 0 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-align: center;
+    margin: 0;
+    height: 2rem;
+    padding: 0;
+}
+
 .vehicledetails td {
-  padding: 0;
+    padding: 0;
 }
-.vehicledetails td:first-child {
-  width: 10%;
-  padding: 1rem;
-  text-align: left;
-}
-.vimg{
-  border-radius: 1rem;
-  height: 21rem;
-  width: auto;
-  margin: 0;
-  float: right;
-}
-.driver_details {
-  margin-right: 2.5vw;
-  border-radius: 1rem;
-  float: right;
-  width: 31vw;
-  background: rgba(255, 255, 255, 0.5);
-  height: 23rem;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0;
-  border-collapse: collapse;
 
+.vehicledetails td:first-child {
+    width: 10%;
+    padding: 1rem;
+    text-align: left;
+}
+
+.vimg {
+    border-radius: 1rem;
+    height: 21rem;
+    width: auto;
+    margin: 0;
+    float: right;
+}
+
+.driver_details {
+    margin-right: 2.5vw;
+    border-radius: 1rem;
+    float: right;
+    width: 31vw;
+    background: rgba(255, 255, 255, 0.5);
+    height: 23rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    border-collapse: collapse;
 }
 
 .driver_details td {
-  padding: 1rem;
-  text-align: left;
-  line-height: 1.5rem;
-  margin: 0;
+    padding: 1rem;
+    text-align: left;
+    line-height: 1.5rem;
+    margin: 0;
 }
 
+.buttons-sign_up-traveler {
+    width: 40%;
+    padding: 0px;
+    margin-left: 13rem;
+}
 
+.submitbtn {
+    width: 50%;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border-width: 0px;
+    background-color: rgba(103, 176, 186, 0.8);
+    font-weight: bold;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    cursor: pointer;
+    float: right;
+    box-shadow: 1px 2px #888888;
+}
 
 
 /* input[type="checkbox"]{
     width: 10px;
     background-color: transparent;
 } */
+
 
 /* @media screen and (max-width:650px){
 

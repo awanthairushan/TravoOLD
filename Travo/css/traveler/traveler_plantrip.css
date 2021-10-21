@@ -1,19 +1,21 @@
-body{
+body {
     font-family: sans-serif;
     margin: 0px;
 }
 
-.uppersection{
+.uppersection {
     background-image: url("../../images/background_Images/travelerbg.jpg");
     opacity: 90%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
 }
+
 .content {
-  display: block;
+    display: block;
 }
-.details{
+
+.details {
     align-content: center;
     background: rgba(196, 196, 196, 0.5);
     border-radius: 3.5rem;
@@ -21,34 +23,37 @@ body{
     width: 80%;
     height: 76vh;
 }
+
 .location {
-  width: 90%;
-  margin: auto;
+    width: 90%;
+    margin: auto;
 }
+
 .location label {
-  float: left;
+    float: left;
 }
+
 .location input {
-  float: right;
+    float: right;
 }
-.tableday{
+
+.tableday {
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-.tdata{
-    padding :15px;
+.tdata {
+    padding: 15px;
     text-align: center;
 }
 
-#destinations{
+#destinations {
     float: left;
     width: 33.33%;
 }
 
-
-.selecthotelpopupbtn{
+.selecthotelpopupbtn {
     width: 15rem;
     height: 4rem;
     display: inline-block;
@@ -61,13 +66,13 @@ body{
     cursor: pointer;
 }
 
-select{
+select {
     border: none;
     border-bottom: solid #000000 2px;
-    background:none;
+    background: none;
 }
 
-#sights{
+#sights {
     width: 15rem;
     height: 20vh;
     padding: 20px;
@@ -77,30 +82,31 @@ select{
     border-radius: 15px;
 }
 
-input[type=email],input[type="text"]{
+input[type=email],
+input[type="text"] {
     background: none;
-    border:2px solid #000000;
+    border: 2px solid #000000;
     margin: 5px;
     border-radius: 0.5rem;
     width: 65%;
 }
 
-#img{
+#img {
     width: 1.5rem;
     height: 1.5rem;
 }
 
-.addmail{
+.addmail {
     color: #000000;
 }
 
-.buttons{
+.buttons {
     position: absolute;
     left: 50%;
     margin-top: 10px;
 }
 
-#nextbtn{
+#nextbtn {
     position: relative;
     left: -50%;
     width: 15rem;
@@ -114,30 +120,26 @@ input[type=email],input[type="text"]{
     border: none;
     cursor: pointer;
 }
+
 .other_email {
-  text-align: center;
+    text-align: center;
 }
-
-
-
-
-
-
 
 .hotel_names_popup {
-  display: none;
-  height: 50vh;
-  background: rgba(196, 196, 196, 0.5);
-  width: 80%;
-  margin: auto;
-  border-radius: 3.5rem;
+    display: none;
+    height: 50vh;
+    background: rgba(196, 196, 196, 0.5);
+    width: 80%;
+    margin: auto;
+    border-radius: 3.5rem;
 }
-table{
+
+table {
     width: 100%;
     text-align: center;
 }
 
-.prev{
+.prev {
     border-top: 75px solid transparent;
     border-right: 50px solid #555;
     border-bottom: 75px solid transparent;
@@ -147,39 +149,43 @@ table{
     cursor: pointer;
 }
 
-.hotels{
+.hotels {
     width: 80%;
 }
 
-.next{
-	width: 0;
-	height: 0;
-	border-top: 75px solid transparent;
-	border-left: 50px solid #555;
-	border-bottom: 75px solid transparent;
+.next {
+    width: 0;
+    height: 0;
+    border-top: 75px solid transparent;
+    border-left: 50px solid #555;
+    border-bottom: 75px solid transparent;
     width: 5%;
     float: left;
     align-content: center;
     cursor: pointer;
 }
 
-.cols1,.cols2{
+.cols1,
+.cols2 {
     float: left;
     width: 50%;
     align-content: center;
 }
 
-.hotels1{
+.hotels1 {
     display: block;
 }
 
-.hotels2,.hotels3,.hotels4{
+.hotels2,
+.hotels3,
+.hotels4 {
     display: none;
 }
 
-#selecthotelbtn{
+#selecthotelbtn {
     background-color: rgba(0, 0, 0, 0.5);
-    width: 20rem;;
+    width: 20rem;
+    ;
     height: 7rem;
     color: #ffffff;
     border-radius: 2rem;
@@ -188,7 +194,7 @@ table{
     cursor: pointer;
 }
 
-#cancelbtn{
+#cancelbtn {
     font-family: sans-serif;
     width: 250px;
     height: 46px;
@@ -200,30 +206,26 @@ table{
     cursor: pointer;
 }
 
-@media screen and (max-width:650px){
-    .slide{
+@media screen and (max-width:650px) {
+    .slide {
         float: left;
         width: 100%;
         align-content: center;
     }
-
-    .cols1,.cols2{
-        width:100%
+    .cols1,
+    .cols2 {
+        width: 100%
     }
-
-
-    .next{
-        float:left;
+    .next {
+        float: left;
         width: 5%;
     }
-
-    #selecthotelbtn{
+    #selecthotelbtn {
         height: 100px;
     }
-
-    #cancelbtn{
-    }
+    #cancelbtn {}
 }
+
 
 /* @media screen and (max-width:1075px){
     #destinations{

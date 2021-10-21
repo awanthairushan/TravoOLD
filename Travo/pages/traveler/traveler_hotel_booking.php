@@ -35,7 +35,7 @@
             </div>
 
             <div>
-                <form>
+                <form action="traveler_plantrip.php">
                 <div class="rooms">
                     <div class="slide">
                         <div class="rname">Single Room</div>

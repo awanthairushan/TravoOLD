@@ -15,7 +15,7 @@ if(isset($_POST['otp_send_btn'])){
         $sqlForExistedTraveler = "SELECT * FROM travelers WHERE email = '$user_email' LIMIT 1";
         $resultForExistedTraveler = mysqli_query($con,$sqlForExistedTraveler);
 
-        $sqlForExistedVehicle = "SELECT * FROM vehicles WHERE email = '$user_email' LIMIT 1";
+        $sqlForExistedVehicle = "SELECT * FROM vehicle_owners WHERE email = '$user_email' LIMIT 1";
         $resultForExistedVehicle = mysqli_query($con,$sqlForExistedVehicle);
         
         if (mysqli_num_rows($resultForExistedTraveler) > 0) {
@@ -72,7 +72,7 @@ if(isset($_POST['otp_send_btn'])){
                     $vehicle_otp = rand(1000, 9999); //if exists,generate a new otp
                 }else{
                     //update the 'otp' column of travelers database
-                    $sqlForUpdateOtp = "UPDATE vehicles SET otp = '$vehicle_otp' WHERE email = '$existing_vehicle_email' ";
+                    $sqlForUpdateOtp = "UPDATE vehicle_owners SET otp = '$vehicle_otp' WHERE email = '$existing_vehicle_email' ";
 
                     //create the body of the email
                     if(mysqli_query($con, $sqlForUpdateOtp)){
@@ -113,7 +113,7 @@ if(isset($_POST['enter_otp_btn'])){
     $sqlForExistingOtp = "SELECT otp FROM travelers WHERE email = '$sent_email' ";
     $resultForExistingOtp = mysqli_query($con, $sqlForExistingOtp);
 
-    $sqlForExistingVehicleOtp = "SELECT otp FROM vehicles WHERE email = '$sent_email' ";
+    $sqlForExistingVehicleOtp = "SELECT otp FROM vehicle_owners WHERE email = '$sent_email' ";
     $resultForExistingVehicleOtp = mysqli_query($con, $sqlForExistingVehicleOtp);
 
 
@@ -156,7 +156,7 @@ if(isset($_POST['update_pw_btn'])){
         $sqlForExistingTraveler = "SELECT * FROM travelers WHERE email = '$sent_email' ";
         $resultForExistingTraveler = mysqli_query($con, $sqlForExistingTraveler);
     
-        $sqlForExistingVehicle = "SELECT * FROM vehicles WHERE email = '$sent_email' ";
+        $sqlForExistingVehicle = "SELECT * FROM vehicle_owners WHERE email = '$sent_email' ";
         $resultForExistingVehicle = mysqli_query($con, $sqlForExistingVehicle);
 
         if(mysqli_num_rows($resultForExistingTraveler)>0){
@@ -177,7 +177,7 @@ if(isset($_POST['update_pw_btn'])){
                 $existingVehiclerEmail = $rows['email'];
             }
             if($sent_email == $existingVehiclerEmail){
-                $sqlForUpdatePw = "UPDATE vehicles SET password = '$new_password' WHERE email = '$sent_email' ";
+                $sqlForUpdatePw = "UPDATE vehicle_owners SET password = '$new_password' WHERE email = '$sent_email' ";
                 //$updatePwResults = mysqli_query($con, $sqlForUpdatePw);        
                 if(mysqli_query($con, $sqlForUpdatePw)){
                     header('location: ../../pages/unregistered/log_in.php');

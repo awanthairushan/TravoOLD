@@ -3,7 +3,7 @@
   if(isset($_SESSION['username'])) {
     include '../../db/db_connection.php';
     $temp = $_SESSION['username'];
-    $sqlForSession = "SELECT vehicle_id FROM vehicles WHERE email = '$temp'";
+    $sqlForSession = "SELECT owner_id FROM vehicle_owners WHERE email = '$temp'";
     $resultForSession = mysqli_query($con, $sqlForSession);
     if (mysqli_num_rows($resultForSession) === 1) {
  ?>

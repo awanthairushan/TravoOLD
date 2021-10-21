@@ -8,6 +8,7 @@ include '../../db/db_connection.php';
 
 if (isset($_POST['submitbtn'])) {
     $vehicle_id = uniqid("veh_");
+    $owner_id = uniqid("own_");
     $owner_name = mysqli_real_escape_string($con,$_POST['owner_name']);
     $email = mysqli_real_escape_string($con,$_POST['email']);
     $contact1 = mysqli_real_escape_string($con,$_POST['contact1']);
@@ -25,7 +26,7 @@ if (isset($_POST['submitbtn'])) {
     $image = $_POST['images'];
     $otp = rand(1000, 9999);
 
-   $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicles WHERE email = '$email'";
+   $sqlForExistedEmail = "SELECT email FROM hotels WHERE email = '$email' UNION SELECT email FROM travelers WHERE email = '$email' UNION SELECT email FROM vehicle_owners WHERE email = '$email'";
     $resultForExistedEmail = mysqli_query($con,$sqlForExistedEmail);
     if (mysqli_num_rows($resultForExistedEmail) > 0) {
         $_SESSION['value'] = "username_exist";
@@ -34,10 +35,14 @@ if (isset($_POST['submitbtn'])) {
         exit();
     } else {
         $password = password_hash($password, PASSWORD_DEFAULT); // Password hashing
-        $sql = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_name, email, contact1, contact2, password, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac, vehicle_image, otp) VALUES ('$vehicle_id', '$vehicle_no', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac', '$image', '$otp')";
+        $sqlForOwnerDetails = "INSERT INTO vehicle_owners (owner_id, owner_name, email, contact1, contact2, password, otp) VALUES ('$owner_id', '$owner_name', '$email', '$contact1', '$contact2', '$password', '$otp')";
+        $sqlForVehicleDetails = "INSERT INTO vehicles (vehicle_id,vehicle_no, owner_id, city, type, no_of_passengers, price_for_1km, price_for_day, driver_type, driver_charge, ac, vehicle_image) VALUES ('$vehicle_id', '$vehicle_no', '$owner_id', '$city', '$type', '$no_of_passengers', '$price_for_1km', '$price_for_day', '$driver_type', '$driver_charge', '$ac', '$image')";
 
-        $result=$con->query($sql);
-        if($result){
+    
+        $resultForOwnerDetails=$con->query($sqlForOwnerDetails);
+        $resultForVehicleDetails=$con->query($sqlForVehicleDetails);
+
+        if($resultForOwnerDetails && $resultForVehicleDetails){
             header("Location: ../../pages/unregistered/log_in.php");
         }else{
             echo "Error:".$con->error;
