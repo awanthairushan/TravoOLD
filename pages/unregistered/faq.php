@@ -10,6 +10,7 @@
 
     <?php
       $result = require '../../db/all/all_faq.php';
+      include '../../repeatable_contents/font.php';
     ?>
   </head>
   <body>

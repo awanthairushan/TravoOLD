@@ -13,9 +13,8 @@ if (isset($_SESSION['username'])) {
   <head>
     <meta charset="utf-8">
     <title></title>
-    <style>
-      <?php include '../../css/unregistered/forgot_pw.css'; ?>
-    </style>
+    <style><?php include '../../css/unregistered/forgot_pw.css'; ?></style>  
+  <?php include '../../repeatable_contents/font.php'; ?>
   </head>
 
   <body>

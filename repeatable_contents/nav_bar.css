@@ -6,6 +6,8 @@
   display: flex;
   z-index: 10;
   margin-bottom: 1rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1rem;
 }
 .nav_bar_logo {
   text-align: right;
@@ -45,7 +47,9 @@
   margin-right: 3rem;
 }
 
-
+.navigations_bold_style {
+  font-weight: bold;
+}
 
 /*Styling Hamburger Icon*/
 .hamburger div{

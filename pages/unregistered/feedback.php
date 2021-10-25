@@ -7,6 +7,7 @@
     <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
     <?php
       $result = require '../../db/traveler/traveler_feedbacklist.php';
+      include '../../repeatable_contents/font.php';
     ?>
         <link rel="icon" href="../../images/icons/favicon.ico">
         
