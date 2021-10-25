@@ -11,7 +11,7 @@
     <style> <?php include '../../css/unregistered/sign_up-vehicle.css'; ?> </style>
     <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
     <link rel="icon" href="../../images/icons/favicon.ico">
-
+    <?php include '../../repeatable_contents/font.php'; ?>
   </head>
   <body>
  <?php 

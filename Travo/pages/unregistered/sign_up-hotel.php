@@ -9,7 +9,7 @@
     <style> <?php include '../../css/unregistered/sign_up-hotel.css'; ?> </style>
     <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
     <link rel="icon" href="../../images/icons/favicon.ico">
-
+    <?php include '../../repeatable_contents/font.php'; ?>
     <!-- This code will run after the body tag  -->
   </head>
   <body>

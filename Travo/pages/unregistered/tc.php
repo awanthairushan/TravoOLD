@@ -2,11 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>T&C</title>
     <style> <?php include '../../css/unregistered/tc.css'; ?> </style>
     <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
     <link rel="icon" href="../../images/icons/favicon.ico">
-
+    <?php include '../../repeatable_contents/font.php'; ?>
   </head>
   <body>
     <section class="faq">
