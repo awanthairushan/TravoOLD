@@ -10,12 +10,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>AVAILABILITY</title>
-      <link rel="icon" href="../../images/icons/favicon.ico">
+        <title>AVAILABILITY</title>
+        <link rel="icon" href="../../images/icons/favicon.ico">
         <link rel="stylesheet" href="../../css/hotel/hotel_availability.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../../script/hotel/hotel_availability.js"></script>
         <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
+        <link rel="icon" href="../../images/icons/favicon.ico">
     </head>
     <body>
     <section class="sign_up-traveler">

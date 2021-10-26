@@ -1,19 +1,19 @@
-var modal = document.querySelector(".more_traveler_details_modal");
-var remove_btns = document.querySelectorAll(".morebtn");
-var cancelBtn = document.querySelector("#more_traveler_cancel_btn");
+var customer_modal = document.querySelector(".more_traveler_details_modal");
+var more_btns = document.querySelectorAll(".morebtn");
+var doneBtn = document.querySelector("#more_traveler_cancel_btn");
 
-for(var i = 0; i < remove_btns.length; i++){
-    remove_btns[i].addEventListener("click", function(e) {
-        modal.style.display = "block";
+for(var i = 0; i < more_btns.length; i++){
+    more_btns[i].addEventListener("click", function(e) {
+        customer_modal.style.display = "block";
         event.preventDefault();
     });
 }
 
 window.onclick = function(e) {
     if (event.target == modal) {
-        modal.style.display = "none";
+        customer_modal.style.display = "none";
     }
 }
-cancelBtn.addEventListener("click", function() {
-    modal.style.display = "none";
+doneBtn.addEventListener("click", function() {
+    customer_modal.style.display = "none";
 });
