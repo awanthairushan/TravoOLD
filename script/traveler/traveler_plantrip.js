@@ -55,3 +55,62 @@ cancelBtn.addEventListener("click", function(){
    }
 
  }
+
+//js for selecting destinations
+
+ var count=0;
+
+
+function getSelectedValue(){
+    var e = document.getElementById("choices");
+    var choiceValue = e.value; // to get value only
+    var op=e.getElementsByTagName("option");
+    var choicetext = e.options[e.selectedIndex].text;
+    var displaydiv=document.getElementById('displaydiv');
+
+    if(count==0){
+        displaydiv.innerHTML="";
+        displaydiv.style.padding= "0 0 1vh 0";
+    }
+
+    if(count<3){
+        count=count+1;
+        op[e.selectedIndex].disabled=true;
+        choicetext.display="none";
+        var newDiv = document.createElement('span');
+        newDiv.setAttribute("class","choice");
+        newDiv.setAttribute("id",e.selectedIndex);
+        newDiv.innerHTML=choicetext+ " ";
+        var spanDiv = document.createElement('b');
+        spanDiv.setAttribute("class","close");
+        spanDiv.innerHTML=" x ";
+        spanDiv.setAttribute("onclick",'closeDiv(this)');
+        newDiv.appendChild(spanDiv);
+        displaydiv.appendChild(newDiv);
+    }
+}
+
+function closeDiv(x){
+    var c = document.getElementById("choices");
+    var opt=c.getElementsByTagName("option");
+    var parentDiv=x.parentNode.parentNode;
+    var optid=parseInt(x.parentNode.id);
+    opt[optid].disabled=false;
+    parentDiv.removeChild(x.parentNode);
+    var displaydiv=document.getElementById('displaydiv');
+    count=count-1;
+    if(count<=0){
+        count=0;
+        displaydiv.innerHTML="Select up to 3 destinations";
+        displaydiv.style.padding= "0 0 2vh 0";
+    }
+
+}
+
+
+
+
+
+ 
+ 
+ 

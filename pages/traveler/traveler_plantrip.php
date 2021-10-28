@@ -30,24 +30,40 @@
                         <!-- destination  1 -->
                         <div class="location_div">
                           <label for="location">LOCATION:</label><input type="text" id="location" name="location">
+                          <div class="clear"></div>
+                          <div id="displaydiv" class="displaydiv"> Select up to 3 destinations</div>
+                          <label for="destination">SELECT DESTINATIONS:</label><select id="choices" name="destinations" onchange="getSelectedValue()" placeholder="Select up to 3 destinations">
+                                <option value="Ampara">Ampara</option>
+                                <option value="Anuradhapura">Anuradhapura</option>
+                                <option value="Badulla">Badulla</option>
+                                <option value="Batticaloa">Batticaloa</option>
+                                <option value="Colombo">Colombo</option>
+                                <option value="Galle">Galle</option>
+                                <option value="Gampaha">Gampaha</option>
+                                <option value="Hambantota">Hambantota</option>
+                                <option value="Jaffna">Jaffna</option>
+                                <option value="Kalutara">Kalutara</option>
+                                <option value="Kandy">Kandy</option>
+                                <option value="Kegalle">Kegalle</option>
+                                <option value="Kilinochchi">Kilinochchi</option>
+                                <option value="Kurunegala">Kurunegala</option>
+                                <option value="Mannar">Mannar</option>
+                                <option value="Matale">Matale</option>
+                                <option value="Matara">Matara</option>
+                                <option value="Monaragala">Monaragala</option>
+                                <option value="Mullaitivu">Mullaitivu</option>
+                                <option value="Nuwara Eliya">Nuwara Eliya</option>
+                                <option value="Polonnaruwa">Polonnaruwa</option>
+                                <option value="Puttalam">Puttalam</option>
+                                <option value="Ratnapura">Ratnapura</option>
+                                <option value="Trincomalee">Trincomalee</option>
+                                <option value="Vavuniya">Vavuniya</option>
+                        </select>
                         </div>
                         <br>
                         <div id="destinations">
                             <table class="tableday">
                                 <tr><td class="tdata"><label for="destination1">DESTINATION 1</label></td></tr>
-                                <tr>
-                                    <td class="tdata">
-                                        <select name="destination1" id="des1">
-                                        <option selected>Destination 1</option>
-                                        <option value="Ampara">Ampara</option>
-                                        <option value="Anuradhapura">Anuradhapura</option>
-                                        <option value="Badulla">Badulla</option>
-                                        <option value="Batticaloa">Batticaloa</option>
-                                        <option value="Colombo">Colombo</option>
-                                        <option value="Galle">Galle</option>
-                                        </select>
-                                    </td>
-                                </tr>
                                 <tr><td class="tdata"><button class="selecthotelpopupbtn"> FIRST NIGHT HOTEL</button></td></tr>
                                 <!-- <tr><td class="tdata"><label for="destination1">DESTINATION 1</label></td></tr> -->
                                 <tr>
@@ -67,19 +83,6 @@
                         <div id="destinations">
                             <table class="tableday">
                                 <tr><td class="tdata"><label for="destination2">DESTINATION 2</label></td></tr>
-                                <tr>
-                                    <td class="tdata">
-                                        <select name="destination2" id="des2">
-                                        <option selected>Destination 2</option>
-                                        <option value="Ampara">Ampara</option>
-                                        <option value="Anuradhapura">Anuradhapura</option>
-                                        <option value="Badulla">Badulla</option>
-                                        <option value="Batticaloa">Batticaloa</option>
-                                        <option value="Colombo">Colombo</option>
-                                        <option value="Galle">Galle</option>
-                                        </select>
-                                    </td>
-                                </tr>
                                 <tr><td class="tdata"><button class="selecthotelpopupbtn">SECOND NIGHT HOTEL</button></td></tr>
                                 <!-- <tr><td class="tdata"><label for="destination2">DESTINATION 2</label></td></tr> -->
                                 <tr>
@@ -99,19 +102,6 @@
                         <div id="destinations">
                             <table class="tableday">
                                 <tr><td class="tdata"><label for="destination3">DESTINATION 3</label></td></tr>
-                                <tr>
-                                    <td class="tdata">
-                                        <select name="destination3" id="des3">
-                                        <option selected>Destination 3</option>
-                                        <option value="Ampara">Ampara</option>
-                                        <option value="Anuradhapura">Anuradhapura</option>
-                                        <option value="Badulla">Badulla</option>
-                                        <option value="Batticaloa">Batticaloa</option>
-                                        <option value="Colombo">Colombo</option>
-                                        <option value="Galle">Galle</option>
-                                        </select>
-                                    </td>
-                                </tr>
                                 <tr><td class="tdata"><button  class="selecthotelpopupbtn">THIRD NIGHT HOTEL</button></td></tr>
                                 <!-- <tr><td class="tdata"><label for="destination1">DESTINATION 3</label></td></tr> -->
                                 <tr>
