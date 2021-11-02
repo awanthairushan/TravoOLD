@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>T&C</title>
     <style> <?php include '../../css/unregistered/tc.css'; ?> </style>
     <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>

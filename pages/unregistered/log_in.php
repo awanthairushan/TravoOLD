@@ -12,6 +12,7 @@ if (isset($_SESSION['username'])) {
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>LOGIN</title>
     <style>
       <?php include '../../css/unregistered/log_in.css'; ?>
@@ -26,10 +27,9 @@ if (isset($_SESSION['username'])) {
   <body>
     <section class="log_in">
       <?php include '../../repeatable_contents/nav_bar.php'; ?>
-      <style>
-        <?php include '../../repeatable_contents/nav_bar.css'; ?>
-      </style>
+      <style><?php include '../../repeatable_contents/nav_bar.css'; ?></style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar.js"></script>
+      
       <div class="box-log_in">
         <br>
         <div class="border-img-log_in">

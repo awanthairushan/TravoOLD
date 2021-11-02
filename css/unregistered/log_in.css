@@ -9,7 +9,7 @@
   display: block;
   background-color: rgba(255,255,255,0.4);
   height: 80vh;
-  width: 35%;
+  width: 35vw;
   margin: 1rem auto auto auto;
 }
 .img-log_in {
@@ -37,11 +37,13 @@
   height: 2.5rem;
   border-width: thin;
   margin: 1.5rem auto 1.5rem auto;
+  vertical-align: middle;
 }
 .img-username-div-log_in {
-  width: 1.8rem;
-  height: auto;
-  padding: 0.35rem;
+  width: auto;
+  height: 80%;
+  padding-left: 0.35rem;
+  padding-top: 0.35rem;
 }
 .text-log_in {
   width: 85%;
@@ -173,4 +175,67 @@ input:focus {
   color: #ffffff;
   cursor: pointer;
   box-shadow: 1px 2px #888888;
+}
+@media screen and (max-width: 1200px){
+  .box-log_in{
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 1000px){
+  .box-log_in{
+    width: 45vw;
+  }
+  .text-log_in {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 850px){
+  .box-log_in{
+    width: 50vw;
+    margin-top: 4rem;
+  }
+  .text-log_in {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 750px){
+  .box-log_in{
+    width: 55vw;
+  }
+  .text-log_in {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px){
+  .box-log_in{
+    width: 60vw;
+    margin-top: 4rem;
+  }
+  .text-log_in {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 550px){
+  .box-log_in{
+    width: 65vw;
+  }
+  .text-log_in {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px){
+  .box-log_in{
+    width: 70vw;
+  }
+  .text-log_in {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 400px){
+  .box-log_in{
+    width: 80vw;
+  }
+  .text-log_in {
+    width: 70%;
+  }
 }

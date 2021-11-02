@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>FEEDBACK</title>
     <style> <?php include '../../css/unregistered/feedback.css'; ?> </style>
     <style> <?php include '../../css/unregistered/repeating_css.css'; ?> </style>
@@ -18,8 +19,8 @@
       <style> <?php include '../../repeatable_contents/nav_bar.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar.js"></script>
       <br>
+
     <div class="box-feedback">
-      <br>
       <table class="feedback_table-feedback">
         <thead class="feedback_thead-feedback">
           <tr>

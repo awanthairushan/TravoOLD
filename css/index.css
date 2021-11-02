@@ -1,20 +1,20 @@
 body {
-  font-family: 'Zen Kaku Gothic New', sans-serif;
-  padding: 0;
-  margin: 0;
-  overflow-x: hidden;
-}
-::-webkit-scrollbar {
-width: 5px;
-}
-
-::-webkit-scrollbar-track {
-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb {
-background-color: darkgrey;
-outline: 1px solid slategrey;
+  font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+  width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 /*.................navigation bar...............*/
 .nav_bar {
@@ -59,7 +59,7 @@ outline: 1px solid slategrey;
 .nav_bar_links li {
   position: relative;
   text-align: right;
-  width: 10rem;
+  width: 10vw;
 }
 .nav_bar_links li:last-child{
   margin-right: 3rem;
@@ -174,7 +174,7 @@ outline: 1px solid slategrey;
 
 .home-watermark_and_started-section{
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-image: url("../images/background_images/unregisteredbg.jpg");
   background-size: cover;
   margin: 0;
@@ -249,6 +249,7 @@ outline: 1px solid slategrey;
 .div-about_us {
   display: block;
   height: 28vh;
+  margin-bottom: 2rem;
 }
 .h3-about_us {
   margin: auto auto 1rem 8%;
@@ -265,13 +266,14 @@ outline: 1px solid slategrey;
   width: 14.5%;
   height: auto;
   float: right;
-  margin: auto 8% auto auto;
+  margin: 1rem 8% auto auto;
 }
 
 .hr-about_us {
 border-width: 0.3rem 0rem 0rem 0rem;
 border-color: #000000;
 margin: 0px;
+width: 100vw;
 }
 /*.............image gallery <- about us...............*/
 
@@ -329,44 +331,146 @@ margin: 0px;
   cursor: pointer;
 }
 /*.............END image gallery <- about us...............*/
+@media screen and (max-width: 1200px){
+  .gallary-about_us {
+    height: 35vh;
+    width: 88%;
+  }
+  .slide-about_us img{
+    height: 33vh;
+  }
+  .prev_btn-about_us{
+   margin: 7.5vh 0rem 7.5vh 0.5rem;
+  }
+  .next_btn-about_us  {
+    margin: 7.5vh 0.5rem 7.5vh 0rem;
+  }
+  .div-about_us {
+    margin-bottom: 3rem;
+  }
+  .logo-about_us {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 900px){
+  .gallary-about_us {
+    height: 30vh;
+    width: 85%;
+  }
+  .slide-about_us img{
+    height: 28vh;
+  }
+  .prev_btn-about_us{
+    margin: 7.5vh 0rem 7.5vh 0.5rem;
+   }
+   .next_btn-about_us  {
+     margin: 7.5vh 0.5rem 7.5vh 0rem;
+   }
+  .div-about_us {
+    margin-bottom: 5rem;
+  }
+  .logo-about_us {
+    margin-top: 3rem;
+    width: 18%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 650px){
+  .gallary-about_us,.prev_btn-about_us,.next_btn-about_us,.hr-about_us {
+    display:none;
+  }
+  .div-about_us {
+    margin:auto;
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+  }
+  .p-about_us {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
+  .logo-about_us {
+    margin: 2rem auto 1rem auto;
+    width: 25vw;
+    height: auto;
+    float: none;
+  }
+  .h3-about_us {
+    float: none;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 420px){
+  .logo-about_us {
+    margin: 0.5rem auto 0.5rem auto;
+    width: 25vw;
+    height: auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 350px){
+  .logo-about_us {
+    display: none;
+  }
+  .h3-about_us {
+    margin-bottom: 1rem;
+  }
+}
 /*__________________END about_us________________*/
 
-/*--------------contact_us-----------*/
-.home-contact_us {
-  height: 30vh;
+.contact_us {
+  height: 25vh;
   background-color: #000000;
+  width: 100vw;
+  text-align: center;
+  align-items: center;
 }
-.mail_div-contact_us{
+.mail_div_contact_us{
   display: block;
   height: 3rem;
+  width: 19rem;
+  margin-left: 2rem;
 }
-.mail_img-contact_us {
+.mail_img_contact_us {
   height: auto;
   width: 2rem;
-  margin: 1.8rem auto auto 3rem;
+  margin: auto;
   float: left;
 }
-.mail-contact_us {
-  float: left;
+.mail_contact_us {
+  float: right;
   color: #ffffff;
-  margin: 2.3rem auto auto 1rem;
+  margin: auto;
   font-size: 1.2rem;
 }
-.phone_img-contact_us {
+.phone_div_contact_us {
+  display: block;
+  height: 3rem;
+  width: 10.5rem;
+  margin-left: 2rem;
+}
+.phone_img_contact_us {
   height: auto;
   width: 2rem;
-  margin: 0.8rem auto auto 3rem;
+  margin: auto;
   float: left;
 }
-.phone-contact_us {
-  float: left;
+.phone_contact_us {
+  float: right;
   color: #ffffff;
-  margin: 1.3rem auto auto 1rem;
+  margin: auto;
   font-size: 1.2rem;
+}
+.phone_mail_contact_us {
+  display: block;
+  float: left;
 }
 .social_media-contact_us {
   float: right;
-  margin: auto 3rem auto auto;
+  margin: 2rem 3rem auto auto;
+  width: 15rem;
+  height: 3rem;
 }
 .social_media_img-about_us {
   float: right;
@@ -374,9 +478,55 @@ margin: 0px;
   height: auto;
   width: 2rem;
 }
-.Copyrights-contact_us {
+.copyrights_contact_us {
   color: #ffffff;
-  display: inline-block;
-  margin: 2.7rem auto auto 15rem;
-
+  margin: auto auto auto auto;
+  float:left;
+  width: 100vw;
+}
+.copyrights_contact_us p {
+  margin: 0;
+}
+@media screen and (max-width: 875px){
+  .phone_mail_contact_us {
+    display: block;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  .mail_div_contact_us{
+    display: block;
+    height: 3rem;
+    width: 19rem;
+    margin: auto;
+  }
+  .phone_div_contact_us {
+    display: block;
+    height: 3rem;
+    width: 10.5rem;
+    margin: auto;
+  }
+  .social_media-contact_us {
+    margin: 1rem auto;
+    width: 15rem;
+    height: 3rem;
+    float: none;
+  }
+  .contact_us {
+    height: 40vh;
+    background-color: #000000;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px){
+  .contact_us {
+    height: 45vh;
+  }
+}
+@media screen and (max-width: 330px){
+  .contact_us {
+    height: 50vh;
+  }
 }

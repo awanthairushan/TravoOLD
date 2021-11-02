@@ -17,6 +17,9 @@
     <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
     <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
     </script>
+    <?php 
+    include '../../repeatable_contents/font.php';
+    ?>
   </head>
   <body>
 
