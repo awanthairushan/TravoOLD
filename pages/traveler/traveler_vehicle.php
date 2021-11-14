@@ -21,8 +21,9 @@
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
             <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
             <br>
+            <div class="pageheading">VEHICLES</div>
             <div class="content">
-                <form>
+                <form class="filter_form">
                   <table class="filter_table">
                     <tr>
                       <td>

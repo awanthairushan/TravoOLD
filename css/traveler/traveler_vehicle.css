@@ -4,22 +4,41 @@ body {
 }
 .uppersection {
       background-image: url("../../images/background_Images/travelerbg.jpg");
-      opacity: 90%;
+      /* opacity: 90%; */
       background-size: cover;
       background-repeat: no-repeat;
       height: 100vh;
 }
+
+/* title of the page */
+.pageheading{
+  font-size: 1.5rem;
+  margin:0 0 0.25rem 0;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  align-content: center;
+}
+
 .content {
   width: 80%;
   margin: auto;
   padding: 0;
 }
 .vehicledetails_div {
-  max-height: 78%;
+  max-height: 72%;
   overflow-y: scroll;
 }
 .vehicledetails_div::-webkit-scrollbar {
   display: none;
+}
+
+.filter_form{
+  margin-top: 0.5rem;
+}
+
+.filter_table{
+  width: 100%;
 }
 
 .filter_table td {
@@ -28,6 +47,7 @@ body {
 select{
     width: 80%;
     padding: 0.2rem;
+    border: none;
 }
 
 .vehicledetails{

@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="confirm"><button id="confirmbtn" onclick="window.location.href='traveler_plantrip.php'">CONFIRM</button></div>
+                <div class="confirm"><button id="confirmbtn" class="confirmbtn" onclick="window.location.href='traveler_plantrip.php'">CONFIRM</button></div>
             </form>
 
             <table class="hoteldetails">

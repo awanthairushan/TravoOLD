@@ -6,14 +6,14 @@ body{
 .uppersection{
     background-image: url("../../images/background_Images/travelerbg.jpg");
     height: 100vh;
-    opacity: 90%;
+    /* opacity: 90%; */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .trip{
     /* used to center .tripmenu */
-    width: 50%;
+    width: 50vw;
     height: 3rem;;
     /* align .tripmenu div tags to the center */
     margin: auto;
@@ -22,14 +22,26 @@ body{
 
 .tripmenu{
     /* helps to center .tripmenu */
-    width: 33%;
+    width: 31%;
     height: 3rem;
     float: left;
-    padding-top: 0.75rem;
+    padding-top: 0.3rem;
+    margin:0 2px 0 2px ;
     text-align: center;
     vertical-align: middle;
     font-size: 1.5rem;
-    background: rgba(103, 176, 186, 0.7);
+    background: #369093;
+    border: transparent;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.trip :first-child{
+    border-radius: 1rem 0 0 1rem;
+}
+
+.trip :last-child{
+    border-radius: 0 1rem 1rem 0;
 }
 
 .link{
@@ -38,14 +50,14 @@ body{
 }
 
 .container{
-    width: 80%;
-    height: 60vh;
+    width: 80vw;
+    height: 63vh;
     /* align .tripmenu div tags to the center */
     margin: 0.5rem auto;
-        background: rgba(196, 196, 196, 0.5);
-        align-content: center;
+    background: rgba(196, 196, 196, 0.5);
+    align-content: center;
 
-        border-radius: 2rem;
+    border-radius: 2rem;
 }
 
 .main{
@@ -65,7 +77,8 @@ body{
 }
 
 .main_details{
-    margin: 1rem auto;
+    margin: 0 auto;
+    padding-top: 0.25rem ;
     width: 50%;
   }
   
@@ -118,14 +131,16 @@ body{
 }
 
 .button{
-    width: 15rem;
-    height: 4rem;
-    background: rgba(103, 176, 186, 0.7);
-    border-radius: 2rem;
-    font-size: 1.5rem;
+    width: 12rem;
+    height: 2.5rem;
+    background: #369093;
+    border-radius: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: bold;
     color: #ffffff;
     border: none;
     cursor: pointer;
+    letter-spacing: 2px;
 }
 .details iframe {
   margin:auto;
@@ -133,6 +148,14 @@ body{
 }
 
 .payForm{
+    display: none;
+}
+
+.modal2{
+    display: block;
+}
+
+.modal1,.modal3{
     display: none;
 }
 

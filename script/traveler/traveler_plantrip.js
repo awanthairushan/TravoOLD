@@ -1,4 +1,6 @@
 var content = document.querySelector(".content");
+var planheading = document.querySelector(".plan-head");
+var hotelsheading = document.querySelector(".hotel-head");
 var popup = document.querySelector(".hotel_names_popup");
 var popupBtn = document.querySelectorAll(".selecthotelpopupbtn");
 var cancelBtn = document.querySelector("#cancelbtn");
@@ -14,16 +16,22 @@ for (var i = 0; i < popupBtn.length; i++) {
 function openPopup(){
   content.style.display = "none";
   popup.style.display = "block";
+  planheading.style.display="none";
+  hotelsheading.style.display="block";
 }
 window.onclick = function(event) {
   if (event.target == popup) {
     popup.style.display = "none";
     content.style.display = "block";
+    planheading.style.display="block";
+    hotelsheading.style.display="none";
   }
 }
 cancelBtn.addEventListener("click", function(){
-   popup.style.display = "none";
-   content.style.display = "block";
+  popup.style.display = "none";
+  content.style.display = "block";
+  planheading.style.display="block";
+  hotelsheading.style.display="none";
  });
 
 

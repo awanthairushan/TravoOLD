@@ -25,6 +25,7 @@
       <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
       <br>
+      <div class="pageheading">UPDATE</div>
     <div class="box-sign_up-traveler">
       <br>
       <form class="form-sign_up-traveler" id="form-sign_up-traveler" action="../../php/traveler/traveler_updateprofile.php" method="post">

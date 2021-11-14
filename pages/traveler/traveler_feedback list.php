@@ -25,6 +25,7 @@
       <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
       <br>
+      <div class="pageheading">FEEDBACK</div>
     <div class="box-feedback">
       <br>
       <table class="feedback_table-feedback">
@@ -34,7 +35,7 @@
             <td class="feedback-feedback">FEEDBACK</td>
           </tr>
         </thead>
-        <tbody class="feedback_tbody-feedback">
+        <tbody class="feedback_tbody-feedback" id="feedback_tbody-feedback">
           <?php
             while ($rows = mysqli_fetch_array($result)){
               echo "<tr>
@@ -45,7 +46,24 @@
           ?>
         </tbody>
       </table>
+      <img class="addfeedback" id="addfeedback" src="../../images/icons/add.png">
+      <!-- feedback form -->
+          <div class="form_div" id="form_div">
+            <div class="heading">LEAVE YOUR LOVING RESPONSE !</div>
+            <div class="feedbackform">
+              <form action="../../php/traveler/traveler_givefeedback.php" method="POST">
+                <textarea name="response" class="response" required></textarea>
+                   <!--<input type="image" name="submit" src="../../images/icons/send.png" alt="Submit"  id="Submit" class="Submit">-->
+                   <input type="submit" name="submitbtn"  class="submitbtn" value="SUBMIT">
+                  <!-- <button type="submit" name="submitbtn"  class="submitbtn" >
+                  <img src="../../images/icons/send.png" id="SubmitFeedback" class="Submit" alt="Submit"/>
+                  </button> -->
+              </form>
+              </div>
+          </div>
+    <!-- end of feedback form -->
     </div>
+    <script type="text/javascript" src="../../script/traveler/traveler_feedback_list.js"></script>
     </section>
     <section id="contact_us-section">
       <?php include '../../repeatable_contents/footer.php';?>
