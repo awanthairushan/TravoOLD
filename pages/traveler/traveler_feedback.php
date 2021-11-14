@@ -24,18 +24,18 @@
             <div class="content">
                 <div class="container">
                 <div class="details">
-                    <div class="heading">LEAVE YOUR LOVING RESPONSE !</div>
-                    <div class="feedback">
-                      <form action="../../php/traveler/traveler_givefeedback.php" method="POST">
-                            <textarea name="response" class="response" required></textarea>
-                            <!--<input type="image" name="submit" src="../../images/icons/send.png" alt="Submit"  id="Submit" class="Submit">-->
-                            <button type="submit" name="submitbtn"  class="submitbtn" >
-                                <img src="../../images/icons/send.png" id="Submit" class="Submit" alt="Submit"/>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+                      <div class="heading">LEAVE YOUR LOVING RESPONSE !</div>
+                      <div class="feedback">
+                        <form action="../../php/traveler/traveler_givefeedback.php" method="POST">
+                              <textarea name="response" class="response" required></textarea>
+                              <!--<input type="image" name="submit" src="../../images/icons/send.png" alt="Submit"  id="Submit" class="Submit">-->
+                              <button type="submit" name="submitbtn"  class="submitbtn" >
+                                  <img src="../../images/icons/send.png" id="Submit" class="Submit" alt="Submit"/>
+                              </button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
             </div>
         </section>
     <section id="contact_us-section">

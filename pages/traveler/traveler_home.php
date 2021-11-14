@@ -35,6 +35,21 @@
     <div class="container" id="containerstart">
             <div class="details">
 
+              <!-- toogle -->
+              <input type="checkbox" id="switch">
+              <div class="app">
+                  <div class="selecttype">
+                      <label for="switch">
+                      <div class="toggle"></div>
+                      <div class="names">
+                          <p class="planning">PLAN</p>
+                          <p class="upcoming">UPCOMING</p>
+                      </div>
+                      </label>
+                  </div>
+              </div>
+              <!-- end of the toggle -->
+
               <form class="" action="../../pages/traveler/traveler_plantrip.php" method="post">
                 <table class="main">
                       <tr>
@@ -43,7 +58,7 @@
                           <th class="trow heading">CATEGORY</th>
                       </tr>
                       <tr>
-                          <td class="trow"><input type="number" id="peoplecount" name="peoplecount"></td>
+                          <td class="trow"><input type="number" id="peoplecount" name="peoplecount" ></td>
                           <td class="trow to"><input type="date" id="startdate" name="startdate">to<input type="date" id="enddate" name="enddate"></td>
                           <td class="trow"><select name="category" id="category">
                               <option selected>Select Category</option>
@@ -53,7 +68,7 @@
                               </select>
                           </td>
                   </table>
-                  <button id="nextbtn" onclick="window.location.href='../../pages/traveler/traveler_plantrip.php'">NEXT</button>
+                  <button id="nextbtn" class="nextbtn" onclick="window.location.href='../../pages/traveler/traveler_plantrip.php'">NEXT</button>
                 </form>
             </div>
         </div>

@@ -5,7 +5,7 @@ body{
 }
 .uppersection {
   background-image: url("../../images/background_Images/travelerbg.jpg");
-  opacity: 90%;
+  /* opacity: 90%; */
   background-size: cover;
   height: 100vh;
 }
@@ -105,17 +105,19 @@ b{
     text-align: center;
 }
 
-#confirmbtn{
-    width: 14rem;
-    height: 2.5rem;
-    font-size: 1.3rem;
-    letter-spacing: 2px;
-    margin-top: 0.5rem;
-    background: rgba(93, 196, 189, 0.7);
-    border-radius: 30px;;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
+.confirmbtn{
+  width: 12rem;
+  height: 2.5rem;
+  margin: 0.5rem auto 0 auto;
+  background: #369093;
+  border-radius: 0.8rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  display: block;
+  cursor: pointer;
+  letter-spacing: 2px;    
 }
 
 /* css for changing no of rooms part */

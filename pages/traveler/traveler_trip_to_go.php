@@ -41,11 +41,11 @@
                         <div class="next" onclick="plusSlides(1)"></div>
                     </div>
                     <div class="cols2">
-                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kandy</dt> <dt>Mathale</dt> <dt>Dambulla</dt> <dt>2021-11-02</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Anuradhapura</dt> <dt>Trincomalee</dt> <dt>Jaffna</dt> <dt>2021-10-25</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kandy</dt> <dt>Mathale</dt> <dt>Dambulla</dt> <dt>2021-11-02</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Anuradhapura</dt> <dt>Trincomalee</dt> <dt>Jaffna</dt> <dt>2021-10-25</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
 
-                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Mathale</dt> <dt>Badulla</dt> <dt>Nuwara-Eliya</dt> <dt>2022-01-05</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Matara</dt> <dt>Galle</dt> <dt>Kataragama</dt> <dt>2021-12-15</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Mathale</dt> <dt>Badulla</dt> <dt>Nuwara-Eliya</dt> <dt>2022-01-05</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Matara</dt> <dt>Galle</dt> <dt>Kataragama</dt> <dt>2021-12-15</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
                     </div>
                 </div>
 
@@ -56,12 +56,12 @@
                         <div class="next" onclick="plusSlides(1)"></div>
                     </div>
                     <div class="cols2">
-                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Jaffna</dt> <dt>Nuwara Eliya</dt> <dt>Gampaha</dt> <dt>2021-11-12 </dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kilinochchi</dt> <dt>Batticaloa</dt> <dt> Monaragala</dt> <dt>2021-11-15</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kurunegala</dt> <dt>Mannar</dt> <dt> Puttalam</dt> <dt>2021-11-19</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'"id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Matara</dt> <dt>Galle</dt> <dt>Kataragama</dt> <dt>2021-12-15</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Jaffna</dt> <dt>Nuwara Eliya</dt> <dt>Gampaha</dt> <dt>2021-11-12 </dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kilinochchi</dt> <dt>Batticaloa</dt> <dt> Monaragala</dt> <dt>2021-11-15</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kurunegala</dt> <dt>Mannar</dt> <dt> Puttalam</dt> <dt>2021-11-19</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'"id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Matara</dt> <dt>Galle</dt> <dt>Kataragama</dt> <dt>2021-12-15</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
+                    </div>
                 </div>
-    </div>
 
                 <div class="slide trip3">
                     <div class="row1">
@@ -70,16 +70,15 @@
                         <div class="next" onclick="plusSlides(1)"></div>
                     </div>
                     <div class="cols2">
-                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Matara</dt> <dt>Galle</dt> <dt>Colombo</dt> <dt>2021-12-09</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kandy</dt> <dt>Nuwara Eliya</dt> <dt>Anuradhapura</dt> <dt>2021-11-20</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t1"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Matara</dt> <dt>Galle</dt> <dt>Colombo</dt> <dt>2021-12-09</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t2"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Kandy</dt> <dt>Nuwara Eliya</dt> <dt>Anuradhapura</dt> <dt>2021-11-20</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
 
-                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Galle</dt> <dt>Ratnapura</dt> <dt>Kandy</dt> <dt>2022-06-06</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
-			        <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Colombo</dt> <dt>Gampaha</dt> <dt>Kegalle</dt> <dt>2021-12-23</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_budget.php'" id="selecttrip">READ MORE</button></div>
+                        <div class="tripdetail t3"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Galle</dt> <dt>Ratnapura</dt> <dt>Kandy</dt> <dt>2022-06-06</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
+			                  <div class="tripdetail t4"><img src="../../images/icons/delete.png" class="delete_img"><dl class=""> <dt>Colombo</dt> <dt>Gampaha</dt> <dt>Kegalle</dt> <dt>2021-12-23</dt></dl><button onclick="window.location.href='../../pages/traveler/traveler_saved_budget.php'" id="selecttrip">READ MORE</button></div>
                     </div>
                 </div>
-
+                </div>
             </div>
-          </div>
               <script type="text/javascript" src="../../script/traveler/traveler_trip_to_go.js"></script>
         </section>
     <section id="contact_us-section">

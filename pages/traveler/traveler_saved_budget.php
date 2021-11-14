@@ -13,7 +13,7 @@ if (isset($_SESSION['username'])) {
             <title>MY TRIPS</title>
             <link rel="icon" href="../../images/icons/favicon.ico">
             <style>
-                <?php include '../../css/traveler/traveler_trip_details.css'; ?>
+                <?php include '../../css/traveler/traveler_budget.css'; ?>
             </style>
             <style>
                 <?php include '../../css/traveler/traveler_repeating_css.css'; ?>
@@ -30,13 +30,13 @@ if (isset($_SESSION['username'])) {
                 <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
                 <br>
                 <div class="content">
-                    <div class="trip">
-                        <div class="tripmenu"><a class="link" href="traveler_trip_details.php">TRIP</a></div>
-                        <div class="tripmenu"><a class="link" href="traveler_budget.php">BUDGET</div>
-                        <div class="tripmenu"><a class="link" href="traveler_route.php">ROUTE</a></div>
+                    <div class="trip ">
+                        <button class="tripmenu" id="trip_details_btn">TRIP</button>
+                        <button class="tripmenu" id="budget_btn">BUDGET</button>
+                        <button class="tripmenu" id="route_btn">ROUTE</button>
                     </div>
 
-                    <div class="container">
+                    <div class="container modal1">
                         <div class="details">
                             <table class="main_details">
                                 <tr>
@@ -86,11 +86,61 @@ if (isset($_SESSION['username'])) {
                         </div>
                     </div>
 
+                    <div class="container modal2">
+                        <div class="details">
+                        <br>
+                            <table class="main">
+                                <tr>
+                                    <td>Hotel 1</td>
+                                    <td>=</td>
+                                    <td>RS 3500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Hotel 2</td>
+                                    <td>=</td>
+                                    <td>RS 4500.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Hotel 2</td>
+                                    <td>=</td>
+                                    <td>RS 5000.00</td>
+                                </tr>
+                                <tr>
+                                    <th class="row">Accomodaions</th>
+                                    <th class="row">=</th>
+                                    <th class="row">RS 13000.00</th>
+                                </tr>
+                                <tr>
+                                    <td>Service Charges</td>
+                                    <td>=</td>
+                                    <td>RS 1000.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Ticket fees</td>
+                                    <td>=</td>
+                                    <td>(RS 500.00)</td>
+                                </tr>
+                                <tr>
+                                    <th class="row">Total Budget</th>
+                                    <th class="row">=</th>
+                                    <th class="row">RS 14000.00</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="container modal3">
+                            <div class="details">
+                            <br>
+                                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7936.595061707961!2d80.5334359!3d5.953681200000001!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2slk!4v1629276519410!5m2!1sen!2slk" width="1000" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+
                     <form method="post" id="payForm" name="payForm" class="payForm" action="https://sandbox.payhere.lk/pay/checkout">
                         <input type="text" name="merchant_id" value="1218929"> <!-- Replace your Merchant ID -->
-                        <input type="text" name="return_url" value="http://localhost//Travo.lk/Travo/pages/traveler/traveler_trip_to_go.php">
-                        <input type="text" name="cancel_url" value="https://localhost//Travo.lk/Travo.lk/Travo/pages/traveler/traveler_budget.php">
-                        <input type="text" name="notify_url" value="https://localhost//Travo.lk/Travo.lk/Travo/php/traveler/traveler_payment.php">
+                        <input type="text" name="return_url" value="http://localhost//Travo.lk/pages/traveler/traveler_trip_to_go.php">
+                        <input type="text" name="cancel_url" value="https://localhost//Travo.lk/pages/traveler/traveler_budget.php">
+                        <input type="text" name="notify_url" value="https://localhost//Travo.lk/php/traveler/traveler_payment.php">
                         <input type="text" name="order_id" value="1">
                         <input type="text" name="items" value="Trip"><br>
                         <input type="text" name="currency" value="LKR">
@@ -105,11 +155,11 @@ if (isset($_SESSION['username'])) {
                     </form>
 
                     <div class="buttons">
-                        <button class="button" id="savebtn" onclick="window.location.href='../../pages/traveler/traveler_trip_to_go.php'">SAVE</button>
                         <button class="button" form="payForm" id="paybtn">PAY NOW</button>
                     </div>
                 </div>
             </section>
+            <script type="text/javascript" src="../../script/traveler/traveler_trip_details.js"></script>
 
             <section id="contact_us-section">
                 <?php include '../../repeatable_contents/footer.php'; ?>
