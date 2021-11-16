@@ -16,6 +16,7 @@
         <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="../../script/traveler/traveler_hotel_booking.js"></script>
+        <?php include '../../repeatable_contents/font.php'; ?>
     </head>
     <body>
         <section class="uppersection">
@@ -121,7 +122,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="confirm"><button id="confirmbtn" onclick="window.location.href='traveler_plantrip.php'">CONFIRM</button></div>
+                <div class="confirm"><button id="confirmbtn" class="confirmbtn" onclick="window.location.href='traveler_plantrip.php'">CONFIRM</button></div>
             </form>
 
             <table class="hoteldetails">

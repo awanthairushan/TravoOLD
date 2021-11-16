@@ -18,7 +18,7 @@
       <?php include '../../repeatable_contents/nav_bar.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar.js"></script>
-      <br>
+      <div class="heading">FAQ</div>
     <div class="question_and_answers-faq">
       <br>
       <table class="faq_table-faq">
@@ -34,6 +34,7 @@
         ?>
       </table>
     </div>
+    <script type="text/javascript" src="../../script/traveler/traveler_faq.js"></script>
     </section>
     <section id="contact_us-section">
       <?php include '../../repeatable_contents/footer.php';?>

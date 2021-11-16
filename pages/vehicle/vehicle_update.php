@@ -11,12 +11,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPDATE</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/vehicle/vehicle_update.css'; ?> </style>
-    <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
+    <style> <?php include '../../css/vehicle/vehicle_repeating_css.css'; ?> </style>
     <?php
       $result = require '../../db/vehicle/vehicle_update_profile.php';
+      include '../../repeatable_contents/font.php';
     ?>
   </head>
   <body>

@@ -14,15 +14,16 @@
         <style> <?php include '../../css/traveler/traveler_vehicle.css'; ?> </style>
         <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php include '../../repeatable_contents/font.php'; ?>
     </head>
     <body>
         <section class="uppersection">
             <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
             <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
-            <br>
+            <div class="pageheading">VEHICLES</div>
             <div class="content">
-                <form>
+                <form class="filter_form">
                   <table class="filter_table">
                     <tr>
                       <td>
@@ -88,50 +89,9 @@
                       <th colspan="5" class="vehicleType">Toyota Prius 4th Generation</th>
                   </tr>
                   <tr class="detail">
-                      <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
-                      <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
+                      <td class="trow">Car<br/>With A/C<br/>5 seats<br/>with/without Driver<br/>LKR.50 per km</td>
                       <td class="trow"><img class="vimg" src="../../images/Sample_images/for_vehicles/car2.jpg"></td>
-                      <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
-                      <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
-                  </tr>
-              </table>
-              <br/>
-              <table class="vehicledetails">
-                  <tr>
-                      <th colspan="5" class="vehicleType trow">Toyota</th>
-                  </tr>
-                  <tr class="detail">
-                      <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
-                      <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
-                      <td class="trow"><img class="vimg"src="../../images/Sample_images/for_vehicles/car1.jpg"></td>
-                      <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
-                      <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
-                  </tr>
-              </table>
-              <br/>
-              <table class="vehicledetails">
-                  <tr>
-                      <th colspan="5" class="vehicleType trow">Toyota</th>
-                  </tr>
-                  <tr class="detail">
-                      <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
-                      <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
-                      <td class="trow"><img class="vimg"src="../../images/Sample_images/for_vehicles/car3.jpg"></td>
-                      <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
-                      <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
-                  </tr>
-              </table>
-              <br/>
-              <table class="vehicledetails">
-                  <tr>
-                      <th colspan="5" class="vehicleType trow">Toyota</th>
-                  </tr>
-                  <tr class="detail">
-                      <td class="trow">Type<br/>A/C<br/>Seating capacity<br/>Driver<br/>Price per day</td>
-                      <td class="trow">Car<br/><input type="checkbox"><br/>5<br/>with<input type="checkbox"> without<input type="checkbox"><br/>LKR.</td>
-                      <td class="trow"><img class="vimg"src="../../images/Sample_images/for_vehicles/car4.jpg"></td>
-                      <td class="trow">Name<br/>E-mail<br/>Contact<br/>Location<br/>Driver charges</td>
-                      <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00</td>
+                      <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00 for a driver</td>
                   </tr>
               </table>
               </div>

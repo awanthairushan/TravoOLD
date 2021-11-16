@@ -12,8 +12,9 @@
       <title>VIEW</title>
       <link rel="icon" href="../../images/icons/favicon.ico">
         <style> <?php include '../../css/vehicle/vehicle_view_vehicle.css'; ?> </style>
-        <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
+        <style> <?php include '../../css/vehicle/vehicle_repeating_css.css'; ?> </style>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <?php include '../../repeatable_contents/font.php'; ?>
     </head>
     <body>
         <section class="uppersection">

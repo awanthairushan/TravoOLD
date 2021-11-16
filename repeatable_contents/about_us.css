@@ -1,4 +1,3 @@
-
 /*__________________about_us________________*/
 
 .about_us-section {
@@ -12,6 +11,7 @@
 .div-about_us {
   display: block;
   height: 28vh;
+  margin-bottom: 2rem;
 }
 .h3-about_us {
   margin: auto auto 1rem 8%;
@@ -28,13 +28,14 @@
   width: 14.5%;
   height: auto;
   float: right;
-  margin: auto 8% auto auto;
+  margin: 1rem 8% auto auto;
 }
 
 .hr-about_us {
 border-width: 0.3rem 0rem 0rem 0rem;
 border-color: #000000;
 margin: 0px;
+width: 100vw;
 }
 /*.............image gallery <- about us...............*/
 
@@ -92,4 +93,90 @@ margin: 0px;
   cursor: pointer;
 }
 /*.............END image gallery <- about us...............*/
+@media screen and (max-width: 1200px){
+  .gallary-about_us {
+    height: 35vh;
+    width: 88%;
+  }
+  .slide-about_us img{
+    height: 33vh;
+  }
+  .prev_btn-about_us{
+   margin: 7.5vh 0rem 7.5vh 0.5rem;
+  }
+  .next_btn-about_us  {
+    margin: 7.5vh 0.5rem 7.5vh 0rem;
+  }
+  .div-about_us {
+    margin-bottom: 3rem;
+  }
+  .logo-about_us {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 900px){
+  .gallary-about_us {
+    height: 30vh;
+    width: 85%;
+  }
+  .slide-about_us img{
+    height: 28vh;
+  }
+  .prev_btn-about_us{
+    margin: 7.5vh 0rem 7.5vh 0.5rem;
+   }
+   .next_btn-about_us  {
+     margin: 7.5vh 0.5rem 7.5vh 0rem;
+   }
+  .div-about_us {
+    margin-bottom: 5rem;
+  }
+  .logo-about_us {
+    margin-top: 3rem;
+    width: 18%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 650px){
+  .gallary-about_us,.prev_btn-about_us,.next_btn-about_us,.hr-about_us {
+    display:none;
+  }
+  .div-about_us {
+    margin:auto;
+    width: 80vw;
+    height: 100vh;
+    text-align: center;
+  }
+  .p-about_us {
+    width: 100%;
+    float: none;
+    margin: auto;
+  }
+  .logo-about_us {
+    margin: 2rem auto 1rem auto;
+    width: 25vw;
+    height: auto;
+    float: none;
+  }
+  .h3-about_us {
+    float: none;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 420px){
+  .logo-about_us {
+    margin: 0.5rem auto 0.5rem auto;
+    width: 25vw;
+    height: auto;
+    float: none;
+  }
+}
+@media screen and (max-width: 350px){
+  .logo-about_us {
+    display: none;
+  }
+  .h3-about_us {
+    margin-bottom: 1rem;
+  }
+}
 /*__________________END about_us________________*/

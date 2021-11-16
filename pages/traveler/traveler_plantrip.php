@@ -14,6 +14,7 @@
     <style> <?php include '../../css/traveler/traveler_plantrip.css'; ?> </style>
     <style> <?php include '../../css/traveler/traveler_repeating_css.css'; ?> </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include '../../repeatable_contents/font.php'; ?>
 </head>
 
 <body>
@@ -21,7 +22,8 @@
         <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
         <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
         <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
-        <br>
+        <div class="pageheading plan-head">PLAN</div>
+        <div class="pageheading hotel-head">HOTELS</div>
         <div class="content">
             <div class="container" >
                 <div class="details">
@@ -121,12 +123,14 @@
                         <div class="location_div">
                           <label for="mails">OTHER E-MAILS:</label><input type="email" id="mails" name="mails"><br/>
                         </div>
-                    </div>
-                        <div class="buttons">
-                            <button id="nextbtn" onclick="window.location.href='../../pages/traveler/traveler_budget.php'">NEXT</button>
-                        </div>
+                        <br>
+                        <button id="nextbtn" class="nextbtn" onclick="window.location.href='../../pages/traveler/traveler_budget.php'">NEXT</button>
+                    
+                        
+                    
+                        
                     </form>
-
+                    </div>
             </div>
         </div>
 <!-- .................................popup.................................. -->

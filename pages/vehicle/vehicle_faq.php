@@ -12,14 +12,16 @@ if (isset($_SESSION['username'])) {
 
     <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>FAQ</title>
       <link rel="icon" href="../../images/icons/favicon.ico">
       <style>
         <?php include '../../css/vehicle/vehicle_faq.css'; ?>
       </style>
-      <style> <?php include '../../css/hotel/hotel_repeating_css.css'; ?> </style>
+        <style> <?php include '../../css/vehicle/vehicle_repeating_css.css'; ?> </style>
       <?php
       $result = require '../../db/all/all_faq.php';
+      include '../../repeatable_contents/font.php';
       ?>
     </head>
 
@@ -30,7 +32,7 @@ if (isset($_SESSION['username'])) {
           <?php include '../../repeatable_contents/nav_bar_vehicle.css'; ?>
         </style>
         <script type="text/javascript" src="../../repeatable_contents/nav_bar_vehicle.js"></script>
-        <br>
+        <div class="heading">FAQ</div>
         <div class="question_and_answers-faq">
           <br>
           <table class="faq_table-faq">
@@ -46,6 +48,7 @@ if (isset($_SESSION['username'])) {
             ?>
           </table>
         </div>
+        <script type="text/javascript" src="../../script/vehicle/vehicle_faq.js"></script>
       </section>
       <section id="contact_us-section">
         <?php include '../../repeatable_contents/footer.php'; ?>
