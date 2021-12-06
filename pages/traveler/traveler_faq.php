@@ -11,6 +11,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/traveler/traveler_faq.css'; ?> </style>
@@ -25,7 +26,7 @@
       <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
       <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
       <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
-      <div class="heading">FAQ</div>
+      <div class="pageheading">FAQ</div>
     <div class="question_and_answers-faq">
       <br>
       <table class="faq_table-faq">

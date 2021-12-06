@@ -22,6 +22,7 @@
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
             <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
             <div class="pageheading">VEHICLES</div>
+            <button id="filterbtn" class="filterbtn">ADD FILTER</button>
             <div class="content">
                 <form class="filter_form">
                   <table class="filter_table">
@@ -81,11 +82,12 @@
                       </td>
                     </tr>
                   </table>
+                  <button type="submit" name="filtersubmitbtn"  class="filtersubmitbtn">ADD</button>
             </form>
             <div class="vehicledetails_div">
-              <table class="vehicledetails">
+              <!-- <table class="vehicledetails"> -->
                   <!-- vehicle 1 -->
-                  <tr>
+                  <!-- <tr>
                       <th colspan="5" class="vehicleType">Toyota Prius 4th Generation</th>
                   </tr>
                   <tr class="detail">
@@ -93,10 +95,81 @@
                       <td class="trow"><img class="vimg" src="../../images/Sample_images/for_vehicles/car2.jpg"></td>
                       <td class="trow">Mr.Kamal Ranasinghe<br/>kamal@gmail.com<br/>0710000000/0332200000<br/>Gampaha<br/>LKR.1000.00 for a driver</td>
                   </tr>
-              </table>
+              </table> -->
+              <div class="vtable">
+                <!-- vehicle 1 -->
+                <div class="vdetails">Toyota Prius 4th Generation</div>
+                <div class="vdetails">
+                  <dl>
+                    <dt class="vspecs">Car</dt>
+                    <dt class="vspecs">With A/C</dt>
+                    <dt class="vspecs">5 seats</dt>
+                    <dt class="vspecs">with/without Driver</dt>
+                    <dt class="vspecs">LKR.50 per km</dt>
+                  </dl>
+                </div>
+                <div class="vdetails"><img class="vimg" src="../../images/Sample_images/for_vehicles/car2.jpg"></div>
+                <div class="vdetails">
+                  <dl>
+                    <dt class="vspecs">Mr.Kamal Ranasinghe</dt>
+                    <dt class="vspecs">kamal@gmail.com</dt>
+                    <dt class="vspecs">0710000000/0332200000</dt>
+                    <dt class="vspecs">Gampaha</dt>
+                    <dt class="vspecs">LKR.1000.00 for a driver</dt>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="vtable">
+                <!-- vehicle 2 -->
+                <div class="vdetails">Toyota Prius 4th Generation</div>
+                <div class="vdetails">
+                  <dl>
+                    <dt class="vspecs">Car</dt>
+                    <dt class="vspecs">With A/C</dt>
+                    <dt class="vspecs">5 seats</dt>
+                    <dt class="vspecs">with/without Driver</dt>
+                    <dt class="vspecs">LKR.50 per km</dt>
+                  </dl>
+                </div>
+                <div class="vdetails"><img class="vimg" src="../../images/Sample_images/for_vehicles/car2.jpg"></div>
+                <div class="vdetails">
+                  <dl>
+                    <dt class="vspecs">Mr.Kamal Ranasinghe</dt>
+                    <dt class="vspecs">kamal@gmail.com</dt>
+                    <dt class="vspecs">0710000000/0332200000</dt>
+                    <dt class="vspecs">Gampaha</dt>
+                    <dt class="vspecs">LKR.1000.00 for a driver</dt>
+                  </dl>
+                </div>
+              </div>
+
+              <div class="vtable">
+                <!-- vehicle 2 -->
+                <div class="vdetails">Toyota Prius 4th Generation</div>
+                <div class="vdetails">
+                  <dl>
+                    <dt class="vspecs">Car</dt>
+                    <dt class="vspecs">With A/C</dt>
+                    <dt class="vspecs">5 seats</dt>
+                    <dt class="vspecs">with/without Driver</dt>
+                    <dt class="vspecs">LKR.50 per km</dt>
+                  </dl>
+                </div>
+                <div class="vdetails"><img class="vimg" src="../../images/Sample_images/for_vehicles/car2.jpg"></div>
+                <div class="vdetails">
+                  <dl>
+                    <dt class="vspecs">Mr.Kamal Ranasinghe</dt>
+                    <dt class="vspecs">kamal@gmail.com</dt>
+                    <dt class="vspecs">0710000000/0332200000</dt>
+                    <dt class="vspecs">Gampaha</dt>
+                    <dt class="vspecs">LKR.1000.00 for a driver</dt>
+                  </dl>
+                </div>
               </div>
             </div>
         </section>
+        <script type="text/javascript" src="../../script/traveler/traveler_vehicle.js"></script>
 
     <section id="contact_us-section">
       <?php include '../../repeatable_contents/footer.php';?>

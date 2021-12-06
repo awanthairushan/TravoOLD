@@ -23,6 +23,8 @@
             <?php include '../../repeatable_contents/nav_bar_traveler.php';?>
             <style> <?php include '../../repeatable_contents/nav_bar_traveler.css'; ?>  </style>
             <script type="text/javascript" src="../../repeatable_contents/nav_bar_traveler.js"></script>
+            <div class="pageheading">CINNAMON GRAND</div>
+            <div class="hotelcontent">
             <div class="image_gallery_hotel">
                 <table>
                   <tr>
@@ -125,7 +127,7 @@
                 <div class="confirm"><button id="confirmbtn" class="confirmbtn" onclick="window.location.href='traveler_plantrip.php'">CONFIRM</button></div>
             </form>
 
-            <table class="hoteldetails">
+            <!-- <table class="hoteldetails">
                 <tr>
                     <th>Location</th>
                     <th>Description</th>
@@ -141,8 +143,24 @@
                         </p>
                     </td>
                 </tr>
-            </table>
-            </div>
+            </table> -->
+            <div class="hoteldetails">
+              <div class="hdrow">
+                <div class="hdhead">Location</div>
+                <div class="hdbody">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7921.539473306047!2d79.84874!3d6.918109!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb0658168859e3c0e!2sCinnamon%20Grand%20Colombo!5e0!3m2!1sen!2slk!4v1629560069244!5m2!1sen!2slk" width="95%" height="92%"  allowfullscreen="" loading="lazy"></iframe>
+                </div>
+              </div>
+              <div class="hdrow">
+                <div class="hdhead">Description</div>
+                <div class="hdbody">
+                  <p>
+                      Set 1 km from both the Slave Island Railway Station and Galle Face Green, a seaside urban park, this grand resort hotel is also 2 km from Gangaramaya Buddhist Temple.
+                      Featuring picture windows, the polished rooms come with minibars, free Wi-Fi and flat-screen TVs. Suites add living rooms and dining areas, and some offer kitchenettes, wet bars or butler service.
+                  </p>
+                </div>
+              </div>
+         </div>
         </section>
 
     <section id="contact_us-section">

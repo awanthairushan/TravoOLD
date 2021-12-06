@@ -58,7 +58,7 @@ if (isset($_SESSION['username'])) {
                                 </tr>
                             </table>
 
-                            <table class="days" rules=none>
+                            <!-- <table class="days" rules=none>
                                 <tr>
                                     <th class="trow"></th>
                                     <th class="trow">Day 1</th>
@@ -83,14 +83,56 @@ if (isset($_SESSION['username'])) {
                                     <td class="trow">Dutch Reformed Church<br />The National Museum<br />Japanese Peace Pagoda</td>
                                     <td class="trow">National Museum<br />Viharamahadevi Park<br />Sri Lanka Planetarium</td>
                                 </tr>
-                            </table>
+                            </table> -->
+
+                            <div class="days">
+                                <div class="thide">
+                                    <!-- trowhead is an empty div -->
+                                    <div class="trowhead">&nbsp</div>
+                                    <div class="trow"><span>Destination</span></div>
+                                    <div class="trow"><span>Hotel</span></div>
+                                    <div class="trow"><span>Sights<span><br/><br/><br/></div>
+                                </div>
+                                <div class="tcolumn">
+                                    <div class="trowhead">Day 1</div>
+                                    <div class="trow"> Anuradhapura	</div>
+                                    <div class="trow"> Hotel Alakamanda</div>
+                                    <div class="trow"> Ruwanweliseya<br />Rathna Prasada<br />Isurumuniya</div>
+                                </div>
+                                <div class="thide">
+                                    <!-- trowhead is an empty div -->
+                                    <div class="trowhead">&nbsp</div>
+                                    <div class="trow"><span>Destination</span></div>
+                                    <div class="trow"><span>Hotel</span></div>
+                                    <div class="trow"><span>Sights</span><br><br><br></div>
+                                </div>
+                                <div class="tcolumn">
+                                    <div class="trowhead">Day 2</div>
+                                    <div class="trow">Galle</div>
+                                    <div class="trow">CocoBay Unawatuna</div>
+                                    <div class="trow">Dutch Reformed Church<br />The National Museum<br />Japanese Peace Pagoda</div>
+                                </div>
+                                <div class="thide">
+                                    <!-- trowhead is an empty div -->
+                                    <div class="trowhead">&nbsp</div>
+                                    <div class="trow"><span>Destination</span></div>
+                                    <div class="trow"><span>Hotel</span></div>
+                                    <div class="trow"><span>Sights</span><br><br><br></div>
+                                </div>
+                                <div class="tcolumn">
+                                    <div class="trowhead">Day 3</div>
+                                    <div class="trow">Colombo</div>
+                                    <div class="trow">Cinnamon Grand Colombo</div>
+                                    <div class="trow">National Museum<br />Viharamahadevi Park<br />Sri Lanka Planetarium</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="container modal2">
-                        <div class="details">
+                        <div class="details main">
                         <br>
-                            <table class="main">
+                            <!-- <table class="main">
                                 <tr>
                                     <td>Hotel 1</td>
                                     <td>=</td>
@@ -126,7 +168,35 @@ if (isset($_SESSION['username'])) {
                                     <th class="row">=</th>
                                     <th class="row">RS 14000.00</th>
                                 </tr>
-                            </table>
+                            </table> -->
+
+                            <div class="row1">Hotel 1</div>
+                            <div class="equal">=</div>
+                            <div class="row">RS 3500.00</div>
+
+                            <div class="row1">Hotel 2</div>
+                            <div class="equal">=</div>
+                            <div class="row">RS 4500.00</div>
+
+                            <div class="row1">Hotel 3</div>
+                            <div class="equal">=</div>
+                            <div class="row">RS 5000.00</div>
+
+                            <div class="row1 final">Accomodations</div>
+                            <div class="equal final">=</div>
+                            <div class="row final">RS 13000.00</div>
+
+                            <div class="row1">Service Charges</div>
+                            <div class="equal">=</div>
+                            <div class="row">RS 1000.00</div>
+
+                            <div class="row1">Ticket fees</div>
+                            <div class="equal">=</div>
+                            <div class="row">(RS 500.00)</div>
+
+                            <div class="row1 final">Total Budget</div>
+                            <div class="equal final">=</div>
+                            <div class="row final">RS 14000.00</div>
                         </div>
                     </div>
 

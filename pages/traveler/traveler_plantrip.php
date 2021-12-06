@@ -151,7 +151,7 @@
                         </div>
                     </div>
 
-                      <div class="slide hotels2">
+                      <div class="slide">
                           <div class="cols1">
                               <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> The Glamp - Kelaniya <br><br> Deluxe <br><br> Rs.7,500 - Rs.20,000 </button></div>
                               <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Sigiriya Resort - Sigiriya <br><br> Luxury <br><br> Rs.4,000 - Rs.15,000 </button></div>
@@ -163,7 +163,7 @@
                       </div>
 
 
-                      <div class="slide hotels3">
+                      <div class="slide">
                             <div class="cols1">
                                 <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Shanaya Mansion <br><br> Superior <br><br> Rs.2,000 - Rs.8,000 </button></div>
                                 <div><button onclick="window.location.href='../../pages/traveler/traveler_hotel_booking.php';" id="selecthotelbtn"> Marriott resort <br><br> Luxury <br><br> Rs.2,500 - Rs.12,500 </button></div>
