@@ -10,6 +10,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UPDATE</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/traveler/traveler_update.css'; ?> </style>

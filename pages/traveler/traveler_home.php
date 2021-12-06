@@ -11,6 +11,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="icon" href="../../images/icons/favicon.ico">
     <style> <?php include '../../css/traveler/traveler_home.css'; ?> </style>
@@ -36,7 +37,7 @@
               <div class="app">
                   <div class="selecttype">
                       <label for="switch">
-                      <div class="toggle"></div>
+                      <div class="toggle_select"></div>
                       <div class="names">
                           <p class="planning">PLAN</p>
                           <p class="upcoming">UPCOMING</p>
@@ -55,7 +56,7 @@
                       </tr>
                       <tr>
                           <td class="trow"><input type="number" id="peoplecount" name="peoplecount" ></td>
-                          <td class="trow to"><input type="date" id="startdate" name="startdate">to<input type="date" id="enddate" name="enddate"></td>
+                          <td class="trow to"><input type="date" id="startdate" name="startdate"><span class="select-to">to</span><input type="date" id="enddate" name="enddate"></td>
                           <td class="trow"><select name="category" id="category">
                               <option selected>Select Category</option>
                               <option value="pilgrimage">Pilgrimage</option>
